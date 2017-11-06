@@ -1,0 +1,3 @@
+# Adds other folders besides _includes, _layouts, _posts
+includes:
+- html

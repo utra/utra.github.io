@@ -1,0 +1,65 @@
+#mainHeader{
+	position: absolute;
+	z-index: 9999999; //position above all
+	top: 0;
+	width: 100vw;
+	#navMenuMain{
+		background-color: rgba(0,0,0,0);
+		height: 65px;
+		ul{
+			list-style-type: none;
+		    
+		    //positoning stuff
+		    display: flex;
+		    position: absolute;
+		    bottom: 0px;
+		    right: 120px;
+		    li{
+		    	margin: 5px;
+		    	a {
+		    		text-decoration: none;
+		    		display: block;
+
+		    		text-align: center;
+		    		padding: 5px 10px 5px 10px;
+
+		    		//font styling
+		    		color: white;
+		    		font-weight: bold;
+		    		font-size: 1.0em;
+		    		&:hover{
+		    			color: lightgrey;
+		    		}
+
+		    	}
+		    	&.active{
+	    			&:after{
+    				content: '';
+    				position: relative;
+    				left: 50%;
+    				top: 8px;
+    				transform:translateX(-50%);
+    				width: calc(100% + 10.5px);
+    				background-color: lightgrey;
+    				display: block;
+    				height: 3px;
+    				}
+    			}
+    			&:hover{
+    				&:after{
+    				content: '';
+    				position: relative;
+    				left: 50%;
+    				top: 8px;
+    				transform:translateX(-50%);
+    				width: calc(100% + 10.5px);
+    				background-color: lightgrey;
+    				display: block;
+    				height: 3px;
+    				}
+    			}
+		    }
+
+		}	
+	}
+}

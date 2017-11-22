@@ -1,6 +1,6 @@
 #bannerImage{
 	width:100%;
-	height: 700px;
+	height: 800px;
 	overflow: hidden;
 	position: relative;
 	#titleText{
@@ -8,17 +8,14 @@
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%,-50%);
-		color: lightgrey;
+		color: #fff;
 		z-index: 2;
 
 		//
 		font-size: 5em;
 	}
-	#greyoverley{
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		background-color: rgba(30,30,30,0.8);
+	#imageOverley{
+		position: absolute;	
 		z-index: 1;
 	}
 	#aboutImage{

@@ -5,12 +5,12 @@
   width: 100vw; }
   #mainHeader #navMenuMain {
     background-color: rgba(0, 0, 0, 0);
-    height: 65px; }
+    height: 75px; }
     #mainHeader #navMenuMain ul {
       list-style-type: none;
       display: flex;
       position: absolute;
-      bottom: 0px;
+      bottom: 5px;
       right: 120px; }
       #mainHeader #navMenuMain ul li {
         margin: 5px; }
@@ -18,32 +18,54 @@
           text-decoration: none;
           display: block;
           text-align: center;
-          padding: 5px 10px 5px 10px;
-          color: white;
+          padding: 5px 15px 5px 15px;
+          color: #DADADA;
           font-weight: bold;
-          font-size: 1.0em; }
+          font-size: 1.0em;
+          transition: color 0.1s; }
           #mainHeader #navMenuMain ul li a:hover {
-            color: lightgrey; }
+            color: white; }
+        #mainHeader #navMenuMain ul li:after {
+          content: '';
+          position: relative;
+          left: 50%;
+          top: 2px;
+          transform: translateX(-50%);
+          width: 70%;
+          background-color: white;
+          opacity: 0;
+          display: block;
+          height: 2px;
+          transition: opacity 0.2s, top 0.2s; }
+        #mainHeader #navMenuMain ul li.active a {
+          color: white; }
         #mainHeader #navMenuMain ul li.active:after {
           content: '';
           position: relative;
           left: 50%;
-          top: 8px;
+          top: 0px;
           transform: translateX(-50%);
-          width: calc(100% + 10.5px);
-          background-color: lightgrey;
+          width: 70%;
+          background-color: white;
+          opacity: 1;
           display: block;
-          height: 3px; }
+          height: 2px; }
         #mainHeader #navMenuMain ul li:hover:after {
           content: '';
           position: relative;
           left: 50%;
-          top: 8px;
+          top: 0px;
           transform: translateX(-50%);
-          width: calc(100% + 10.5px);
-          background-color: lightgrey;
+          width: 70%;
+          background-color: white;
+          opacity: 1;
           display: block;
-          height: 3px; }
+          height: 2px; }
+
+.overley {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); }
 
 #landingImage {
   position: absolute;
@@ -54,7 +76,7 @@
 
 #bannerImage {
   width: 100%;
-  height: 700px;
+  height: 800px;
   overflow: hidden;
   position: relative; }
   #bannerImage #titleText {
@@ -62,14 +84,11 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    color: lightgrey;
+    color: #fff;
     z-index: 2;
     font-size: 5em; }
-  #bannerImage #greyoverley {
+  #bannerImage #imageOverley {
     position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(30, 30, 30, 0.8);
     z-index: 1; }
   #bannerImage #aboutImage {
     position: absolute;
@@ -81,7 +100,8 @@ html, body {
   border: 0;
   height: 100vh;
   width: 100vw;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #f2f2f2; }
 
 * {
   margin: 0;

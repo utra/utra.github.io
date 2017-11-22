@@ -5,14 +5,14 @@
 	width: 100vw;
 	#navMenuMain{
 		background-color: rgba(0,0,0,0);
-		height: 65px;
+		height: 75px;
 		ul{
 			list-style-type: none;
 		    
 		    //positoning stuff
 		    display: flex;
 		    position: absolute;
-		    bottom: 0px;
+		    bottom: 5px;
 		    right: 120px;
 		    li{
 		    	margin: 5px;
@@ -21,28 +21,47 @@
 		    		display: block;
 
 		    		text-align: center;
-		    		padding: 5px 10px 5px 10px;
+		    		padding: 5px 15px 5px 15px;
 
 		    		//font styling
-		    		color: white;
+		    		color: #DADADA;
 		    		font-weight: bold;
 		    		font-size: 1.0em;
+		    		transition: color 0.1s;
 		    		&:hover{
-		    			color: lightgrey;
+		    			color: white;
 		    		}
 
 		    	}
+		    	&:after{
+		    		content: '';
+    				position: relative;
+    				left: 50%;
+    				top: 2px;
+    				transform: translateX(-50%);
+    				width: 70%;
+    				background-color: white;
+    				opacity: 0;
+    				display: block;
+    				height: 2px;
+
+		    		transition: opacity 0.2s, top 0.2s;
+		    	}
 		    	&.active{
+		    		a{
+		    			color: white;
+		    		}
 	    			&:after{
     				content: '';
     				position: relative;
     				left: 50%;
-    				top: 8px;
+    				top: 0px;
     				transform:translateX(-50%);
-    				width: calc(100% + 10.5px);
-    				background-color: lightgrey;
+    				width: 70%;
+    				background-color: white;
+    				opacity: 1;
     				display: block;
-    				height: 3px;
+    				height: 2px;
     				}
     			}
     			&:hover{
@@ -50,12 +69,13 @@
     				content: '';
     				position: relative;
     				left: 50%;
-    				top: 8px;
+    				top: 0px;
     				transform:translateX(-50%);
-    				width: calc(100% + 10.5px);
-    				background-color: lightgrey;
+    				width: 70%;
+    				background-color: white;
+    				opacity: 1;
     				display: block;
-    				height: 3px;
+    				height: 2px;
     				}
     			}
 		    }

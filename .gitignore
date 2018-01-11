@@ -1,10 +1,17 @@
-#ignore all _site
-/_site
+#ignore these
+.sass-cache/
+_site/
 
 #ignore all images
-/assets/img/*
+!assets/img
+assets/img/*
+!assets/img/Logo/
+!assets/img/Logo/*
 
-#except these
-!/assets/img/Logo/*
-!/assets/img/Utra Exec Photoshoot 171120/DSC_4016.jpg
-!/assets/img/SUMO/good.jpg
+!assets/img/SUMO
+assets/img/SUMO/*
+!assets/img/SUMO/good.jpg
+
+!assets/img/Utra Exec Photoshoot 171120/
+assets/img/Utra Exec Photoshoot 171120/*
+!assets/img/Utra Exec Photoshoot 171120/DSC_4016.jpg

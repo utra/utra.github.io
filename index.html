@@ -7,13 +7,19 @@
 
 	<!-- compiled css file -->
 	<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+	<!-- load images -->
+	<link rel="preload" href="./assets/img/SUMO/good.jpg" as="image">
+	<link rel="preload" href="./assets/img/Logo/logoRectangle.png" as="image">
 
 </head>
 <body>
-	<header id="mainHeader">{% include header.html %}</header>
+	<header class="header">{% include header.html %}</header>
 
-
-	<img id="landingImage" src="./assets/img/landingImage.jpg" alt="UTRA">
+	<div class="fullScreenImage">
+		<div class="fullScreenImage__overley"></div>
+		<div class="fullScreenImage__image""></div>
+	</div>
+	
 
 
 

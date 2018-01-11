@@ -1,85 +1,106 @@
-#mainHeader {
-  position: absolute;
+.header {
+  position: fixed;
   z-index: 9999999;
   top: 0;
   width: 100vw; }
-  #mainHeader #navMenuMain {
-    background-color: rgba(0, 0, 0, 0);
-    height: 75px; }
-    #mainHeader #navMenuMain ul {
-      list-style-type: none;
-      display: flex;
-      position: absolute;
-      bottom: 5px;
-      right: 120px; }
-      #mainHeader #navMenuMain ul li {
-        margin: 5px; }
-        #mainHeader #navMenuMain ul li a {
-          text-decoration: none;
-          display: block;
-          text-align: center;
-          padding: 5px 15px 5px 15px;
-          color: #DADADA;
-          font-weight: bold;
-          font-size: 1.0em;
-          transition: color 0.1s; }
-          #mainHeader #navMenuMain ul li a:hover {
-            color: white; }
-        #mainHeader #navMenuMain ul li:after {
-          content: '';
-          position: relative;
-          left: 50%;
-          top: 2px;
-          transform: translateX(-50%);
-          width: 70%;
-          background-color: white;
-          opacity: 0;
-          display: block;
-          height: 2px;
-          transition: opacity 0.2s, top 0.2s; }
-        #mainHeader #navMenuMain ul li.active a {
-          color: white; }
-        #mainHeader #navMenuMain ul li.active:after {
-          content: '';
-          position: relative;
-          left: 50%;
-          top: 0px;
-          transform: translateX(-50%);
-          width: 70%;
-          background-color: white;
-          opacity: 1;
-          display: block;
-          height: 2px; }
-        #mainHeader #navMenuMain ul li:hover:after {
-          content: '';
-          position: relative;
-          left: 50%;
-          top: 0px;
-          transform: translateX(-50%);
-          width: 70%;
-          background-color: white;
-          opacity: 1;
-          display: block;
-          height: 2px; }
 
-.overley {
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5); }
+.mainMenu {
+  transition: background-color 0.2s;
+  background-color: rgba(0, 0, 0, 0);
+  height: 75px; }
+  .mainMenu .mainMenu__list {
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    bottom: 5px;
+    right: 120px; }
+  .mainMenu .mainMenu__menuItem {
+    margin: 5px; }
+    .mainMenu .mainMenu__menuItem:after {
+      content: '';
+      position: relative;
+      left: 50%;
+      top: 2px;
+      transform: translateX(-50%);
+      width: 70%;
+      background-color: white;
+      opacity: 0;
+      display: block;
+      height: 2px;
+      transition: opacity 0.2s, top 0.2s; }
+    .mainMenu .mainMenu__menuItem a {
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      padding: 5px 15px 5px 15px;
+      color: #DADADA;
+      font-weight: bold;
+      font-size: 1.0em;
+      transition: color 0.1s; }
+      .mainMenu .mainMenu__menuItem a:hover {
+        color: white; }
+    .mainMenu .mainMenu__menuItem:hover:after {
+      content: '';
+      position: relative;
+      left: 50%;
+      top: 0px;
+      transform: translateX(-50%);
+      width: 70%;
+      background-color: white;
+      opacity: 1;
+      display: block;
+      height: 2px; }
+    .mainMenu .mainMenu__menuItem.mainMenu__menuItem--active a {
+      color: white; }
+    .mainMenu .mainMenu__menuItem.mainMenu__menuItem--active:after {
+      content: '';
+      position: relative;
+      left: 50%;
+      top: 0px;
+      transform: translateX(-50%);
+      width: 70%;
+      background-color: white;
+      opacity: 1;
+      display: block;
+      height: 2px; }
 
-#landingImage {
+.logo.logo--header {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  weight: 100vw; }
+  left: 30px;
+  bottom: 0px;
+  height: 75px; }
+.logo img {
+  height: 100%; }
 
-#bannerImage {
+.fullScreenImage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+  .fullScreenImage .fullScreenImage__overley {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.2; }
+  .fullScreenImage .fullScreenImage__image {
+    background-image: url("../img/SUMO/good.jpg");
+    background-size: cover;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%; }
+
+.bannerImage {
   width: 100%;
   height: 800px;
   overflow: hidden;
   position: relative; }
-  #bannerImage #titleText {
+  .bannerImage .bannerImage__titleText {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -87,20 +108,70 @@
     color: #fff;
     z-index: 2;
     font-size: 5em; }
-  #bannerImage #imageOverley {
+  .bannerImage .bannerImage__overley {
     position: absolute;
-    z-index: 1; }
-  #bannerImage #aboutImage {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.2; }
+  .bannerImage .bannerImage__image {
     position: absolute;
-    width: 100vw; }
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/UTRA Exec Photoshoot 171120/DSC_4016.jpg");
+    background-position: 50% 30%; }
+
+.aboutPageWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-left: 5vw;
+  margin-right: 10vw; }
+
+.sideMenu {
+  background-color: #E4F1FE;
+  padding: 20px 20px 40px 20px;
+  height: 155px;
+  margin-right: 5vw; }
+  .sideMenu .sideMenu__titleText {
+    text-decoration: underline;
+    font-size: 1.5em;
+    font-weight: 300; }
+  .sideMenu .sideMenu__list {
+    list-style-type: none; }
+    .sideMenu .sideMenu__list .sideMenu__menuItem {
+      padding: 10px 5px 5px 0px; }
+
+.infoBlock {
+  flex: 1;
+  margin-left: 20px; }
+  .infoBlock .infoBlock__title {
+    position: relative;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    .infoBlock .infoBlock__title:first-child {
+      margin-top: 0px; }
+    .infoBlock .infoBlock__title.infoBlock__title--caption {
+      font-size: 3em;
+      font-weight: 800; }
+  .infoBlock .infoBlock__paragraph {
+    line-height: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px; }
 
 html, body {
   margin: 0;
   padding: 0;
   border: 0;
-  height: 100vh;
   width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: #f2f2f2; }
 
 * {

@@ -1,0 +1,11 @@
+#ignore all _site
+./_site/*
+./_site
+
+#ignore all images
+./assets/img/*
+
+#except these
+!./assets/img/Logo/*
+!./assets/img/Utra Exec Photoshoot 171120/DSC_4016.jpg
+!./assets/img/SUMO/good.jpg

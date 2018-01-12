@@ -128,32 +128,50 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  margin-top: 50px;
-  margin-left: 5vw;
-  margin-right: 10vw; }
+  margin-top: 4vw; }
 
 .sideMenu {
-  background-color: #E4F1FE;
-  padding: 20px 20px 40px 20px;
-  height: 155px;
-  margin-right: 5vw; }
+  height: 190px;
+  margin-top: calc(30px + 6%);
+  margin-right: 5vw;
+  margin-left: 5vw; }
   .sideMenu .sideMenu__titleText {
-    text-decoration: underline;
-    font-size: 1.5em;
-    font-weight: 300; }
+    font-size: 1.9em;
+    font-weight: 500;
+    color: #45526B; }
+    .sideMenu .sideMenu__titleText:after {
+      display: block;
+      content: '';
+      height: 3px;
+      width: 26.5px;
+      background-color: #CD959A;
+      margin-top: 10px; }
   .sideMenu .sideMenu__list {
-    list-style-type: none; }
+    list-style-type: none;
+    margin-top: 25px; }
     .sideMenu .sideMenu__list .sideMenu__menuItem {
-      padding: 10px 5px 5px 0px; }
+      padding: 2.5px 0px 0px 2.5px;
+      font-size: 1.2em;
+      color: #45526B;
+      opacity: 0.8;
+      cursor: pointer;
+      transition: color 0.2s; }
+      .sideMenu .sideMenu__list .sideMenu__menuItem:hover {
+        color: #CD959A; }
 
 .infoBlock {
+  background-color: #F5F9FC;
   flex: 1;
-  margin-left: 20px; }
+  margin-right: 10vw;
+  padding-top: calc(30px + 6%);
+  padding-bottom: calc(30px + 6%);
+  padding-left: calc(20px + 7.5%);
+  padding-right: calc(20px + 7.5%); }
   .infoBlock .infoBlock__title {
     position: relative;
-    text-align: center;
     font-size: 2em;
     font-weight: 700;
+    color: #45526B;
     margin-top: 20px;
     margin-bottom: 20px; }
     .infoBlock .infoBlock__title:first-child {
@@ -163,6 +181,8 @@
       font-weight: 800; }
   .infoBlock .infoBlock__paragraph {
     line-height: 25px;
+    color: #45526B;
+    opacity: 0.8;
     margin-top: 20px;
     margin-bottom: 20px; }
 
@@ -172,13 +192,13 @@ html, body {
   border: 0;
   width: 100vw;
   overflow-x: hidden;
-  background-color: #f2f2f2; }
+  background-color: #D2DCE5; }
 
 * {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Abel', sans-serif;
   font-style: normal; }
 
 /*# sourceMappingURL=main.css.map */

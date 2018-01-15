@@ -6,29 +6,28 @@ permalink: /teams.html
 <head>
 	<title>UTRA | Our Teams</title>
 
-	<!-- compiled css file -->
-	<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
-	<!-- ionicons css -->
-	<link rel="stylesheet" type="text/css" href="./assets/css/ionicons.min.css">
+	{% include resources.html %}
 
 	
 </head>
 <body>
-	<header class="header">{% include header.html %}</header>
+	<header class="header header--teamsActive">{% include header.html %}</header>
 
 	<div class="bannerImage">
-		<h1 class="bannerImage__titleText">ABOUT</h1>
+		<h1 class="bannerImage__titleText">OUR TEAMS</h1>
 		<div class="bannerImage__overley"></div>
-		<div class="bannerImage__image aboutImage"></div>
+		<div class="bannerImage__image bannerImage__image--teams"></div>
+	</div>
+
+	<div class="flexContainer">
+		<div class="teamContainer"></div>
+		<div class="teamContainer"></div>
+		<div class="teamContainer"></div>
+		<div class="teamContainer"></div>
+		<div class="teamContainer"></div>
 	</div>
 
 	<footer id="mainFooter">{% include footer.html %}</footer>
 
-
-	<!-- loading JQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-	<!-- javascript -->
-	<script type="text/javascript" src="./assets/js/header.js" ></script>
 </body>
 </html>

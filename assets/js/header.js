@@ -5,7 +5,7 @@ $(document).ready(function(){
 			$(".header .mainMenu").css("background-color", "rgba(0,0,0,0)");
 		}
 		else{
-			$(".header .mainMenu").css("background-color", "rgba(0,0,0,0.6)");
+			$(".header .mainMenu").css("background-color", "rgba(69,82,107,0.8)");
 		}
 		
 	})

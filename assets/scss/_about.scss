@@ -12,7 +12,7 @@
 		transform: translate(-50%,-50%);
 		color: #fff;
 		z-index: 2;
-
+		text-align: center;
 		//
 		font-size: 5em;
 	}
@@ -30,8 +30,11 @@
 		height: 100%;
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-image: url("../img/UTRA Exec Photoshoot 171120/DSC_4016.jpg");
-		background-position: 50% 30%;
+
+		&.bannerImage__image--about{
+			background-image: url("../img/UTRA Exec Photoshoot 171120/DSC_4016.jpg");
+			background-position: 50% 30%;
+		}
 	}
 }
 
@@ -133,4 +136,155 @@
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
+}
+
+.infoBlock__executiveWrapper{
+	position: relative;
+
+	.infoBlock__execRow{
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	.infoBlock__execImageWrapper{
+		position: relative;
+		width: 20%;
+		padding-bottom: 24.5%;
+	}
+	.infoBlock__execImage{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-size: 100% auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		&:hover{
+			.infoBlock__execFader{
+				opacity: 0.8;
+			}
+			.infoBlock__execName{
+				opacity: 1;
+			}
+
+			.infoBlock__execPosition{
+				opacity: 1;
+			}
+			.infoBlock__execYear{
+				opacity: 1;
+			}
+			.infoBlock__execSocial{
+				opacity: 1;
+			}
+		}
+
+		.infoBlock__execFader{
+			position: absolute;
+			background-color: $background-color-light;
+			opacity: 0;
+			transition: opacity 0.2s;
+			height: 100%;
+			width: 100%;
+			z-index: 0;
+		}
+
+		.infoBlock__execName{
+			position: relative;
+			opacity: 0;
+			transition: opacity 0.2s;
+			z-index: 1;
+			pointer-events: none;
+			color: $heading-color;
+			font-weight: 600;
+		}
+
+		.infoBlock__execPosition{
+			position: relative;
+			opacity: 0;
+			transition: opacity 0.2s;
+			z-index: 1;
+			pointer-events: none;
+			color: $heading-color;
+		}
+		.infoBlock__execYear{
+			position: relative;
+			opacity: 0;
+			transition: opacity 0.2s;
+			z-index: 1;
+			pointer-events: none;
+			color: $heading-color;
+		}
+		.infoBlock__execSocial{
+			position: relative;
+			opacity: 0;
+			transition: opacity 0.2s;
+			z-index: 1;
+
+			i{
+				font-size: 1.5em;
+				color: $heading-color;
+			}
+		}
+
+		&.infoBlock__execImage--President{
+			background-image: url("../img/UTRA Exec Photoshoot 171120/headshots/DSC_3942.jpg");
+		}
+		&.infoBlock__execImage--VP_Ops{
+			background-image : url("../img/UTRA Exec Photoshoot 171120/headshots/DSC_3865.jpg");
+		}
+		&.infoBlock__execImage--Director_website{
+			background-image : url("../img/UTRA Exec Photoshoot 171120/headshots/DSC_3875.jpg");
+		}
+		&.infoBlock__execImage--Director_graphics1{
+			background-image : url("../img/UTRA Exec Photoshoot 171120/headshots/DSC_3889.jpg");
+		}
+		
+
+
+		&.infoBlock__execImage--whodis1{
+			background-image : url("../img/UTRA Exec Photoshoot 171120/headshots/DSC_3807.jpg");
+		}
+		&.infoBlock__execImage--whodis2{
+			background-image : url("../img/UTRA Exec Photoshoot 171120/headshots/DSC_3822.jpg");
+		}
+		&.infoBlock__execImage--whodis3{
+			background-image : url("../img/UTRA Exec Photoshoot 171120/headshots/DSC_3834.jpg");
+		}
+		&.infoBlock__execImage--whodis4{
+			background-image : url("../img/UTRA Exec Photoshoot 171120/headshots/DSC_3844.jpg");
+		}
+		&.infoBlock__execImage--whodis5{
+			background-image : url("../img/UTRA Exec Photoshoot 171120/headshots/DSC_3850.jpg");
+		}
+		&.infoBlock__execImage--whodis6{
+			background-image : url("../img/UTRA Exec Photoshoot 171120/headshots/DSC_3851.jpg");
+		}	
+	}
+}
+
+.columnWrapper{
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	height: 400px;
+	.form{
+		flex: 2;
+		height: 100%;
+		.infoBlock__paragraph{
+			margin-top: 0px;
+		}
+	}
+	.map{
+		flex: 2;
+		height: 100%;
+	}
+
+}
+
+#googleMaps{
+	width: 100%;
+	height: 100%;
 }

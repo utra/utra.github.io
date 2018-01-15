@@ -123,6 +123,9 @@
   height: 2px;
   transition: none; }
 
+.header--noScroll .mainMenu {
+  background-color: #45526b; }
+
 .fullScreenImage {
   position: absolute;
   left: 0;
@@ -359,7 +362,8 @@
   flex-wrap: wrap-reverse;
   justify-content: center;
   width: 80%;
-  margin-top: 20px; }
+  margin-top: 20px;
+  margin-bottom: 20px; }
   .flexContainer .teamContainer {
     height: 300px;
     width: 400px;

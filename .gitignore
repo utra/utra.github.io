@@ -12,6 +12,11 @@ assets/img/*
 assets/img/SUMO/*
 !assets/img/SUMO/good.jpg
 
+#this is the team page image
+!assets/img/Combat
+assets/img/Combat/*
+!assets/img/Combat/Cover Photo.jpg
+
 #this is the about page banner
 !assets/img/Utra Exec Photoshoot 171120/
 assets/img/Utra Exec Photoshoot 171120/*

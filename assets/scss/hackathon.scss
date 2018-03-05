@@ -1,0 +1,122 @@
+@import 'header';
+
+@import 'bannerImage';
+
+@import 'landingPage';
+@import 'onePager';
+
+html, body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	
+	width: 100vw;
+	overflow-x: hidden;
+	background-color: #D2DCE5;
+
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: 'Abel', sans-serif;
+    font-style: normal;
+}
+
+//about section
+.aboutFlexContainer{
+	position: relative;
+	display: flex;
+	margin-top: 50px;
+
+	//flex
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 1200px;
+
+	.iconContainer{
+		position: relative;
+		display: flex;
+
+		//flex
+		flex-wrap: nowrap;
+		justify-content: space-evenly;
+		width: 100%;
+		margin-bottom: 20px;
+		.aboutIcon{
+			width: 150px;
+			.aboutIcon__img{
+				clip-path: circle(50% at 50% 50%);
+				width: 150px;
+				height: 150px;
+				background-size: 100% 100%;
+
+				&.aboutIcon__img--design{
+					background-image: url("../img/hackathonIcons/design.png");
+				}
+				&.aboutIcon__img--build{
+					background-image: url("../img/hackathonIcons/build.png");
+				}
+				&.aboutIcon__img--inspire{
+					background-image: url("../img/hackathonIcons/inspire.png");
+				}
+			}
+			.aboutIcon__text{
+				font-size: 2em;
+				font-weight: 600;
+				padding: 15px;
+				text-align: center;
+			}
+
+		}
+	}
+
+	p{
+		font-size: 1.5em;
+	}
+}
+
+//location section
+.map{
+	position: relative;
+	max-width: 1200px; 	
+}
+#hackathonMaps{
+	width: 100%;
+	height: 100%;
+}
+
+//FAQ section
+.QandAFlexContainer{
+	position: relative;
+	display: flex;
+
+	//flex stuff
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	max-width: 1200px;
+	.QandAFlexCol{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		margin-left: 50px;
+		margin-right: 50px;
+		width: 25%;
+		.QandA{
+			margin-top: 30px;
+			margin-bottom: 30px;
+
+			&:first-child{
+				margin-top: 0px;
+			}
+			&:last-child{
+				margin-bottom: 0px;
+			}
+
+			.faq__question{
+				margin-bottom: 10px;
+			}
+		}
+	}
+	
+}

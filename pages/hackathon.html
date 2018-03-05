@@ -1,0 +1,181 @@
+---
+permalink: /hackathon.html
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UTRA | Hackathon</title>
+
+	<!-- hackathon style sheet -->
+	<link rel="stylesheet" type="text/css" href="./assets/css/hackathon.css">
+
+	<!-- ionicons css -->
+	<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<!-- Abel Font -->
+	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+
+	<!-- loading JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- javascript -->
+	<script type="text/javascript" src="./assets/js/header.js" ></script>
+</head>
+<body>
+	<header class="header header--aboutActive">{% include hackathonHeader.html %}</header>
+
+	<div class="bannerImage">
+		
+		<div class="bannerImage__textBlock">
+			<h1 class="textBlock__titleText">utraHacks</h1>
+			<h1 class="textBlock__subText">@ MaRs Discovery District</h1>
+		</div>
+		<div class="bannerImage__countDown">
+			
+		</div>
+		<div class="bannerImage__overley"></div>
+		<div class="bannerImage__image bannerImage__image--hackathon"></div>
+	</div>
+
+
+
+	<a id="about" name="about"></a>
+	<section class="onePagerSection onePagerSection--about">
+		<h1 class="onePagerSection__title">About</h1>
+		
+		<div class="aboutFlexContainer">
+			<div class="iconContainer">
+				<div class="aboutIcon">
+					<div class="aboutIcon__img aboutIcon__img--design"></div>
+					<p class="aboutIcon__text">Design</p>
+				</div>
+				<div class="aboutIcon">
+					<div class="aboutIcon__img aboutIcon__img--build"></div>
+					<p class="aboutIcon__text">Build</p>
+				</div>
+				<div class="aboutIcon">
+					<div class="aboutIcon__img aboutIcon__img--inspire"></div>
+					<p class="aboutIcon__text">Inspire</p>
+				</div>
+			</div>
+			<p>2018 is UTRA’s first year hosting this event. Following UTRA’s mission - to foster creativity and innovation, and cultivate science and technology leaders of the future by providing students with the opportunities to design and build advanced robotic technologies. The team started planning for this event with a mindset of “Design, Build, Inspire”. Without limitation on the design scope, we believe this event could bring a variety of brilliant ideas and creative minds together. 25 hours of hacking is a short time for a fully functional and manufacturable product, but ideas and prototypes are always where future technologies start at. </p>
+			<br><br>
+			<p>In this event, student teams are required to build a physical prototype within the given time, then pitch to the judges. Judging of the event is based on a few criterias including functionality, innovativity, and most importantly, real-world potential.</p>
+		</div>
+	</section>
+
+	<a id="location" name="location"></a>
+	<section class="onePagerSection onePagerSection--location">
+		
+		<h1 class="onePagerSection__title">Location</h1>
+		<div class="map">
+			<div id="hackathonMaps"></div>
+		</div>
+	</section>
+
+	
+
+	<a id="faq" name="faq"></a>
+	<section class="onePagerSection onePagerSection--faq">
+		<h1 class="onePagerSection__title">FAQ</h1>
+		<div class="QandAFlexContainer">
+			<div class="QandAFlexCol">
+				<div class="QandA">
+					<h1 class="faq__question">Who is UTRA?</h1>
+					<p class="faq__answer">UTRA stands for the University of Toronto Robotics Association. We are the largest active robotics group on campus. Our mission is to foster interests in robotics, and teach anybody who is interested all that they need to know to be able to contribute. We are currently running 5 sub-teams at varying technical skill levels, making it easy for both beginners and veterans to embrace their passion in robotics. Our 5 sub-teams include SUMO, RoboSoccer, Combat, Autonomous Rover Team (ART), and 3D Printing (3DP). Visit our website, www.utra.ca for more information!</p>
+				</div>
+				<div class="QandA">
+					<h1 class="faq__question">When / Where is utraHacks?</h1>
+					<p class="faq__answer">utraHacks will be hosted at the MaRs Discovery District in Downtown Toronto. We are currently working on the exact date of the event, but it will be during the month of October 2018.</p>
+				</div>
+				<div class="QandA">
+					<h1 class="faq__question">How do hackathons work?</h1>
+					<p class="faq__answer">Hackathon are awesome events where you can dedicate 24 hours of your time to come up with a creative solution to a problem. We will provide you with food, drinks, workshops, entertainment, and all the caffeine required for you to bring your idea to life.</p>
+				</div>
+				<div class="QandA">
+					<h1 class="faq__question">What hardware will be available?</h1>
+					<p class="faq__answer">We will be posting a list of hardware shortly. Keep an eye on our Facebook Page! </p>
+				</div>
+				<div class="QandA">
+					<h1 class="faq__question">Who can attend?</h1>
+					<p class="faq__answer">Anyone, as long as you will 18 or older by October 2018, you are welcome to join us at utraHacks. Form a team with your friends or come alone, and join us for an action-packed weekend of hacking, and building something amazing.</p>
+				</div>
+			</div>
+
+			<div class="QandAFlexCol">
+				<div class="QandA">
+					<h1 class="faq__question">What size should teams be?</h1>
+					<p class="faq__answer">We are allowing up to 4 hackers per team. Solo hackers are also welcomed, but we also have a team finding process. (see below)</p>
+				</div>
+				<div class="QandA">
+					<h1 class="faq__question">I don’t have a team. Can I still apply?</h1>
+					<p class="faq__answer">Absolutely! After registering, we will have a participants Facebook group where you can find other hackers like yourself and form a team. A few days before the event, we’ll also have a Slack channel dedicated to bringing people together. Lastly, after opening ceremonies, we will have a time-slot for you everyone to meet each other, and will be the last chance to form teams.</p>
+				</div>
+				<div class="QandA">
+					<h1 class="faq__question">I'm a beginner. Can I still apply?</h1>
+					<p class="faq__answer">Of course! Hackathons are a great opportunity to learn and grow, especially for beginners. We will also have tons of mentors and resources to help your throughout the event.</p>
+				</div>
+
+				<div class="QandA">
+					<h1 class="faq__question">What should I make?</h1>
+					<p class="faq__answer"> You can make anything you like! For utraHacks, we are primarily focusing on hardware, however, software hacks are also allowed! If you don’t have an idea, don’t worry and apply anyways, ideas might come to you while you are the event itself.  </p>
+				</div>
+						
+				
+				<div class="QandA">
+					<h1 class="faq__question">Are you providing travel reimbursements?</h1>
+					<p class="faq__answer">Yes, we will be providing travel reimbursement on an individual basis. Details about how travel compensation will be released soon! </p>
+				</div>	
+			</div>
+			
+			<div class="QandAFlexCol">
+							
+				<div class="QandA">
+					<h1 class="faq__question">What should I bring?</h1>
+					<p class="faq__answer">You’ll need to bring a laptop, chargers, and anything else that you need to hack with! You’ll also need to bring your student card to check-in and a government-issued ID, if you plan to borrow any hardware. If you are bringing your own hardware, please let us know through our email (hackinfo@utra.ca). Lastly, if you wish to stay overnight, don’t forget to bring you sleeping bags, toiletries, and comfortable clothes!</p>
+				</div>	
+				<div class="QandA">
+					<h1 class="faq__question">Can I keep what I make?</h1>
+					<p class="faq__answer">In general, yes! However, some of the components that you borrow will have to be returned at the end of the event. More details regarding this will be released shortly. </p>
+				</div>	
+				<div class="QandA">
+					<h1 class="faq__question">How much does it cost?</h1>
+					<p class="faq__answer">Nothing! Well, time and effort... But other than that, everything is provided for free!</p>
+				</div>
+					
+				<div class="QandA">
+					<h1 class="faq__question">How does judging work?</h1>
+					<p class="faq__answer">Since many of you will be building hardware hacks, we would like the judges to see it in action! The first stage of judging will begin at our Demo Expo, where companies, volunteers, and judges will be walking around and asking questions about your hack. The judges will then pick the Top 10 teams, and those who make it, will give a final presentation at the closing ceremonies. May the best hack win!  </p>
+				</div>	
+				<div class="QandA">
+					<h1 class="faq__question">Other questions?</h1>
+					<p class="faq__answer"> We’d be happy to help!  Send the inquiry over to hackinfo@utra.ca and we’ll answer it right away! :) </p>
+				</div>	
+
+
+		
+
+			</div>
+			
+
+		</div>		
+	</section>
+
+	<a id="sponsors" name="sponsors"></a>
+	<section class="onePagerSection onePagerSection--sponsors">
+		
+		<h1 class="onePagerSection__title">2018 Sponsors</h1>
+	</section>
+
+
+	<footer>
+		
+
+	</footer>
+
+	<!-- scrips -->
+	<script type="text/javascript" src="./assets/js/hackathon.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQQ04VdU2UMEk81eM3kryWP4JrC65Lz5g&callback=initMap"
+    async defer></script>
+
+</body>
+</html>

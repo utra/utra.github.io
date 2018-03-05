@@ -1,0 +1,48 @@
+.bannerImage{
+	width:100%;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	.bannerImage__textBlock{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		z-index: 2;
+		.textBlock__titleText{
+			color: #fff;
+			text-align: center;
+			font-size: 5em;
+		}
+		.textBlock__subText{
+			color: #fff;
+			text-align: center;
+			font-size: 1.5em;
+		}
+	}
+	
+	.bannerImage__overley{
+		position: absolute;	
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		background-color: black;
+		opacity: 0.2
+	}
+	.bannerImage__image{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		&.bannerImage__image--about{
+			background-image: url("../img/UTRA Exec Photoshoot 171120/DSC_4016.jpg");
+			background-position: 50% 30%;
+		}
+		&.bannerImage__image--hackathon{
+			// background-image: url("../img/");
+			// background-position: 50% 30%;
+		}
+	}
+}

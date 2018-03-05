@@ -1,43 +1,5 @@
 @import 'variables';
 
-.bannerImage{
-	width:100%;
-	height: 800px;
-	overflow: hidden;
-	position: relative;
-	.bannerImage__titleText{
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%,-50%);
-		color: #fff;
-		z-index: 2;
-		text-align: center;
-		//
-		font-size: 5em;
-	}
-	.bannerImage__overley{
-		position: absolute;	
-		z-index: 1;
-		width: 100%;
-		height: 100%;
-		background-color: black;
-		opacity: 0.2
-	}
-	.bannerImage__image{
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background-repeat: no-repeat;
-		background-size: cover;
-
-		&.bannerImage__image--about{
-			background-image: url("../img/UTRA Exec Photoshoot 171120/DSC_4016.jpg");
-			background-position: 50% 30%;
-		}
-	}
-}
-
 .aboutPageWrapper{
 	position: relative;
 	display: flex;

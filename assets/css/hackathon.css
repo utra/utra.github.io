@@ -246,13 +246,16 @@ html, body {
         clip-path: circle(50% at 50% 50%);
         width: 150px;
         height: 150px;
-        background-size: 100% 100%; }
+        background-size: 100% 100%;
+        transition: opacity 0.2s; }
         .aboutFlexContainer .iconContainer .aboutIcon .aboutIcon__img.aboutIcon__img--design {
           background-image: url("../img/hackathonIcons/design.png"); }
         .aboutFlexContainer .iconContainer .aboutIcon .aboutIcon__img.aboutIcon__img--build {
           background-image: url("../img/hackathonIcons/build.png"); }
         .aboutFlexContainer .iconContainer .aboutIcon .aboutIcon__img.aboutIcon__img--inspire {
           background-image: url("../img/hackathonIcons/inspire.png"); }
+        .aboutFlexContainer .iconContainer .aboutIcon .aboutIcon__img:hover {
+          opacity: 0.6; }
       .aboutFlexContainer .iconContainer .aboutIcon .aboutIcon__text {
         font-size: 2em;
         font-weight: 600;

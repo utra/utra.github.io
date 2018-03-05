@@ -92,14 +92,47 @@ function initMap() {
 $(document).ready(function(){
 	$('a[href^="#"]').click(function() {
 		var href = $(this).attr('href');
-		var scrollLocation = $(href).offset().top - 75;
+
+		if( $('.header').length ) {
+            menuSize = $('.header').outerHeight();
+          }
 
 		$('body,html').animate({
-			scrollTop: scrollLocation
+			scrollTop: $(href).offset().top
 		}, 500, function () {
 			window.location.hash = href;
 		});
 
 		return false;
 	});
+
+});
+
+$(window).scroll(function() {
+	var scroll = $(window).scrollTop(); // how many pixels you've scrolled
+    var aboutPosition = $('#about').offset().top; // pixels to top of about
+    var locationPosition = $('#location').offset().top; // pixels to top of location
+    var faqPosition = $('#faq').offset().top; // pixels to top of faq
+    var sponsorsPosition = $('#sponsors').offset().top; // pixels to top of sponsors
+    
+    if(scroll < aboutPosition){
+        $('.header').attr('class',"header");
+    }
+    else if(scroll >= aboutPosition && scroll < locationPosition){
+    	//scrolled to about
+        $('.header').attr('class',"header header--aboutActive");
+    }
+    else if(scroll >= locationPosition && scroll < faqPosition){
+    	//scrolled to location
+        $('.header').attr('class',"header header--locationActive");
+    }
+    else if(scroll >= faqPosition && scroll < sponsorsPosition){
+    	//scrolled to faq
+        $('.header').attr('class',"header header--faqActive");
+    }
+    else if(scroll >= sponsorsPosition){
+     	//scrolled to sponsors
+        $('.header').attr('class',"header header--sponsorsActive");
+    }
+
 });

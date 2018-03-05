@@ -51,7 +51,7 @@
     		color: #DADADA;
     		font-weight: bold;
     		font-size: 1.0em;
-    		transition: color 0.1s;
+    		transition: color 0.2s;
     		&:hover{
     			color: white;
     		}
@@ -59,16 +59,16 @@
 
 		&:hover{
 			&:after{
-			content: '';
-			position: relative;
-			left: 50%;
-			top: 0px;
-			transform:translateX(-50%);
-			width: 70%;
-			background-color: white;
-			opacity: 1;
-			display: block;
-			height: 2px;
+				content: '';
+				position: relative;
+				left: 50%;
+				top: 0px;
+				transform:translateX(-50%);
+				width: 70%;
+				background-color: white;
+				opacity: 1;
+				display: block;
+				height: 2px;
 			}
 		}
 

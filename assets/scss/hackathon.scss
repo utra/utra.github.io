@@ -24,6 +24,104 @@ html, body{
     font-style: normal;
 }
 
+//menu modifiers
+.header--aboutActive{
+	.mainMenu{
+		.mainMenu__menuItem{
+			&.mainMenu__menuItem--about{
+				a{
+					color: white;
+				}
+				&:after{
+					content: '';
+					position: relative;
+					left: 50%;
+					top: 0px;
+					transform:translateX(-50%);
+					width: 70%;
+					background-color: white;
+					opacity: 1;
+					display: block;
+					height: 2px;
+				}
+			}
+			
+		}
+	}
+}
+.header--locationActive{
+	.mainMenu{
+		.mainMenu__menuItem{
+			&.mainMenu__menuItem--location{
+				a{
+					color: white;
+				}
+				&:after{
+					content: '';
+					position: relative;
+					left: 50%;
+					top: 0px;
+					transform:translateX(-50%);
+					width: 70%;
+					background-color: white;
+					opacity: 1;
+					display: block;
+					height: 2px;
+				}
+			}
+			
+		}
+	}
+}
+.header--faqActive{
+	.mainMenu{
+		.mainMenu__menuItem{
+			&.mainMenu__menuItem--faq{
+				a{
+					color: white;
+				}
+				&:after{
+					content: '';
+					position: relative;
+					left: 50%;
+					top: 0px;
+					transform:translateX(-50%);
+					width: 70%;
+					background-color: white;
+					opacity: 1;
+					display: block;
+					height: 2px;
+				}
+			}
+			
+		}
+	}
+}
+.header--sponsorsActive{
+	.mainMenu{
+		.mainMenu__menuItem{
+			&.mainMenu__menuItem--sponsors{
+				a{
+					color: white;
+				}
+				&:after{
+					content: '';
+					position: relative;
+					left: 50%;
+					top: 0px;
+					transform:translateX(-50%);
+					width: 70%;
+					background-color: white;
+					opacity: 1;
+					display: block;
+					height: 2px;
+				}
+			}
+			
+		}
+	}
+}
+
 //about section
 .aboutFlexContainer{
 	position: relative;

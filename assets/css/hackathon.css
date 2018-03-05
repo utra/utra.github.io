@@ -36,7 +36,7 @@
       color: #DADADA;
       font-weight: bold;
       font-size: 1.0em;
-      transition: color 0.1s; }
+      transition: color 0.2s; }
       .mainMenu .mainMenu__menuItem a:hover {
         color: white; }
     .mainMenu .mainMenu__menuItem:hover:after {
@@ -192,7 +192,7 @@
   justify-content: center;
   padding-top: 50px;
   padding-bottom: 50px; }
-  .onePagerSection:nth-child(4n) {
+  .onePagerSection:nth-child(even) {
     background-color: #F5F9FC; }
   .onePagerSection .onePagerSection__title {
     padding-bottom: 20px;
@@ -225,6 +225,62 @@ html, body {
   border: 0;
   font-family: 'Abel', sans-serif;
   font-style: normal; }
+
+.header--aboutActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--about a {
+  color: white; }
+.header--aboutActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--about:after {
+  content: '';
+  position: relative;
+  left: 50%;
+  top: 0px;
+  transform: translateX(-50%);
+  width: 70%;
+  background-color: white;
+  opacity: 1;
+  display: block;
+  height: 2px; }
+
+.header--locationActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--location a {
+  color: white; }
+.header--locationActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--location:after {
+  content: '';
+  position: relative;
+  left: 50%;
+  top: 0px;
+  transform: translateX(-50%);
+  width: 70%;
+  background-color: white;
+  opacity: 1;
+  display: block;
+  height: 2px; }
+
+.header--faqActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--faq a {
+  color: white; }
+.header--faqActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--faq:after {
+  content: '';
+  position: relative;
+  left: 50%;
+  top: 0px;
+  transform: translateX(-50%);
+  width: 70%;
+  background-color: white;
+  opacity: 1;
+  display: block;
+  height: 2px; }
+
+.header--sponsorsActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--sponsors a {
+  color: white; }
+.header--sponsorsActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--sponsors:after {
+  content: '';
+  position: relative;
+  left: 50%;
+  top: 0px;
+  transform: translateX(-50%);
+  width: 70%;
+  background-color: white;
+  opacity: 1;
+  display: block;
+  height: 2px; }
 
 .aboutFlexContainer {
   position: relative;

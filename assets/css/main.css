@@ -36,7 +36,7 @@
       color: #DADADA;
       font-weight: bold;
       font-size: 1.0em;
-      transition: color 0.1s; }
+      transition: color 0.2s; }
       .mainMenu .mainMenu__menuItem a:hover {
         color: white; }
     .mainMenu .mainMenu__menuItem:hover:after {

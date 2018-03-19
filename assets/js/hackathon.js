@@ -2,8 +2,8 @@
 function initMap() {
     // Styles a map in night mode.
     var map = new google.maps.Map(document.getElementById('hackathonMaps'), {
-      center: {lat: 40.674, lng: -73.945},
-      zoom: 12,
+      center: {lat: 43.659986, lng: -79.38869},
+      zoom: 17,
       styles: [
         {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
         {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
@@ -85,10 +85,17 @@ function initMap() {
         }
       ]
     });
+
+    var marker = new google.maps.Marker({
+	   position: {lat: 43.659986, lng: -79.38869},
+	   map: map,
+	   animation: google.maps.Animation.DROP,
+	   title: 'Mars Discovery District'
+	});
+    marker.setMap(map);
 }
 
 //smooth scrolling
-
 $(document).ready(function(){
 	$('a[href^="#"]').click(function() {
 		var href = $(this).attr('href');
@@ -106,33 +113,40 @@ $(document).ready(function(){
 		return false;
 	});
 
+	$(window).scroll(function() {
+		var scroll = $(window).scrollTop(); // how many pixels you've scrolled
+	    var aboutPosition = $('#about').offset().top; // pixels to top of about
+	    var locationPosition = $('#location').offset().top; // pixels to top of location
+	    var schedulePosition = $('#schedule').offset().top;
+	    var faqPosition = $('#faq').offset().top; // pixels to top of faq
+	    var sponsorsPosition = $('#sponsors').offset().top; // pixels to top of sponsors
+	    
+	    if(scroll < aboutPosition){
+	        $('.header').attr('class',"header");
+	    }
+	    else if(scroll >= aboutPosition && scroll < locationPosition){
+	    	//scrolled to about
+	        $('.header').attr('class',"header header--aboutActive");
+	    }
+	    else if(scroll >= locationPosition && scroll < schedulePosition){
+	    	//scrolled to location
+	        $('.header').attr('class',"header header--locationActive");
+	    }
+	    else if(scroll >= schedulePosition && scroll < faqPosition){
+	    	//scrolled to location
+	        $('.header').attr('class',"header header--scheduleActive");
+	    }
+	    else if(scroll >= faqPosition && scroll < sponsorsPosition){
+	    	//scrolled to faq
+	        $('.header').attr('class',"header header--faqActive");
+	    }
+	    else if(scroll >= sponsorsPosition){
+	     	//scrolled to sponsors
+	        $('.header').attr('class',"header header--sponsorsActive");
+	    }
+
+	});
+
 });
 
-$(window).scroll(function() {
-	var scroll = $(window).scrollTop(); // how many pixels you've scrolled
-    var aboutPosition = $('#about').offset().top; // pixels to top of about
-    var locationPosition = $('#location').offset().top; // pixels to top of location
-    var faqPosition = $('#faq').offset().top; // pixels to top of faq
-    var sponsorsPosition = $('#sponsors').offset().top; // pixels to top of sponsors
-    
-    if(scroll < aboutPosition){
-        $('.header').attr('class',"header");
-    }
-    else if(scroll >= aboutPosition && scroll < locationPosition){
-    	//scrolled to about
-        $('.header').attr('class',"header header--aboutActive");
-    }
-    else if(scroll >= locationPosition && scroll < faqPosition){
-    	//scrolled to location
-        $('.header').attr('class',"header header--locationActive");
-    }
-    else if(scroll >= faqPosition && scroll < sponsorsPosition){
-    	//scrolled to faq
-        $('.header').attr('class',"header header--faqActive");
-    }
-    else if(scroll >= sponsorsPosition){
-     	//scrolled to sponsors
-        $('.header').attr('class',"header header--sponsorsActive");
-    }
 
-});

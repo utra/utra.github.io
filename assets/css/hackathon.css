@@ -686,23 +686,51 @@ html, body {
   position: relative;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
   max-width: 1200px; }
-  .QandAFlexContainer .QandAFlexCol {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    width: 25%; }
-    .QandAFlexContainer .QandAFlexCol .QandA {
-      margin-top: 30px;
-      margin-bottom: 30px; }
-      .QandAFlexContainer .QandAFlexCol .QandA:first-child {
-        margin-top: 0px; }
-      .QandAFlexContainer .QandAFlexCol .QandA:last-child {
-        margin-bottom: 0px; }
+  @media only screen and (max-width: 1049px) {
+    .QandAFlexContainer {
+      flex-direction: column;
+      margin-top: 15px; }
       .QandAFlexContainer .QandAFlexCol .QandA .faq__question {
-        margin-bottom: 10px; }
+        background-color: #F5F9Fc;
+        padding: 15px;
+        text-align: center;
+        border-bottom: solid 1px #D2DCE5;
+        transition: color 0.2s ease-out, opcity 0.1s linear;
+        cursor: pointer; }
+        .QandAFlexContainer .QandAFlexCol .QandA .faq__question:hover {
+          opacity: 0.8; }
+        .QandAFlexContainer .QandAFlexCol .QandA .faq__question.faq__question--active {
+          color: #CD959A; }
+      .QandAFlexContainer .QandAFlexCol .QandA .faq__answerWrapper {
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        max-height: 0px;
+        transition: max-height 0.2s ease-out; }
+        .QandAFlexContainer .QandAFlexCol .QandA .faq__answerWrapper .faq__answer {
+          padding: 15px;
+          text-align: center; } }
+  @media only screen and (min-width: 1050px) {
+    .QandAFlexContainer {
+      justify-content: space-between;
+      flex-direction: row; }
+      .QandAFlexContainer .QandAFlexCol {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 25%; }
+        .QandAFlexContainer .QandAFlexCol .QandA {
+          margin-top: 30px;
+          margin-bottom: 30px; }
+          .QandAFlexContainer .QandAFlexCol .QandA .faq__question {
+            margin-bottom: 10px; } }
+  .QandAFlexContainer .QandAFlexCol {
+    margin-left: 50px;
+    margin-right: 50px; }
+    .QandAFlexContainer .QandAFlexCol .QandA:first-child {
+      margin-top: 0px; }
+    .QandAFlexContainer .QandAFlexCol .QandA:last-child {
+      margin-bottom: 0px; }
 
 .sponsorList {
   position: relative;

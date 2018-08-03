@@ -150,6 +150,22 @@ $(document).ready(function(){
     }
 	});
 
+  $(".faq__question").click(function(){
+    if(window.outerWidth < 1050){
+      if($(this).siblings(".faq__answerWrapper").css("max-height") != "0px"){
+        // Close
+        $(this).removeClass("faq__question--active");
+        $(this).siblings(".faq__answerWrapper").css("max-height", "0px");
+      }
+      else{
+        // Open
+        $(this).addClass("faq__question--active");
+        var elementScrollHeight = $(this).siblings(".faq__answerWrapper").get(0).scrollHeight;
+        $(this).siblings(".faq__answerWrapper").css("max-height",elementScrollHeight + "px");
+      }
+    }
+  });
+
   // Countdown stuff to the date
   var counter = $("#hackathonCounter");
 
@@ -187,4 +203,29 @@ $(document).ready(function(){
 
 });
 
+// $(function() {
+// 	var Accordion = function(el, multiple) {
+// 		this.el = el || {};
+// 		this.multiple = multiple || false;
 
+// 		// Variables privadas
+// 		var links = this.el.find('.accordionContainer_link');
+// 		// Evento
+// 		links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+// 	}
+
+// 	Accordion.prototype.dropdown = function(e) {
+// 		var $el = e.data.el;
+// 			$this = $(this),
+// 			$next = $this.next();
+
+// 		$next.slideToggle();
+// 		$this.parent().toggleClass('open');
+
+// 		if (!e.data.multiple) {
+// 			$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+// 		};
+// 	}	
+
+// 	var accordion = new Accordion($('#accordion'), false);
+// });

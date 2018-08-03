@@ -430,91 +430,137 @@ html, body{
 }
 
 
-// // //FAQ section
-// .QandAFlexContainer{
-// 	position: relative;
-// 	display: flex;
-
-// 	//flex stuff
-// 	flex-wrap: nowrap;
-// 	justify-content: space-between;
-// 	max-width: 1200px;
-// 	.QandAFlexCol{
-// 		margin-top: 20px;
-// 		margin-bottom: 20px;
-// 		margin-left: 50px;
-// 		margin-right: 50px;
-// 		width: 25%;
-// 		.QandA{
-// 			margin-top: 30px;
-// 			margin-bottom: 30px;
-
-// 			&:first-child{
-// 				margin-top: 0px;
-// 			}
-// 			&:last-child{
-// 				margin-bottom: 0px;
-// 			}
-
-// 			.faq__question{
-// 				margin-bottom: 10px;
-// 			}
-// 		}
-// 	}
-	
-// }
-
 //FAQ section
-.accordionContainer {
-	width: 100%;
-	max-width: 95%;
-	text-align: center;
-	margin: 30px auto 20px;
-	background: #fff;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
+.QandAFlexContainer{
 	position: relative;
 	display: flex;
+
+	//flex stuff
 	flex-wrap: nowrap;
-	justify-content: space-between;
-	max-width: 1200px; 
+	max-width: 1200px;
 
-	ul{
-    list-style-type: none;
-    display: inline-block;
-    width: 100%;
-	}
+	@media only screen and (max-width: 1049px) {
+		//Mobile
+		flex-direction: column;
+		margin-top: 15px;
 
-	li{
-    display: inline-block;
-    width: 100%;
-	}
+		.QandAFlexCol{
+			.QandA{
+				.faq__question{
+					background-color: #F5F9Fc;
+    				padding: 15px;
+					text-align: center;
+					border-bottom: solid 1px #D2DCE5;
+					transition: color 0.2s ease-out, opcity 0.1s linear;
+					cursor: pointer;
 
-	li.open .accordionContainer_link {
-		color: #b63b4d; 
-	}
+					&:hover{
+						opacity: 0.8;
+					}
 
-	.accordionContainer_link{
-    cursor: pointer;
-    display: block;
-    padding: 15px 15px 15px 42px;
-    color: #4d4d4d;
-    font-size: 14px;
-    font-weight: 700;
-    border-bottom: 1px solid #ccc;
-    position: relative;
-    -webkit-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-	}
+					&.faq__question--active{
+						color: #CD959A;
+					}
+				}
+				.faq__answerWrapper{
+				    position: relative;
+				    overflow: hidden;
+				    text-align: center;
+				    max-height: 0px;
+				    transition: max-height 0.2s ease-out;
 
-    .accordionContainer_submenu{
-    display: none;
-    background: #D2DCE5;
-    font-size: 14px;
+				    .faq__answer{
+				    	padding: 15px;
+				    	text-align: center;
+				    }
+				}
+			}
+		}
+
 	}
+	@media only screen and (min-width: 1050px) {
+		//Desktop
+		justify-content: space-between;
+		flex-direction: row;
+		.QandAFlexCol{
+			margin-top: 20px;
+			margin-bottom: 20px;
+			width: 25%;
+			.QandA{
+				margin-top: 30px;
+				margin-bottom: 30px;
+				.faq__question{
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+	.QandAFlexCol{
+		margin-left: 50px;
+		margin-right: 50px;	
+		.QandA{
+			&:first-child{
+				margin-top: 0px;
+			}
+			&:last-child{
+				margin-bottom: 0px;
+			}
+		}
+	}
+	
 }
+
+//FAQ section
+// .accordionContainer {
+// 	width: 100%;
+// 	max-width: 95%;
+// 	text-align: center;
+// 	margin: 30px auto 20px;
+// 	background: #fff;
+// 	-webkit-border-radius: 4px;
+// 	-moz-border-radius: 4px;
+// 	border-radius: 4px;
+// 	position: relative;
+// 	display: flex;
+// 	flex-wrap: nowrap;
+// 	justify-content: space-between;
+// 	max-width: 1200px; 
+
+// 	ul{
+//     list-style-type: none;
+//     display: inline-block;
+//     width: 100%;
+// 	}
+
+// 	li{
+//     display: inline-block;
+//     width: 100%;
+// 	}
+
+// 	li.open .accordionContainer_link {
+// 		color: #b63b4d; 
+// 	}
+
+// 	.accordionContainer_link{
+//     cursor: pointer;
+//     display: block;
+//     padding: 15px 15px 15px 42px;
+//     color: #4d4d4d;
+//     font-size: 14px;
+//     font-weight: 700;
+//     border-bottom: 1px solid #ccc;
+//     position: relative;
+//     -webkit-transition: all 0.4s ease;
+//     -o-transition: all 0.4s ease;
+//     transition: all 0.4s ease;
+// 	}
+
+//     .accordionContainer_submenu{
+//     display: none;
+//     background: #D2DCE5;
+//     font-size: 14px;
+// 	}
+// }
 
 // Sponsorship section
 .sponsorList{

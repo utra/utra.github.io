@@ -4,16 +4,84 @@
   top: 0;
   width: 100vw; }
 
-.mainMenu {
-  transition: background-color 0.2s;
-  background-color: rgba(0, 0, 0, 0);
-  height: 75px; }
-  .mainMenu .mainMenu__list {
-    list-style-type: none;
+@media only screen and (max-width: 1049px) {
+  .header .logo .logo__desktop {
+    display: none; }
+
+  .mainMenu .mainMenu__mobileNav {
     display: flex;
     position: absolute;
+    align-items: center;
+    right: 5vw;
+    height: 100%;
+    z-index: 1; }
+    .mainMenu .mainMenu__mobileNav .mainMenu__mobileNavIcon {
+      display: flex;
+      align-items: center;
+      color: #DADADA;
+      font-size: 40px;
+      transition: color 0.2s; }
+      .mainMenu .mainMenu__mobileNav .mainMenu__mobileNavIcon:hover {
+        color: white; }
+    .mainMenu .mainMenu__mobileNav .mainMenu__mobileNavIcon--noDisplay {
+      display: none; }
+  .mainMenu .mainMenu__list {
+    background-color: #45526b;
+    width: 100vw;
+    height: 100vh;
+    top: -100vh;
+    transition: top 0.3s ease-out;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .mainMenu .mainMenu__list.mainMenu__list--active {
+      top: 0; }
+  .mainMenu .mainMenu__menuItem {
+    margin: 5px; }
+    .mainMenu .mainMenu__menuItem:after {
+      content: '';
+      position: relative;
+      left: 50%;
+      top: 2px;
+      transform: translateX(-50%);
+      width: 70%;
+      background-color: white;
+      opacity: 0;
+      display: block;
+      height: 2px;
+      transition: opacity 0.2s, top 0.2s; }
+    .mainMenu .mainMenu__menuItem a {
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      padding: 5px 15px 5px 15px;
+      color: #DADADA;
+      font-weight: bold;
+      font-size: 2.0em;
+      transition: color 0.2s; }
+      .mainMenu .mainMenu__menuItem a:hover {
+        color: white; }
+    .mainMenu .mainMenu__menuItem:hover:after {
+      content: '';
+      position: relative;
+      left: 50%;
+      top: 0px;
+      transform: translateX(-50%);
+      width: 70%;
+      background-color: white;
+      opacity: 1;
+      display: block;
+      height: 2px; } }
+@media only screen and (min-width: 1050px) {
+  .header .mainMenu .mainMenu__mobileNav {
+    display: none; }
+
+  .header .logo .logo__mobile {
+    display: none; }
+
+  .mainMenu .mainMenu__list {
     bottom: 5px;
-    right: 120px; }
+    right: 5vw; }
   .mainMenu .mainMenu__menuItem {
     margin: 5px; }
     .mainMenu .mainMenu__menuItem:after {
@@ -50,87 +118,159 @@
       opacity: 1;
       display: block;
       height: 2px; }
+  .mainMenu .header--aboutActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--about a {
+    color: white;
+    transition: none; }
+  .mainMenu .header--aboutActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--about:after {
+    content: '';
+    position: relative;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+    width: 70%;
+    background-color: white;
+    opacity: 1;
+    display: block;
+    height: 2px;
+    transition: none; }
+  .mainMenu .header--teamsActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--teams a {
+    color: white;
+    transition: none; }
+  .mainMenu .header--teamsActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--teams:after {
+    content: '';
+    position: relative;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+    width: 70%;
+    background-color: white;
+    opacity: 1;
+    display: block;
+    height: 2px;
+    transition: none; }
+  .mainMenu .header--eventsActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--events a {
+    color: white;
+    transition: none; }
+  .mainMenu .header--eventsActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--events:after {
+    content: '';
+    position: relative;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+    width: 70%;
+    background-color: white;
+    opacity: 1;
+    display: block;
+    height: 2px;
+    transition: none; }
+  .mainMenu .header--sponsorsActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--sponsors a {
+    color: white;
+    transition: none; }
+  .mainMenu .header--sponsorsActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--sponsors:after {
+    content: '';
+    position: relative;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+    width: 70%;
+    background-color: white;
+    opacity: 1;
+    display: block;
+    height: 2px;
+    transition: none; } }
+.mainMenu {
+  transition: background-color 0.2s;
+  background-color: rgba(0, 0, 0, 0);
+  height: 75px;
+  width: 100%; }
+  .mainMenu .mainMenu__list {
+    list-style-type: none;
+    display: flex;
+    position: absolute; }
 
 .logo.logo--header {
   position: absolute;
-  left: 30px;
+  left: 3vw;
   bottom: 0px;
-  height: 75px; }
+  height: 75px;
+  z-index: 1; }
 .logo img {
   height: 100%; }
 
-.header--aboutActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--about a {
-  color: white;
-  transition: none; }
-.header--aboutActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--about:after {
-  content: '';
+/*FOOTER*/
+footer {
   position: relative;
-  left: 50%;
-  top: 0px;
-  transform: translateX(-50%);
-  width: 70%;
-  background-color: white;
-  opacity: 1;
-  display: block;
-  height: 2px;
-  transition: none; }
+  width: 100%;
+  height: 150px;
+  /* Style all font awesome icons */ }
+  footer .footer-content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%); }
+  footer .footer-text {
+    font-size: 1.3em;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap; }
+  footer .social-icons {
+    width: 100%;
+    text-align: center; }
+  footer a {
+    font-size: 1.6em;
+    /* Add a hover effect if you want */ }
+    footer a .fa {
+      padding: 10px;
+      color: #333; }
+    footer a .fa:hover {
+      opacity: 0.8; }
 
-.header--teamsActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--teams a {
+/* Set a specific color for each brand */
+/* Facebook */
+/*
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+
+.fa-instagram {
+  background: #125688;
   color: white;
-  transition: none; }
-.header--teamsActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--teams:after {
-  content: '';
-  position: relative;
-  left: 50%;
-  top: 0px;
-  transform: translateX(-50%);
-  width: 70%;
-  background-color: white;
-  opacity: 1;
-  display: block;
-  height: 2px;
-  transition: none; }
+}
 
-.header--eventsActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--events a {
+.fa-snapchat-ghost {
+  background: #fffc00;
   color: white;
-  transition: none; }
-.header--eventsActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--events:after {
-  content: '';
-  position: relative;
-  left: 50%;
-  top: 0px;
-  transform: translateX(-50%);
-  width: 70%;
-  background-color: white;
-  opacity: 1;
-  display: block;
-  height: 2px;
-  transition: none; }
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 
-.header--sponsorsActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--sponsors a {
-  color: white;
-  transition: none; }
-.header--sponsorsActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--sponsors:after {
-  content: '';
-  position: relative;
-  left: 50%;
-  top: 0px;
-  transform: translateX(-50%);
-  width: 70%;
-  background-color: white;
-  opacity: 1;
-  display: block;
-  height: 2px;
-  transition: none; }
-
-.header--noScroll .mainMenu {
-  background-color: #45526b; }
-
+*/
 .bannerImage {
   width: 100%;
   height: 100vh;
   overflow: hidden;
   position: relative; }
+  @media only screen and (max-width: 1049px) {
+    .bannerImage .bannerImage__bannerImage__hackathonTextBlock .buttonBlock {
+      align-items: center;
+      flex-direction: column; }
+    .bannerImage .bannerImage__bannerImage__hackathonTextBlock .buttonBlock__twoCol {
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    .bannerImage .bannerImage__image.bannerImage__image {
+      background-position: 50% 25%; } }
+  @media only screen and (min-width: 1050px) {
+    .bannerImage .bannerImage__bannerImage__hackathonTextBlock {
+      padding-top: 20px; }
+      .bannerImage .bannerImage__bannerImage__hackathonTextBlock .buttonBlock {
+        justify-content: center;
+        padding-top: 15px; }
+      .bannerImage .bannerImage__bannerImage__hackathonTextBlock .buttonBlock__twoCol {
+        margin-left: 35px;
+        margin-right: 35px; }
+    .bannerImage .bannerImage__image.bannerImage__image {
+      background-position: 50% 30%; } }
   .bannerImage .bannerImage__textBlock {
     position: absolute;
     left: 50%;
@@ -145,6 +285,54 @@
       color: #fff;
       text-align: center;
       font-size: 1.5em; }
+  .bannerImage .bannerImage__bannerImage__hackathonTextBlock {
+    position: absolute;
+    z-index: 2;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%); }
+    .bannerImage .bannerImage__bannerImage__hackathonTextBlock .textBlock__hackathonTitle {
+      color: #fff;
+      text-align: center;
+      font-size: 1.5em; }
+    .bannerImage .bannerImage__bannerImage__hackathonTextBlock .textBlock__hackathonDate {
+      color: #fff;
+      text-align: center;
+      font-size: 0.8em; }
+    .bannerImage .bannerImage__bannerImage__hackathonTextBlock .textBlock__hackathonCountdown {
+      padding: 15px;
+      color: #fff;
+      text-align: center;
+      font-size: 2.1em;
+      white-space: nowrap; }
+      @media only screen and (max-width: 580px) {
+        .bannerImage .bannerImage__bannerImage__hackathonTextBlock .textBlock__hackathonCountdown {
+          font-size: 1.9em; } }
+      @media only screen and (max-width: 500px) {
+        .bannerImage .bannerImage__bannerImage__hackathonTextBlock .textBlock__hackathonCountdown {
+          font-size: 1.8em; } }
+      @media only screen and (max-width: 450px) {
+        .bannerImage .bannerImage__bannerImage__hackathonTextBlock .textBlock__hackathonCountdown {
+          font-size: 1.6em; } }
+      @media only screen and (max-width: 370px) {
+        .bannerImage .bannerImage__bannerImage__hackathonTextBlock .textBlock__hackathonCountdown {
+          font-size: 1.4em; } }
+    .bannerImage .bannerImage__bannerImage__hackathonTextBlock .buttonBlock {
+      position: relative;
+      display: flex; }
+      .bannerImage .bannerImage__bannerImage__hackathonTextBlock .buttonBlock .buttonBlock__twoCol {
+        color: white;
+        border-color: white;
+        border-width: 1px;
+        border-style: solid;
+        width: 150px;
+        text-align: center;
+        padding: 5px 0 5px 0;
+        transition: 0.2s color linear, 0.2s background-color linear; }
+        .bannerImage .bannerImage__bannerImage__hackathonTextBlock .buttonBlock .buttonBlock__twoCol:hover {
+          color: black;
+          background-color: white;
+          cursor: pointer; }
   .bannerImage .bannerImage__overley {
     position: absolute;
     z-index: 1;
@@ -169,9 +357,8 @@
       background-position: 50% 30%; }
     .bannerImage .bannerImage__image.bannerImage__image--hackathon {
       z-index: 1;
-      background-image: url("../img/hackathonIcons/hackathonWhiteLogo.png");
-      background-position: 50% 50%;
-      background-size: auto 90%; }
+      background-image: url("../img/hackathonIcons/torontoSkylineHD.png");
+      background-size: auto 40%; }
 
 .fullScreenImage {
   position: absolute;
@@ -366,15 +553,137 @@ html, body {
       width: 100%;
       height: 100%; }
 
-.accordionContainer {
+
+.scheduleLegend {
+  position: relative;
+  margin-top: 30px;
   width: 100%;
-  max-width: 95%;
+  display: flex;
   text-align: center;
-  margin: 30px auto 20px;
-  background: #fff;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+  .scheduleLegend .scheduleLegend__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 30px;
+    margin-right: 30px; }
+    .scheduleLegend .scheduleLegend__item svg {
+      margin-left: 5px;
+      margin-right: 5px; }
+    .scheduleLegend .scheduleLegend__item .scheduleLegend__itemTitle {
+      margin-left: 5px;
+      margin-right: 5px; }
+
+.timeTableHeader {
+  position: relative;
+  margin-top: 30px;
+  width: 80%; }
+  .timeTableHeader .timeTableHeader__title {
+    position: relative;
+    font-size: 1.5em;
+    text-align: center; }
+
+.timeTable {
+  background-color: #F5F9FC;
+  /*margin-left: 1%;
+  margin-right: 1%; */
+  width: 80%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 15px; }
+  .timeTable .timeTable__row {
+    position: relative;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .timeTable .timeTable__row .timetimeTable__timeHeader {
+      order: 1;
+      text-align: center;
+      padding: 20px 30px 20px 30px;
+      transition: background-color 0.1s linear; }
+    .timeTable .timeTable__row .timeTable__event {
+      position: relative;
+      order: 2;
+      flex: 1;
+      height: 100%;
+      transition: background-color 0.1s linear; }
+      .timeTable .timeTable__row .timeTable__event .timeTable__eventHorizontalLine {
+        position: relative;
+        width: calc(100% - 30px);
+        height: 1px;
+        background-color: #DADADA;
+        top: 50%;
+        transform: translateY(-50%); }
+      .timeTable .timeTable__row .timeTable__event .timeTable__eventMarkerWrapper {
+        position: absolute;
+        height: 100%;
+        width: 100%; }
+        .timeTable .timeTable__row .timeTable__event .timeTable__eventMarkerWrapper .timeTable__eventDot {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%); }
+          .timeTable .timeTable__row .timeTable__event .timeTable__eventMarkerWrapper .timeTable__eventDot.timeTable__eventDot--middleEndUp {
+            top: 100%; }
+          .timeTable .timeTable__row .timeTable__event .timeTable__eventMarkerWrapper .timeTable__eventDot.timeTable__eventDot--middleEndDown {
+            top: 0%; }
+        .timeTable .timeTable__row .timeTable__event .timeTable__eventMarkerWrapper .timeTable__eventVerticalLine {
+          position: absolute;
+          width: 2px;
+          height: 50%;
+          transform: translateX(5px); }
+          .timeTable .timeTable__row .timeTable__event .timeTable__eventMarkerWrapper .timeTable__eventVerticalLine.timeTable__eventVerticalLine--food {
+            background-color: #F2C94C; }
+          .timeTable .timeTable__row .timeTable__event .timeTable__eventMarkerWrapper .timeTable__eventVerticalLine.timeTable__eventVerticalLine--presentation {
+            background-color: #2F80ED; }
+          .timeTable .timeTable__row .timeTable__event .timeTable__eventMarkerWrapper .timeTable__eventVerticalLine.timeTable__eventVerticalLine--main {
+            background-color: #CD959A; }
+          .timeTable .timeTable__row .timeTable__event .timeTable__eventMarkerWrapper .timeTable__eventVerticalLine.timeTable__eventVerticalLine--down {
+            top: 50%; }
+          .timeTable .timeTable__row .timeTable__event .timeTable__eventMarkerWrapper .timeTable__eventVerticalLine.timeTable__eventVerticalLine--up {
+            bottom: 50%; }
+        .timeTable .timeTable__row .timeTable__event .timeTable__eventMarkerWrapper .timeTable__eventTimeAndDetails {
+          position: absolute;
+          transform: translateX(25px);
+          white-space: nowrap; }
+          .timeTable .timeTable__row .timeTable__event .timeTable__eventMarkerWrapper .timeTable__eventTimeAndDetails .timeTable__eventTimeAndDetails--food {
+            color: #F2C94C; }
+          .timeTable .timeTable__row .timeTable__event .timeTable__eventMarkerWrapper .timeTable__eventTimeAndDetails .timeTable__eventTimeAndDetails--presentation {
+            color: #2F80ED; }
+          .timeTable .timeTable__row .timeTable__event .timeTable__eventMarkerWrapper .timeTable__eventTimeAndDetails .timeTable__eventTimeAndDetails--main {
+            color: #CD959A; }
+          .timeTable .timeTable__row .timeTable__event .timeTable__eventMarkerWrapper .timeTable__eventTimeAndDetails.timeTable__eventTimeAndDetails--down {
+            bottom: 50%; }
+          .timeTable .timeTable__row .timeTable__event .timeTable__eventMarkerWrapper .timeTable__eventTimeAndDetails.timeTable__eventTimeAndDetails--up {
+            top: 50%; }
+        .timeTable .timeTable__row .timeTable__event .timeTable__eventMarkerWrapper.timeTable__eventMarkerWrapper--position1 {
+          margin-left: 20px; }
+        .timeTable .timeTable__row .timeTable__event .timeTable__eventMarkerWrapper.timeTable__eventMarkerWrapper--position2 {
+          margin-left: 300px; }
+    .timeTable .timeTable__row:first-child .timetimeTable__timeHeader {
+      padding-top: 40px; }
+    .timeTable .timeTable__row:first-child .timeTable__event {
+      padding-top: 20px;
+      height: calc(100% - 20px); }
+      .timeTable .timeTable__row:first-child .timeTable__event .timeTable__eventMarkerWrapper {
+        height: calc(100% - 20px); }
+    .timeTable .timeTable__row:last-child .timetimeTable__timeHeader {
+      padding-bottom: 40px; }
+    .timeTable .timeTable__row:last-child .timeTable__event {
+      padding-bottom: 20px;
+      height: calc(100% - 20px); }
+      .timeTable .timeTable__row:last-child .timeTable__event .timeTable__eventMarkerWrapper {
+        height: calc(100% - 20px); }
+
+.time-table-time {
+  margin-top: 3%;
+  margin-left: 3%;
+  position: absolute; }
+
+.QandAFlexContainer {
   position: relative;
   display: flex;
   flex-wrap: nowrap;
@@ -405,5 +714,25 @@ html, body {
     display: none;
     background: #D2DCE5;
     font-size: 14px; }
+
+.sponsorList {
+  position: relative;
+  display: inline-flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: 30px; }
+  .sponsorList .sponsorList__img {
+    position: relative;
+    height: 100px;
+    margin: 15px; }
+    .sponsorList .sponsorList__img img {
+      height: 100%;
+      opacity: 1; }
 
 /*# sourceMappingURL=hackathon.css.map */

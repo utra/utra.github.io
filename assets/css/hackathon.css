@@ -553,6 +553,7 @@ html, body {
       width: 100%;
       height: 100%; }
 
+
 .scheduleLegend {
   position: relative;
   margin-top: 30px;
@@ -688,21 +689,31 @@ html, body {
   flex-wrap: nowrap;
   justify-content: space-between;
   max-width: 1200px; }
-  .QandAFlexContainer .QandAFlexCol {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    width: 25%; }
-    .QandAFlexContainer .QandAFlexCol .QandA {
-      margin-top: 30px;
-      margin-bottom: 30px; }
-      .QandAFlexContainer .QandAFlexCol .QandA:first-child {
-        margin-top: 0px; }
-      .QandAFlexContainer .QandAFlexCol .QandA:last-child {
-        margin-bottom: 0px; }
-      .QandAFlexContainer .QandAFlexCol .QandA .faq__question {
-        margin-bottom: 10px; }
+  .accordionContainer ul {
+    list-style-type: none;
+    display: inline-block;
+    width: 100%; }
+  .accordionContainer li {
+    display: inline-block;
+    width: 100%; }
+  .accordionContainer li.open .accordionContainer_link {
+    color: #b63b4d; }
+  .accordionContainer .accordionContainer_link {
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 42px;
+    color: #4d4d4d;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+  .accordionContainer .accordionContainer_submenu {
+    display: none;
+    background: #D2DCE5;
+    font-size: 14px; }
 
 .sponsorList {
   position: relative;

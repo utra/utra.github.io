@@ -430,39 +430,90 @@ html, body{
 }
 
 
+// // //FAQ section
+// .QandAFlexContainer{
+// 	position: relative;
+// 	display: flex;
+
+// 	//flex stuff
+// 	flex-wrap: nowrap;
+// 	justify-content: space-between;
+// 	max-width: 1200px;
+// 	.QandAFlexCol{
+// 		margin-top: 20px;
+// 		margin-bottom: 20px;
+// 		margin-left: 50px;
+// 		margin-right: 50px;
+// 		width: 25%;
+// 		.QandA{
+// 			margin-top: 30px;
+// 			margin-bottom: 30px;
+
+// 			&:first-child{
+// 				margin-top: 0px;
+// 			}
+// 			&:last-child{
+// 				margin-bottom: 0px;
+// 			}
+
+// 			.faq__question{
+// 				margin-bottom: 10px;
+// 			}
+// 		}
+// 	}
+	
+// }
 
 //FAQ section
-.QandAFlexContainer{
+.accordionContainer {
+	width: 100%;
+	max-width: 95%;
+	text-align: center;
+	margin: 30px auto 20px;
+	background: #fff;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
 	position: relative;
 	display: flex;
-
-	//flex stuff
 	flex-wrap: nowrap;
 	justify-content: space-between;
-	max-width: 1200px;
-	.QandAFlexCol{
-		margin-top: 20px;
-		margin-bottom: 20px;
-		margin-left: 50px;
-		margin-right: 50px;
-		width: 25%;
-		.QandA{
-			margin-top: 30px;
-			margin-bottom: 30px;
+	max-width: 1200px; 
 
-			&:first-child{
-				margin-top: 0px;
-			}
-			&:last-child{
-				margin-bottom: 0px;
-			}
-
-			.faq__question{
-				margin-bottom: 10px;
-			}
-		}
+	ul{
+    list-style-type: none;
+    display: inline-block;
+    width: 100%;
 	}
-	
+
+	li{
+    display: inline-block;
+    width: 100%;
+	}
+
+	li.open .accordionContainer_link {
+		color: #b63b4d; 
+	}
+
+	.accordionContainer_link{
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 42px;
+    color: #4d4d4d;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+	}
+
+    .accordionContainer_submenu{
+    display: none;
+    background: #D2DCE5;
+    font-size: 14px;
+	}
 }
 
 // Sponsorship section

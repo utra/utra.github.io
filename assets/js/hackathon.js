@@ -118,34 +118,34 @@ $(document).ready(function(){
 	$(window).scroll(function() {
     if(window.outerWidth >=1050){
   		var scroll = $(window).scrollTop(); // how many pixels you've scrolled
-      var aboutPosition = $('#about').offset().top; // pixels to top of about
-      var schedulePosition = $('#schedule').offset().top;
-      var locationPosition = $('#location').offset().top; // pixels to top of location
-      var faqPosition = $('#faq').offset().top; // pixels to top of faq
-      var sponsorsPosition = $('#sponsors').offset().top; // pixels to top of sponsors
+      var aboutPosition = $('#about').offset().top - $(window).height(); // pixels to top of about
+      var schedulePosition = $('#schedule').offset().top - $(window).height();
+      var locationPosition = $('#location').offset().top - $(window).height(); // pixels to top of location
+      var faqPosition = $('#faq').offset().top - $(window).height(); // pixels to top of faq
+      var sponsorsPosition = $('#sponsors').offset().top - $(window).height(); // pixels to top of sponsors
       
-      if(scroll < aboutPosition){
-          $('.header').attr('class',"header");
-      }
-      else if(scroll >= aboutPosition && scroll < schedulePosition){
+      if(scroll > aboutPosition && scroll <= schedulePosition){
       	//scrolled to about
           $('.header').attr('class',"header header--aboutActive");
       }
-      else if(scroll >= schedulePosition && scroll < locationPosition){
+      else if(scroll > schedulePosition && scroll <= locationPosition){
       	//scrolled to location
           $('.header').attr('class',"header header--scheduleActive");
       }
-      else if(scroll >= locationPosition && scroll < faqPosition){
-      	//scrolled to location
+      else if(scroll > locationPosition && scroll <= faqPosition){
+        //scrolled to location
           $('.header').attr('class',"header header--locationActive");
       }
-      else if(scroll >= faqPosition && scroll < sponsorsPosition){
-      	//scrolled to faq
+      else if(scroll > faqPosition && scroll <= sponsorsPosition){
+      	//scrolled to location
           $('.header').attr('class',"header header--faqActive");
       }
-      else if(scroll >= sponsorsPosition){
-       	//scrolled to sponsors
+      else if(scroll > sponsorsPosition){
+      	//scrolled to faq
           $('.header').attr('class',"header header--sponsorsActive");
+      }
+      else{
+          $('.header').attr('class',"header");
       }
     }
 	});

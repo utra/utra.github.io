@@ -213,6 +213,18 @@ footer {
     width: 100%;
     text-align: center;
     white-space: nowrap; }
+    @media only screen and (max-width: 460px) {
+      footer .footer-text {
+        font-size: 1.2em; } }
+    @media only screen and (max-width: 440px) {
+      footer .footer-text {
+        font-size: 1.1em; } }
+    @media only screen and (max-width: 420px) {
+      footer .footer-text {
+        font-size: 1.0em; } }
+    @media only screen and (max-width: 340px) {
+      footer .footer-text {
+        font-size: 0.9em; } }
   footer .social-icons {
     width: 100%;
     text-align: center; }
@@ -314,9 +326,12 @@ footer {
       @media only screen and (max-width: 450px) {
         .bannerImage .bannerImage__bannerImage__hackathonTextBlock .textBlock__hackathonCountdown {
           font-size: 1.6em; } }
-      @media only screen and (max-width: 370px) {
+      @media only screen and (max-width: 400px) {
         .bannerImage .bannerImage__bannerImage__hackathonTextBlock .textBlock__hackathonCountdown {
           font-size: 1.4em; } }
+      @media only screen and (max-width: 370px) {
+        .bannerImage .bannerImage__bannerImage__hackathonTextBlock .textBlock__hackathonCountdown {
+          font-size: 1.3em; } }
     .bannerImage .bannerImage__bannerImage__hackathonTextBlock .buttonBlock {
       position: relative;
       display: flex; }

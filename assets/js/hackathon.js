@@ -119,25 +119,25 @@ $(document).ready(function(){
     if(window.outerWidth >=1050){
   		var scroll = $(window).scrollTop(); // how many pixels you've scrolled
       var aboutPosition = $('#about').offset().top; // pixels to top of about
-      var locationPosition = $('#location').offset().top; // pixels to top of location
       var schedulePosition = $('#schedule').offset().top;
+      var locationPosition = $('#location').offset().top; // pixels to top of location
       var faqPosition = $('#faq').offset().top; // pixels to top of faq
       var sponsorsPosition = $('#sponsors').offset().top; // pixels to top of sponsors
       
       if(scroll < aboutPosition){
           $('.header').attr('class',"header");
       }
-      else if(scroll >= aboutPosition && scroll < locationPosition){
+      else if(scroll >= aboutPosition && scroll < schedulePosition){
       	//scrolled to about
           $('.header').attr('class',"header header--aboutActive");
       }
-      else if(scroll >= locationPosition && scroll < schedulePosition){
-      	//scrolled to location
-          $('.header').attr('class',"header header--locationActive");
-      }
-      else if(scroll >= schedulePosition && scroll < faqPosition){
+      else if(scroll >= schedulePosition && scroll < locationPosition){
       	//scrolled to location
           $('.header').attr('class',"header header--scheduleActive");
+      }
+      else if(scroll >= locationPosition && scroll < faqPosition){
+      	//scrolled to location
+          $('.header').attr('class',"header header--locationActive");
       }
       else if(scroll >= faqPosition && scroll < sponsorsPosition){
       	//scrolled to faq
@@ -153,7 +153,7 @@ $(document).ready(function(){
   // Countdown stuff to the date
   var counter = $("#hackathonCounter");
 
-  var countDownDate = new Date("Sep 5, 2018 15:37:25").getTime();
+  var countDownDate = new Date("Sep 29, 2018 8:00:00").getTime();
 
   // Update the count down every 1 second
   var interval = setInterval(function() {
@@ -180,7 +180,7 @@ $(document).ready(function(){
     // If the count down is finished, write some text 
     if (distance < 0) {
       clearInterval(interval);
-      document.getElementById("#hackathonCounter").innerHTML = "NOW";
+      document.getElementById("#hackathonCounter").innerHTML = "HACKING NOW";
     }
   }, 1000);
 

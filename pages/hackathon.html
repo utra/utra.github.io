@@ -9,6 +9,12 @@ permalink: /hackathon.html
 	<!-- hackathon style sheet -->
 	<link rel="stylesheet" type="text/css" href="./assets/css/hackathon.css">
 
+	<!-- Font Awesome icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Ionicons -->
+	<link href="https://unpkg.com/ionicons@4.1.1/dist/css/ionicons.min.css" rel="stylesheet">
+
 	<!-- Abel Font -->
 	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 
@@ -17,6 +23,8 @@ permalink: /hackathon.html
 
 	<!-- javascript -->
 	<script type="text/javascript" src="./assets/js/header.js" ></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<header class="header">{% include hackathonHeader.html %}</header>
@@ -33,6 +41,15 @@ permalink: /hackathon.html
 		
 		<div class="bannerImage__image bannerImage__image--hackathon"></div>
 		<div class="bannerImage__background"></div>
+		<div class="bannerImage__bannerImage__hackathonTextBlock">
+			<div class="textBlock__hackathonTitle">UtraHacks 2018</div>
+			<div class="textBlock__hackathonDate">2018/09/29 - 2018/09/30</div>
+			<div id="hackathonCounter" class="textBlock__hackathonCountdown">Start Hacking in...</div>
+			<div class="buttonBlock">
+				<div class="buttonBlock__twoCol">Register</div>
+				<div class="buttonBlock__twoCol">Sponsor Us</div>
+			</div>
+		</div>
 	</div>
 
 
@@ -60,6 +77,348 @@ permalink: /hackathon.html
 		</div>
 	</section>
 
+	<section id="schedule" class="onePagerSection onePagerSection--schedule">
+		<h1 class="onePagerSection__title">Schedule</h1>		
+		
+		<div class="scheduleLegend">
+			<div class="scheduleLegend__item">
+				<svg height="20" width="20" >
+					<circle cx="10" cy="10" r="10" fill="#CD959A" />  
+				</svg> 
+				<p class="scheduleLegend__itemTitle">Main</p>
+			</div>
+			<div class="scheduleLegend__item">
+				<svg height="20" width="20">
+					<circle cx="10" cy="10" r="10" fill="#2F80ED" />  
+				</svg> 
+				<p class="scheduleLegend__itemTitle">Presentations</p>
+			</div>
+			<div class="scheduleLegend__item">
+				<svg height="20" width="20">
+					<circle cx="10" cy="10" r="10" fill="#F2C94C" />  
+				</svg> 
+				<p class="scheduleLegend__itemTitle">Food</p>
+			</div>
+			<div class="scheduleLegend__item">
+				<svg height="20" width="20">
+					<circle cx="10" cy="10" r="10" fill="#6FCFC9" />  
+				</svg> 
+				<p class="scheduleLegend__itemTitle">Fun</p>
+			</div>
+			<div class="scheduleLegend__item">
+				<svg height="20" width="20">
+					<circle cx="10" cy="10" r="10" fill="#C4C4C4" />  
+				</svg> 
+				<p class="scheduleLegend__itemTitle">Others</p>
+			</div>
+		</div>
+		
+		<div class="timeTableHeader">
+			<p class="timeTableHeader__title">Saturday Sept 20 2016</p>
+		</div>
+		
+		<div class="timeTable">
+			<!-- 8 AM -->
+			<div class="timeTable__row">
+				<p class="timetimeTable__timeHeader">08:00</p>
+				<div class="timeTable__event">
+					<div class="timeTable__eventHorizontalLine"></div>
+					<div class="timeTable__eventMarkerWrapper timeTable__eventMarkerWrapper--position1">
+						<div class="timeTable__eventDot">
+							<svg  height="12" width="12">
+								<circle cx="6" cy="6" r="6" fill="#F2C94C"/>  
+							</svg> 
+						</div>
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--down timeTable__eventVerticalLine--food"></div>
+						<div class="timeTable__eventTimeAndDetails timeTable__eventTimeAndDetails--up">
+							<p>8:00 - 9:00 <a class="timeTable__eventTimeAndDetails--food">| Breakfast + Registration</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 9 AM -->
+			<div class="timeTable__row">
+				<p class="timetimeTable__timeHeader">09:00</p>
+				<div class="timeTable__event">
+					<div class="timeTable__eventHorizontalLine"></div>
+					<div class="timeTable__eventMarkerWrapper timeTable__eventMarkerWrapper--position1">
+						<div class="timeTable__eventDot">
+							<svg  height="12" width="12">
+								<circle cx="6" cy="6" r="6" fill="#F2C94C"/>  
+							</svg> 
+						</div>
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--up timeTable__eventVerticalLine--food"></div>
+					</div>
+					<div class="timeTable__eventMarkerWrapper timeTable__eventMarkerWrapper--position2">
+						<div class="timeTable__eventDot">
+							<svg  height="12" width="12">
+								<circle cx="6" cy="6" r="6" fill="#2F80ED"/>  
+							</svg> 
+						</div>
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--down timeTable__eventVerticalLine--presentation"></div>
+						<div class="timeTable__eventDot timeTable__eventDot--middleEndUp">
+							<svg  height="12" width="12">
+								<circle cx="6" cy="6" r="6" fill="#2F80ED"/>  
+							</svg> 
+						</div>
+						<div class="timeTable__eventTimeAndDetails timeTable__eventTimeAndDetails--up">
+							<p>9:00 - 9:30 <a class="timeTable__eventTimeAndDetails--presentation">| Opening Ceremony</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 10 AM -->
+			<div class="timeTable__row">
+				<p class="timetimeTable__timeHeader">10:00</p>
+				<div class="timeTable__event">
+					<div class="timeTable__eventHorizontalLine"></div>
+					<div class="timeTable__eventMarkerWrapper timeTable__eventMarkerWrapper--position1">
+						<div class="timeTable__eventDot timeTable__eventDot--middleEndDown">
+							<svg  height="12" width="12">
+								<circle cx="6" cy="6" r="6" fill="#CD959A"/>  
+							</svg> 
+						</div>
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--up timeTable__eventVerticalLine--main"></div>
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--down timeTable__eventVerticalLine--main"></div>
+						<div class="timeTable__eventTimeAndDetails timeTable__eventTimeAndDetails--down">
+							<p>9:30 - 22:30 <a class="timeTable__eventTimeAndDetails--main">| Hacking</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 11 AM -->
+			<div class="timeTable__row">
+				<p class="timetimeTable__timeHeader">11:00</p>
+				<div class="timeTable__event">
+					<div class="timeTable__eventHorizontalLine"></div>
+					<div class="timeTable__eventMarkerWrapper timeTable__eventMarkerWrapper--position1">
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--up timeTable__eventVerticalLine--main"></div>
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--down timeTable__eventVerticalLine--main"></div>
+					</div>
+				</div>
+			</div>
+			<!-- 12 AM -->
+			<div class="timeTable__row">
+				<p class="timetimeTable__timeHeader">12:00</p>
+				<div class="timeTable__event">
+					<div class="timeTable__eventHorizontalLine"></div>
+					<div class="timeTable__eventMarkerWrapper timeTable__eventMarkerWrapper--position1">
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--up timeTable__eventVerticalLine--main"></div>
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--down timeTable__eventVerticalLine--main"></div>
+					</div>
+					<div class="timeTable__eventMarkerWrapper timeTable__eventMarkerWrapper--position2">
+						<div class="timeTable__eventDot">
+							<svg  height="12" width="12">
+								<circle cx="6" cy="6" r="6" fill="#F2C94C"/>  
+							</svg> 
+						</div>
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--down timeTable__eventVerticalLine--food"></div>
+						<div class="timeTable__eventTimeAndDetails timeTable__eventTimeAndDetails--up">
+							<p>12:00 - 13:00 <a class="timeTable__eventTimeAndDetails--food">| Lunch</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 1 PM -->
+			<div class="timeTable__row">
+				<p class="timetimeTable__timeHeader">13:00</p>
+				<div class="timeTable__event">
+					<div class="timeTable__eventHorizontalLine"></div>
+					<div class="timeTable__eventMarkerWrapper timeTable__eventMarkerWrapper--position1">
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--up timeTable__eventVerticalLine--main"></div>
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--down timeTable__eventVerticalLine--main"></div>
+					</div>
+					<div class="timeTable__eventMarkerWrapper timeTable__eventMarkerWrapper--position2">
+						<div class="timeTable__eventDot">
+							<svg  height="12" width="12">
+								<circle cx="6" cy="6" r="6" fill="#F2C94C"/>  
+							</svg> 
+						</div>
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--up timeTable__eventVerticalLine--food"></div>
+					</div>
+				</div>
+			</div>
+			<!-- 2 PM -->
+			<div class="timeTable__row">
+				<p class="timetimeTable__timeHeader">14:00</p>
+				<div class="timeTable__event">
+					<div class="timeTable__eventHorizontalLine"></div>
+					<div class="timeTable__eventMarkerWrapper timeTable__eventMarkerWrapper--position1">
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--up timeTable__eventVerticalLine--main"></div>
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--down timeTable__eventVerticalLine--main"></div>
+					</div>
+				</div>
+			</div>
+			<!-- 3 PM -->
+			<div class="timeTable__row">
+				<p class="timetimeTable__timeHeader">15:00</p>
+				<div class="timeTable__event">
+					<div class="timeTable__eventHorizontalLine"></div>
+					<div class="timeTable__eventMarkerWrapper timeTable__eventMarkerWrapper--position1">
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--up timeTable__eventVerticalLine--main"></div>
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--down timeTable__eventVerticalLine--main"></div>
+					</div>
+				</div>
+			</div>
+			<!-- 4 PM -->
+			<div class="timeTable__row">
+				<p class="timetimeTable__timeHeader">16:00</p>
+				<div class="timeTable__event">
+					<div class="timeTable__eventHorizontalLine"></div>
+					<div class="timeTable__eventMarkerWrapper timeTable__eventMarkerWrapper--position1">
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--up timeTable__eventVerticalLine--main"></div>
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--down timeTable__eventVerticalLine--main"></div>
+					</div>
+				</div>
+			</div>
+			<!-- 5 PM -->
+			<div class="timeTable__row">
+				<p class="timetimeTable__timeHeader">17:00</p>
+				<div class="timeTable__event">
+					<div class="timeTable__eventHorizontalLine"></div>
+					<div class="timeTable__eventMarkerWrapper timeTable__eventMarkerWrapper--position1">
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--up timeTable__eventVerticalLine--main"></div>
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--down timeTable__eventVerticalLine--main"></div>
+					</div>
+				</div>
+			</div>
+			<!-- 6 PM -->
+			<div class="timeTable__row">
+				<p class="timetimeTable__timeHeader">18:00</p>
+				<div class="timeTable__event">
+					<div class="timeTable__eventHorizontalLine"></div>
+					<div class="timeTable__eventMarkerWrapper timeTable__eventMarkerWrapper--position1">
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--up timeTable__eventVerticalLine--main"></div>
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--down timeTable__eventVerticalLine--main"></div>
+					</div>
+					<div class="timeTable__eventMarkerWrapper timeTable__eventMarkerWrapper--position2">
+						<div class="timeTable__eventDot">
+							<svg  height="12" width="12">
+								<circle cx="6" cy="6" r="6" fill="#F2C94C"/>  
+							</svg> 
+						</div>
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--down timeTable__eventVerticalLine--food"></div>
+						<div class="timeTable__eventTimeAndDetails timeTable__eventTimeAndDetails--up">
+							<p>18:00 - 19:00 <a class="timeTable__eventTimeAndDetails--food">| Dinner</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 7 PM -->
+			<div class="timeTable__row">
+				<p class="timetimeTable__timeHeader">19:00</p>
+				<div class="timeTable__event">
+					<div class="timeTable__eventHorizontalLine"></div>
+					<div class="timeTable__eventMarkerWrapper timeTable__eventMarkerWrapper--position1">
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--up timeTable__eventVerticalLine--main"></div>
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--down timeTable__eventVerticalLine--main"></div>
+					</div>
+					<div class="timeTable__eventMarkerWrapper timeTable__eventMarkerWrapper--position2">
+						<div class="timeTable__eventDot">
+							<svg  height="12" width="12">
+								<circle cx="6" cy="6" r="6" fill="#F2C94C"/>  
+							</svg> 
+						</div>
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--up timeTable__eventVerticalLine--food"></div>
+					</div>
+				</div>
+			</div>
+			<!-- 8 PM -->
+			<div class="timeTable__row">
+				<p class="timetimeTable__timeHeader">20:00</p>
+				<div class="timeTable__event">
+					<div class="timeTable__eventHorizontalLine"></div>
+					<div class="timeTable__eventMarkerWrapper timeTable__eventMarkerWrapper--position1">
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--up timeTable__eventVerticalLine--main"></div>
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--down timeTable__eventVerticalLine--main"></div>
+					</div>
+				</div>
+			</div>
+			<!-- 9 PM -->
+			<div class="timeTable__row">
+				<p class="timetimeTable__timeHeader">21:00</p>
+				<div class="timeTable__event">
+					<div class="timeTable__eventHorizontalLine"></div>
+					<div class="timeTable__eventMarkerWrapper timeTable__eventMarkerWrapper--position1">
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--up timeTable__eventVerticalLine--main"></div>
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--down timeTable__eventVerticalLine--main"></div>
+					</div>
+				</div>
+			</div>	
+			<!-- 10 PM -->
+			<div class="timeTable__row">
+				<p class="timetimeTable__timeHeader">22:00</p>
+				<div class="timeTable__event">
+					<div class="timeTable__eventHorizontalLine"></div>
+					<div class="timeTable__eventMarkerWrapper timeTable__eventMarkerWrapper--position1">
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--up timeTable__eventVerticalLine--main"></div>
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--down timeTable__eventVerticalLine--main"></div>
+						<div class="timeTable__eventDot timeTable__eventDot--middleEndUp">
+							<svg  height="12" width="12">
+								<circle cx="6" cy="6" r="6" fill="#CD959A"/>  
+							</svg> 
+						</div>
+					</div>
+				</div>
+			</div>		
+			<!-- 11 PM -->
+			<div class="timeTable__row">
+				<p class="timetimeTable__timeHeader">23:00</p>
+				<div class="timeTable__event">
+					<div class="timeTable__eventHorizontalLine"></div>
+					<div class="timeTable__eventMarkerWrapper timeTable__eventMarkerWrapper--position1">
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--up timeTable__eventVerticalLine--main"></div>
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--down timeTable__eventVerticalLine--main"></div>
+						<div class="timeTable__eventTimeAndDetails timeTable__eventTimeAndDetails--down">
+							<p>23:30 - 24:00 <a class="timeTable__eventTimeAndDetails--main">| Expo and Judging</a></p>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<!-- 12 PM -->
+			<div class="timeTable__row">
+				<p class="timetimeTable__timeHeader">24:00</p>
+				<div class="timeTable__event">
+					<div class="timeTable__eventHorizontalLine"></div>
+					<div class="timeTable__eventMarkerWrapper timeTable__eventMarkerWrapper--position1">
+						<div class="timeTable__eventDot">
+							<svg  height="12" width="12">
+								<circle cx="6" cy="6" r="6" fill="#CD959A"/>  
+							</svg> 
+						</div>
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--up timeTable__eventVerticalLine--main"></div>
+					</div>
+					<div class="timeTable__eventMarkerWrapper timeTable__eventMarkerWrapper--position2">
+						<div class="timeTable__eventDot">
+							<svg  height="12" width="12">
+								<circle cx="6" cy="6" r="6" fill="#2F80ED"/>  
+							</svg> 
+						</div>
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--down timeTable__eventVerticalLine--presentation"></div>
+						<div class="timeTable__eventTimeAndDetails timeTable__eventTimeAndDetails--up">
+							<p>24:00 - 25:00 <a class="timeTable__eventTimeAndDetails--presentation">| Awards and Closing Ceremony</a></p>
+						</div>
+					</div>
+				</div>
+			</div>		
+			<!-- 1 AM -->
+			<div class="timeTable__row">
+				<p class="timetimeTable__timeHeader">25:00</p>
+				<div class="timeTable__event">
+					<div class="timeTable__eventHorizontalLine"></div>
+					<div class="timeTable__eventMarkerWrapper timeTable__eventMarkerWrapper--position2">
+						<div class="timeTable__eventDot">
+							<svg  height="12" width="12">
+								<circle cx="6" cy="6" r="6" fill="#2F80ED"/>  
+							</svg> 
+						</div>
+						<div class="timeTable__eventVerticalLine timeTable__eventVerticalLine--up timeTable__eventVerticalLine--presentation"></div>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</section>
+
 	<section id="location" class="onePagerSection onePagerSection--location">
 		
 		<h1 class="onePagerSection__title">Location</h1>
@@ -69,13 +428,6 @@ permalink: /hackathon.html
 			</div>
 		</div>
 	</section>
-
-	<section id="schedule" class="onePagerSection onePagerSection--schedule">
-		
-		<h1 class="onePagerSection__title">Schedule</h1>
-
-	</section>
-
 
 	<section id="faq" class="onePagerSection onePagerSection--faq">
 		<h1 class="onePagerSection__title">FAQ</h1>
@@ -152,23 +504,59 @@ permalink: /hackathon.html
 					<h1 class="faq__question">Other questions?</h1>
 					<p class="faq__answer"> We’d be happy to help!  Send the inquiry over to hackinfo@utra.ca and we’ll answer it right away! :) </p>
 				</div>	
-
-
-		
-
 			</div>
 		</div>		
 	</section>
 
 	<section id="sponsors" class="onePagerSection onePagerSection--sponsors">
-		
 		<h1 class="onePagerSection__title">2018 Sponsors</h1>
+		<div class="sponsorList">
+			<!-- Altium -->
+			<a class="sponsorList__img" href="http://www.altium.com/">
+				<!-- <div class="sponsorList__overley"></div> -->
+				<img class="sponsorList__img--altrium" src="./assets/img/hackathonIcons/sponsors/altium.jpg" alt="Altium">
+			</a>
+			<!-- 3M Canada -->
+			<a class="sponsorList__img" href="https://www.3mcanada.ca/3M/en_CA/company-ca/?utm_medium=redirect&utm_source=vanity-url&utm_campaign=www.3mcanada.ca/3M/en_CA/Country-CA/">
+				<!-- <div class="sponsorList__overley"></div> -->
+				<img class="sponsorList__img--3m" src="./assets/img/hackathonIcons/sponsors/3M-logo.png" alt="3M">
+			</a>
+			<!-- MDA corporation -->
+			<a class="sponsorList__img" href="https://mdacorporation.com/">
+				<!-- <div class="sponsorList__overley"></div> -->
+				<img class="sponsorList__img--MDA" src="./assets/img/hackathonIcons/sponsors/mda_logo.jpg" alt="MDA">
+			</a>
+			<!-- Aoyue3d -->
+			<!-- a href="http://www.aoyue3d.com/en/">
+				<div class="sponsorList__overley"></div>
+				<img class="sponsorList__img--aoyue" src="./assets/img/hackathonIcons/sponsors/3M-logo.png" alt="aoyue3d">
+			</a> -->
+			<!-- Solidworks -->
+			<a class="sponsorList__img" href="http://www.solidworks.com/">
+				<!-- <div class="sponsorList__overley"></div> -->
+				<img class="sponsorList__img--solidworks" src="./assets/img/hackathonIcons/sponsors/solidworks.jpg" alt="solidworks">
+			</a>
+			<!-- Skule -->
+			<!-- <a class="sponsorList__img" href="http://skule.ca/">
+				<div class="sponsorList__overley"></div>
+				<img class="sponsorList__img--skule" src="./assets/img/hackathonIcons/sponsors/3M-logo.png" alt="Skule">
+			</a> -->
+			<!-- MIE Toronto -->
+			<a class="sponsorList__img" href="http://www.mie.utoronto.ca/">
+				<!-- <div class="sponsorList__overley"></div> -->
+				<img class="sponsorList__img--mie" src="./assets/img/hackathonIcons/sponsors/mie.jpg" alt="MIE">
+			</a>
+			<!-- Engineering U of T -->
+			<a class="sponsorList__img" href="http://www.engineering.utoronto.ca/">
+				<!-- <div class="sponsorList__overley"></div> -->
+				<img class="sponsorList__img--UofTEng" src="./assets/img/hackathonIcons/sponsors/UTengineering.jpg" alt="Engineering U of T">
+			</a>
+
+		</div>
 	</section>
 
-
 	<footer>
-		
-
+		{% include footer.html %}
 	</footer>
 
 	<!-- scrips -->

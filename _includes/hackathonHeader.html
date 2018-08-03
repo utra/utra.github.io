@@ -1,10 +1,16 @@
 <div class="logo logo--header">
 	<a href="{{ "/" | relative_url }}">
-		<img src="./assets/img/Logo/utraLogoWhite.png" alt="UTRA"> 
+		<img class="logo__desktop" src="./assets/img/Logo/utraLogoWhite.png" alt="UTRA"> 
+		<img class="logo__mobile" src="./assets/img/Logo/utraLogoWhiteMobile.png" alt="UTRA"> 
 	</a>
 </div>
 
+
 <nav class="mainMenu">
+	<div class="mainMenu__mobileNav">
+		<i id="mobileNav__open" class="mainMenu__mobileNavIcon ion-md-menu"></i>
+		<i id="mobileNav__close" class="mainMenu__mobileNavIcon mainMenu__mobileNavIcon--noDisplay icon ion-md-close"></i>
+	</div>
 	<ul class="mainMenu__list">
 		<li class="mainMenu__menuItem mainMenu__menuItem--about"><a href="#about">About</a></li>
 		<li class="mainMenu__menuItem mainMenu__menuItem--location"><a href="#location">Location</a></li>

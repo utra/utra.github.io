@@ -100,52 +100,90 @@ $(document).ready(function(){
 	$('a[href^="#"]').click(function() {
 		var href = $(this).attr('href');
 
-		if( $('.header').length ) {
-            menuSize = $('.header').outerHeight();
-          }
+    window.scroll({
+      top: $(href).offset().top - $('.header').outerHeight(), 
+      left: 0, 
+      behavior: 'smooth' 
+    });
 
-		$('body,html').animate({
-			scrollTop: $(href).offset().top
-		}, 500, function () {
-			window.location.hash = href;
-		});
+    if(window.outerWidth < 1050){
+      $("#mobileNav__close").click();
+    }
+
+    // window.location.hash = href;
 
 		return false;
 	});
 
 	$(window).scroll(function() {
-		var scroll = $(window).scrollTop(); // how many pixels you've scrolled
-	    var aboutPosition = $('#about').offset().top; // pixels to top of about
-	    var locationPosition = $('#location').offset().top; // pixels to top of location
-	    var schedulePosition = $('#schedule').offset().top;
-	    var faqPosition = $('#faq').offset().top; // pixels to top of faq
-	    var sponsorsPosition = $('#sponsors').offset().top; // pixels to top of sponsors
-	    
-	    if(scroll < aboutPosition){
-	        $('.header').attr('class',"header");
-	    }
-	    else if(scroll >= aboutPosition && scroll < locationPosition){
-	    	//scrolled to about
-	        $('.header').attr('class',"header header--aboutActive");
-	    }
-	    else if(scroll >= locationPosition && scroll < schedulePosition){
-	    	//scrolled to location
-	        $('.header').attr('class',"header header--locationActive");
-	    }
-	    else if(scroll >= schedulePosition && scroll < faqPosition){
-	    	//scrolled to location
-	        $('.header').attr('class',"header header--scheduleActive");
-	    }
-	    else if(scroll >= faqPosition && scroll < sponsorsPosition){
-	    	//scrolled to faq
-	        $('.header').attr('class',"header header--faqActive");
-	    }
-	    else if(scroll >= sponsorsPosition){
-	     	//scrolled to sponsors
-	        $('.header').attr('class',"header header--sponsorsActive");
-	    }
-
+    if(window.outerWidth >=1050){
+  		var scroll = $(window).scrollTop(); // how many pixels you've scrolled
+      var aboutPosition = $('#about').offset().top; // pixels to top of about
+      var locationPosition = $('#location').offset().top; // pixels to top of location
+      var schedulePosition = $('#schedule').offset().top;
+      var faqPosition = $('#faq').offset().top; // pixels to top of faq
+      var sponsorsPosition = $('#sponsors').offset().top; // pixels to top of sponsors
+      
+      if(scroll < aboutPosition){
+          $('.header').attr('class',"header");
+      }
+      else if(scroll >= aboutPosition && scroll < locationPosition){
+      	//scrolled to about
+          $('.header').attr('class',"header header--aboutActive");
+      }
+      else if(scroll >= locationPosition && scroll < schedulePosition){
+      	//scrolled to location
+          $('.header').attr('class',"header header--locationActive");
+      }
+      else if(scroll >= schedulePosition && scroll < faqPosition){
+      	//scrolled to location
+          $('.header').attr('class',"header header--scheduleActive");
+      }
+      else if(scroll >= faqPosition && scroll < sponsorsPosition){
+      	//scrolled to faq
+          $('.header').attr('class',"header header--faqActive");
+      }
+      else if(scroll >= sponsorsPosition){
+       	//scrolled to sponsors
+          $('.header').attr('class',"header header--sponsorsActive");
+      }
+    }
 	});
+
+  // Countdown stuff to the date
+  var counter = $("#hackathonCounter");
+
+  var countDownDate = new Date("Sep 5, 2018 15:37:25").getTime();
+
+  // Update the count down every 1 second
+  var interval = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the result in the element with id="demo"
+    if(window.outerWidth >= 1050){
+      $("#hackathonCounter").html(days + " Days | " + hours + " Hours | " + minutes + " Minutes | " + seconds + " Seconds")
+    }
+    else{
+      $("#hackathonCounter").html((days * 24 + hours) + " Hours | " + minutes + " Minutes | " + seconds + " Seconds")
+    }
+    // If the count down is finished, write some text 
+    if (distance < 0) {
+      clearInterval(interval);
+      document.getElementById("#hackathonCounter").innerHTML = "NOW";
+    }
+  }, 1000);
+
 
 });
 

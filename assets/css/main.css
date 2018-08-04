@@ -71,13 +71,78 @@
       background-color: white;
       opacity: 1;
       display: block;
-      height: 2px; } }
+      height: 2px; }
+  .mainMenu.mainMenu--backgroundVisible {
+    background-color: rgba(69, 82, 107, 0.8); } }
 @media only screen and (min-width: 1050px) {
   .header .mainMenu .mainMenu__mobileNav {
     display: none; }
 
   .header .logo .logo__mobile {
     display: none; }
+
+  .header.header--aboutActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--about a {
+    color: white;
+    transition: none; }
+  .header.header--aboutActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--about:after {
+    content: '';
+    position: relative;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+    width: 70%;
+    background-color: white;
+    opacity: 1;
+    display: block;
+    height: 2px;
+    transition: none; }
+  .header.header--teamsActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--teams a {
+    color: white;
+    transition: none; }
+  .header.header--teamsActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--teams:after {
+    content: '';
+    position: relative;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+    width: 70%;
+    background-color: white;
+    opacity: 1;
+    display: block;
+    height: 2px;
+    transition: none; }
+  .header.header--eventsActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--events a {
+    color: white;
+    transition: none; }
+  .header.header--eventsActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--events:after {
+    content: '';
+    position: relative;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+    width: 70%;
+    background-color: white;
+    opacity: 1;
+    display: block;
+    height: 2px;
+    transition: none; }
+  .header.header--sponsorsActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--sponsors a {
+    color: white;
+    transition: none; }
+  .header.header--sponsorsActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--sponsors:after {
+    content: '';
+    position: relative;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+    width: 70%;
+    background-color: white;
+    opacity: 1;
+    display: block;
+    height: 2px;
+    transition: none; }
+  .header.header--noScroll .mainMenu {
+    background-color: rgba(69, 82, 107, 0.8); }
 
   .mainMenu .mainMenu__list {
     bottom: 5px;
@@ -118,66 +183,8 @@
       opacity: 1;
       display: block;
       height: 2px; }
-  .mainMenu .header--aboutActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--about a {
-    color: white;
-    transition: none; }
-  .mainMenu .header--aboutActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--about:after {
-    content: '';
-    position: relative;
-    left: 50%;
-    top: 0px;
-    transform: translateX(-50%);
-    width: 70%;
-    background-color: white;
-    opacity: 1;
-    display: block;
-    height: 2px;
-    transition: none; }
-  .mainMenu .header--teamsActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--teams a {
-    color: white;
-    transition: none; }
-  .mainMenu .header--teamsActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--teams:after {
-    content: '';
-    position: relative;
-    left: 50%;
-    top: 0px;
-    transform: translateX(-50%);
-    width: 70%;
-    background-color: white;
-    opacity: 1;
-    display: block;
-    height: 2px;
-    transition: none; }
-  .mainMenu .header--eventsActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--events a {
-    color: white;
-    transition: none; }
-  .mainMenu .header--eventsActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--events:after {
-    content: '';
-    position: relative;
-    left: 50%;
-    top: 0px;
-    transform: translateX(-50%);
-    width: 70%;
-    background-color: white;
-    opacity: 1;
-    display: block;
-    height: 2px;
-    transition: none; }
-  .mainMenu .header--sponsorsActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--sponsors a {
-    color: white;
-    transition: none; }
-  .mainMenu .header--sponsorsActive .mainMenu .mainMenu__menuItem.mainMenu__menuItem--sponsors:after {
-    content: '';
-    position: relative;
-    left: 50%;
-    top: 0px;
-    transform: translateX(-50%);
-    width: 70%;
-    background-color: white;
-    opacity: 1;
-    display: block;
-    height: 2px;
-    transition: none; } }
+  .mainMenu.mainMenu--backgroundVisible {
+    background-color: rgba(69, 82, 107, 0.8); } }
 .mainMenu {
   transition: background-color 0.2s;
   background-color: rgba(0, 0, 0, 0);
@@ -258,6 +265,40 @@ footer {
 }
 
 */
+section {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #F5F9Fc;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%); }
+  section:nth-child(odd) {
+    background-color: #D2DCE5; }
+  section.section__pageDescription p {
+    max-width: 80%;
+    text-align: center;
+    color: #45526B; }
+  section .section__Title {
+    padding-bottom: 20px;
+    position: relative;
+    text-align: center;
+    font-size: 2.0em;
+    width: 100%; }
+    section .section__Title:after {
+      display: block;
+      content: '';
+      height: 3px;
+      width: 30px;
+      background-color: #CD959A;
+      margin-top: 10px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%); }
+
 .bannerImage {
   width: 100%;
   height: 100vh;
@@ -374,6 +415,22 @@ footer {
       z-index: 1;
       background-image: url("../img/hackathonIcons/torontoSkylineHD.png");
       background-size: auto 40%; }
+
+.shortBanner {
+  width: 100%;
+  padding-top: 75px;
+  height: 40vh;
+  position: relative;
+  background-color: #F5F9Fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .shortBanner .shortBanner__titleText {
+    color: #45526B;
+    font-size: 3em; }
+  .shortBanner .shortBanner__content p {
+    color: #45526B; }
 
 .fullScreenImage {
   position: absolute;
@@ -577,7 +634,7 @@ footer {
   transform: translateX(-50%);
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   justify-content: center;
   width: 80%;
   margin-top: 20px;
@@ -588,11 +645,40 @@ footer {
     background-color: #F5F9Fc;
     margin: 10px; }
 
-.eventsCalendar {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%); }
+.section__eventsCalendar {
+  position: relative;
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #F5F9Fc; }
+
+.section__sponsors {
+  width: 80%;
+  position: relative;
+  display: flex;
+  flex-direction: column; }
+
+.sponsorList {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: 30px; }
+  .sponsorList .sponsorList__img {
+    position: relative;
+    height: 100px;
+    margin: 15px; }
+    .sponsorList .sponsorList__img img {
+      height: 100%;
+      opacity: 1; }
 
 html, body {
   margin: 0;

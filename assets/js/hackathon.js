@@ -2,7 +2,7 @@
 function initMap() {
     // Styles a map in night mode.
     var map = new google.maps.Map(document.getElementById('hackathonMaps'), {
-      center: {lat: 43.659986, lng: -79.38869},
+      center: {lat: 43.6595745, lng: -79.3973729},
       zoom: 17,
       styles: [
         {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
@@ -87,10 +87,10 @@ function initMap() {
     });
 
     var marker = new google.maps.Marker({
-	   position: {lat: 43.659986, lng: -79.38869},
+	   position: {lat: 43.6595745, lng: -79.3973729},
 	   map: map,
 	   animation: google.maps.Animation.DROP,
-	   title: 'Mars Discovery District'
+	   title: 'Bahen Centre for Information Technology'
 	});
     marker.setMap(map);
 }

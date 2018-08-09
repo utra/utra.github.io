@@ -3,6 +3,8 @@
   z-index: 9999999;
   top: 0;
   width: 100vw; }
+  .header.header--noScroll .mainMenu {
+    background-color: rgba(69, 82, 107, 0.8); }
 
 @media only screen and (max-width: 1049px) {
   .header .logo .logo__desktop {
@@ -141,8 +143,6 @@
     display: block;
     height: 2px;
     transition: none; }
-  .header.header--noScroll .mainMenu {
-    background-color: rgba(69, 82, 107, 0.8); }
 
   .mainMenu .mainMenu__list {
     bottom: 5px;
@@ -431,6 +431,8 @@ section {
     font-size: 3em; }
   .shortBanner .shortBanner__content p {
     color: #45526B; }
+  .shortBanner.shortBanner--noPhoto {
+    height: 25vh; }
 
 .fullScreenImage {
   position: absolute;
@@ -679,6 +681,31 @@ section {
     .sponsorList .sponsorList__img img {
       height: 100%;
       opacity: 1; }
+
+.section__codeOfConduct {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 50px; }
+  .section__codeOfConduct.section--backgroundLightColor {
+    background-color: #F5F9Fc; }
+  .section__codeOfConduct p {
+    text-align: left;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin-left: 5vw;
+    margin-right: 5vw; }
+    .section__codeOfConduct p:first-child {
+      padding-top: 0px; }
+    .section__codeOfConduct p:last-child {
+      padding-bottom: 10px; }
+
+.codeOfConductBack {
+  text-decoration: none; }
 
 html, body {
   margin: 0;

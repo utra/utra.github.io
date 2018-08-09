@@ -3,6 +3,8 @@
   z-index: 9999999;
   top: 0;
   width: 100vw; }
+  .header.header--noScroll .mainMenu {
+    background-color: rgba(69, 82, 107, 0.8); }
 
 @media only screen and (max-width: 1049px) {
   .header .logo .logo__desktop {
@@ -141,8 +143,6 @@
     display: block;
     height: 2px;
     transition: none; }
-  .header.header--noScroll .mainMenu {
-    background-color: rgba(69, 82, 107, 0.8); }
 
   .mainMenu .mainMenu__list {
     bottom: 5px;
@@ -397,6 +397,8 @@ footer {
     font-size: 3em; }
   .shortBanner .shortBanner__content p {
     color: #45526B; }
+  .shortBanner.shortBanner--noPhoto {
+    height: 25vh; }
 
 .fullScreenImage {
   position: absolute;

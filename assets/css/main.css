@@ -282,12 +282,28 @@ section {
     max-width: 80%;
     text-align: center;
     color: #45526B; }
+  section.section__teamBody {
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-direction: column; }
+    section.section__teamBody p {
+      padding-top: 20px;
+      text-indent: 30px;
+      color: #45526B;
+      padding-left: 30px;
+      padding-right: 30px; }
   section .section__Title {
     padding-bottom: 20px;
     position: relative;
     text-align: center;
     font-size: 2.0em;
+    color: #45526B;
     width: 100%; }
+    section .section__Title.section__Title--small {
+      font-size: 1.6em; }
+      section .section__Title.section__Title--small:after {
+        margin-top: 5px; }
     section .section__Title:after {
       display: block;
       content: '';
@@ -298,6 +314,19 @@ section {
       position: absolute;
       left: 50%;
       transform: translateX(-50%); }
+  section .section_subTitle {
+    font-weight: 800;
+    font-size: 1.2em;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #45526B; }
+  section .section_unorderedList {
+    padding-top: 5px;
+    padding-left: 75px;
+    padding-right: 30px; }
+    section .section_unorderedList li {
+      color: #45526B; }
 
 .bannerImage {
   width: 100%;
@@ -434,6 +463,51 @@ section {
   .shortBanner.shortBanner--noPhoto {
     height: 25vh; }
 
+.accordionWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px; }
+  .accordionWrapper .accordionElement .accordion__title {
+    background-color: #D2DCE5;
+    padding: 15px;
+    text-align: center;
+    border-bottom: solid 1px #F5F9Fc;
+    transition: color 0.2s ease-out, opcity 0.1s linear;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 900;
+    color: #45526B; }
+    .accordionWrapper .accordionElement .accordion__title:hover {
+      opacity: 0.8; }
+    .accordionWrapper .accordionElement .accordion__title.accordion__title--active {
+      color: #CD959A; }
+  .accordionWrapper .accordionElement .accordion__contentWrapper {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    max-height: 0px;
+    transition: max-height 0.2s ease-out; }
+    .accordionWrapper .accordionElement .accordion__contentWrapper .accordion__contentTitle {
+      padding-top: 15px;
+      text-align: center;
+      color: #45526B;
+      font-size: 1.1em;
+      font-weight: 600; }
+    .accordionWrapper .accordionElement .accordion__contentWrapper .accordion__execMember {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-left: 15px;
+      margin-right: 15px;
+      color: #45526B;
+      font-size: 1em; }
+      .accordionWrapper .accordionElement .accordion__contentWrapper .accordion__execMember:last-child {
+        padding-bottom: 15px; }
+      .accordionWrapper .accordionElement .accordion__contentWrapper .accordion__execMember .execMember__name {
+        order: 1; }
+      .accordionWrapper .accordionElement .accordion__contentWrapper .accordion__execMember .execMember__role {
+        order: 2; }
+
 .fullScreenImage {
   position: absolute;
   left: 0;
@@ -518,6 +592,8 @@ section {
     opacity: 0.8;
     margin-top: 20px;
     margin-bottom: 20px; }
+    .infoBlock .infoBlock__paragraph.infoBlock__paragraph--center {
+      text-align: center; }
 
 .infoBlock__executiveWrapper {
   position: relative; }
@@ -608,19 +684,9 @@ section {
     .infoBlock__executiveWrapper .infoBlock__execImage.infoBlock__execImage--whodis6 {
       background-image: url("../img/UTRA Exec Photoshoot 171120/headshots/DSC_3851.jpg"); }
 
-.columnWrapper {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  height: 400px; }
-  .columnWrapper .form {
-    flex: 2;
-    height: 100%; }
-    .columnWrapper .form .infoBlock__paragraph {
-      margin-top: 0px; }
-  .columnWrapper .map {
-    flex: 2;
-    height: 100%; }
+.map {
+  width: 100%;
+  height: 40vw; }
 
 #googleMaps {
   width: 100%;
@@ -639,13 +705,85 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   width: 80%;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 20px; }
   .flexContainer .teamContainer {
+    position: relative;
     height: 300px;
     width: 400px;
     background-color: #F5F9Fc;
-    margin: 10px; }
+    margin: 10px;
+    transition: background-size 0.2s linear;
+    background-position: 50% 50%;
+    background-repeat: no-repeat; }
+    .flexContainer .teamContainer a {
+      text-decoration: none; }
+    .flexContainer .teamContainer:hover .teamContainer__details {
+      opacity: 1; }
+    .flexContainer .teamContainer:hover .teamContainer__fader {
+      opacity: 0.4; }
+    .flexContainer .teamContainer.teamContainer--SUMO {
+      background-image: url("../img/Team Photos/sumo/IMG_6938.jpg");
+      background-size: 100% 100%; }
+      .flexContainer .teamContainer.teamContainer--SUMO:hover {
+        background-size: 110% 110%; }
+    .flexContainer .teamContainer.teamContainer--ART {
+      background-image: url("../img/Team Photos/ART/Art robot.jpg");
+      background-size: 100% 100%; }
+      .flexContainer .teamContainer.teamContainer--ART:hover {
+        background-size: 110% 110%; }
+    .flexContainer .teamContainer.teamContainer--3DP {
+      background-image: url("../img/Team Photos/3dp/IMG_1012.JPG");
+      background-size: 100% 100%; }
+      .flexContainer .teamContainer.teamContainer--3DP:hover {
+        background-size: 110% 110%; }
+    .flexContainer .teamContainer.teamContainer--roboSoccer {
+      background-image: url("../img/Team Photos/robosoccer/DSC01784.jpg");
+      background-size: 100% 100%; }
+      .flexContainer .teamContainer.teamContainer--roboSoccer:hover {
+        background-size: 110% 110%; }
+    .flexContainer .teamContainer.teamContainer--heavyCombat {
+      background-image: url("../img/Team Photos/heavy combat/combat.jpg");
+      background-size: 100% 100%; }
+      .flexContainer .teamContainer.teamContainer--heavyCombat:hover {
+        background-size: 110% 110%; }
+    .flexContainer .teamContainer.teamContainer--lightCombat {
+      background-image: url("../img/Team Photos/sumo/IMG_6938.jpg");
+      background-size: 100% 100%; }
+      .flexContainer .teamContainer.teamContainer--lightCombat:hover {
+        background-size: 110% 110%; }
+    .flexContainer .teamContainer .teamContainer__fader {
+      z-index: 1;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 0;
+      transition: opacity 0.2s linear; }
+    .flexContainer .teamContainer .teamContainer__details {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      white-space: nowrap;
+      transition: opacity 0.2s linear; }
+      .flexContainer .teamContainer .teamContainer__details .teamContainer__name {
+        font-size: 2.5em;
+        font-weight: 600;
+        color: #F5F9Fc; }
+      .flexContainer .teamContainer .teamContainer__details .teamContainer__socialIconsContainer {
+        display: flex;
+        justify-content: center; }
+        .flexContainer .teamContainer .teamContainer__details .teamContainer__socialIconsContainer .teamContainer__socialIcon {
+          padding: 5px;
+          font-size: 1.3em;
+          color: #F5F9Fc;
+          transition: color 0.2s linear;
+          cursor: pointer; }
+          .flexContainer .teamContainer .teamContainer__details .teamContainer__socialIconsContainer .teamContainer__socialIcon:hover {
+            color: gray; }
 
 .section__eventsCalendar {
   position: relative;
@@ -655,6 +793,8 @@ section {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #F5F9Fc; }
+  .section__eventsCalendar iframe .footer {
+    display: none; }
 
 .section__sponsors {
   width: 80%;

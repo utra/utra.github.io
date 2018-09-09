@@ -42,3 +42,7 @@ assets/img/Utra Exec Photoshoot 171120/headshots/*
 
 # hackathon images
 !assets/img/hackathonIcons/**
+
+# team images
+!assets/img/Team Photos/
+!assets/img/Team Photos/**

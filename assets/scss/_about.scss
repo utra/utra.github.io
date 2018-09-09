@@ -96,6 +96,9 @@
 		//margin stuff
 		margin-top: 20px;
 		margin-bottom: 20px;
+		&.infoBlock__paragraph--center{
+			text-align: center;
+		}
 	}
 }
 
@@ -226,23 +229,28 @@
 	}
 }
 
-.columnWrapper{
-	display: flex;
-	flex-direction: row;
-	position: relative;
-	height: 400px;
-	.form{
-		flex: 2;
-		height: 100%;
-		.infoBlock__paragraph{
-			margin-top: 0px;
-		}
-	}
-	.map{
-		flex: 2;
-		height: 100%;
-	}
+// .columnWrapper{
+// 	display: flex;
+// 	flex-direction: row;
+// 	position: relative;
+// 	height: 400px;
+// 	.form{
+// 		flex: 2;
+// 		height: 100%;
+// 		.infoBlock__paragraph{
+// 			margin-top: 0px;
+// 		}
+// 	}
+// 	.map{
+// 		flex: 2;
+// 		height: 100%;
+// 	}
 
+// }
+
+.map{
+	width: 100%;
+	height: 40vw;
 }
 
 #googleMaps{

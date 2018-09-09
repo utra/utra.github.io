@@ -9,7 +9,7 @@ permalink: /about.html
 	{% include resources.html %}
 
 	<!-- load images -->
-	<link rel="preload" href="./assets/img/UTRA Exec Photoshoot 171120/DSC_4016.jpg" as="image">
+	<link rel="preload" href="{{ site.baseurl }}/assets/img/UTRA Exec Photoshoot 171120/DSC_4016.jpg" as="image">
 	
 </head>
 <body>
@@ -333,9 +333,9 @@ permalink: /about.html
 	</footer>
 
 	<!-- scripts -->
-	<!-- <script data-cfasync="false" type="text/javascript" src="../assets/js/formSubmission.js"></script> -->
-	<script type="text/javascript" src='./assets/js/aboutPage.js'></script>
-	<script type="text/javascript" src='./assets/js/accordion.js'></script>
+	<!-- <script data-cfasync="false" type="text/javascript" src=".{{ site.baseurl }}/assets/js/formSubmission.js"></script> -->
+	<script type="text/javascript" src='{{ site.baseurl }}/assets/js/aboutPage.js'></script>
+	<script type="text/javascript" src='{{ site.baseurl }}/assets/js/accordion.js'></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQQ04VdU2UMEk81eM3kryWP4JrC65Lz5g&callback=initMap"
     async defer></script>
 

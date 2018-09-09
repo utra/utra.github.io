@@ -3,7 +3,7 @@
 .bannerImage{
 	.bannerImage__image{
 		&.bannerImage__image--teams{
-			background-image: url("../img/Combat/Cover Photo.jpg");
+			background-image: url($baseurl + "/assets/img/Combat/Cover Photo.jpg");
 			background-position: 50% 30%;
 		}
 	}
@@ -46,7 +46,7 @@
 		}
 
 		&.teamContainer--SUMO{
-			background-image: url('../img/Team Photos/sumo/IMG_6938.jpg');
+			background-image: url($baseurl + '/assets/img/Team Photos/sumo/IMG_6938.jpg');
 			background-size: 100% 100%;
 
 			&:hover{
@@ -54,7 +54,7 @@
 			}
 		}
 		&.teamContainer--ART{
-			background-image: url('../img/Team Photos/ART/Art robot.jpg');
+			background-image: url($baseurl + '/assets/img/Team Photos/ART/Art robot.jpg');
 			background-size: 100% 100%;
 			
 			&:hover{
@@ -62,7 +62,7 @@
 			}
 		}
 		&.teamContainer--3DP{
-			background-image: url('../img/Team Photos/3dp/IMG_1012.JPG');
+			background-image: url($baseurl + '/assets/img/Team Photos/3dp/IMG_1012.JPG');
 			background-size: 100% 100%;
 			
 			&:hover{
@@ -70,7 +70,7 @@
 			}
 		}
 		&.teamContainer--roboSoccer{
-			background-image: url('../img/Team Photos/robosoccer/DSC01784.jpg');
+			background-image: url($baseurl + '/assets/img/Team Photos/robosoccer/DSC01784.jpg');
 			background-size: 100% 100%;
 			
 			&:hover{
@@ -78,7 +78,7 @@
 			}
 		}
 		&.teamContainer--heavyCombat{
-			background-image: url('../img/Team Photos/heavy combat/combat.jpg');
+			background-image: url($baseurl + '/assets/img/Team Photos/heavy combat/combat.jpg');
 			background-size: 100% 100%;
 			
 			&:hover{
@@ -86,7 +86,7 @@
 			}
 		}
 		&.teamContainer--lightCombat{
-			background-image: url('../img/Team Photos/sumo/IMG_6938.jpg');
+			background-image: url($baseurl + '/assets/img/Team Photos/sumo/IMG_6938.jpg');
 			background-size: 100% 100%;
 			
 			&:hover{

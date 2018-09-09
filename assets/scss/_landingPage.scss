@@ -21,7 +21,7 @@
 		opacity: 0.2;
 	}
 	.fullScreenImage__image{
-		background-image: url('../img/SUMO/good.jpg');
+		background-image: url($baseurl + '/assets/img/SUMO/good.jpg');
 		background-size: cover;
 		background-position: 50% 25%;
 		background-repeat: no-repeat;

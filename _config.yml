@@ -1,3 +1,10 @@
+name: UTRA
+baseurl: /utra
+url: https://johnny-zou.github.io/
+
 # Adds other folders besides _includes, _layouts, _posts
 includes:
 - html
+
+sass:
+    sass_dir: assets/scss

@@ -149,12 +149,12 @@
 		background-size: cover;
 
 		&.bannerImage__image--about{
-			background-image: url("../img/UTRA Exec Photoshoot 171120/DSC_4016.jpg");
+			background-image: url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/DSC_4016.jpg");
 			background-position: 50% 30%;
 		}
 		&.bannerImage__image--hackathon{
 			z-index: 1;
-			background-image: url("../img/hackathonIcons/torontoSkylineHD.png");
+			background-image: url($baseurl + "/assets/img/hackathonIcons/torontoSkylineHD.png");
 			background-size: auto 40%;
 		}
 	}

@@ -194,37 +194,35 @@
 		}
 
 		&.infoBlock__execImage--President{
-			background-image: url("../img/UTRA Exec Photoshoot 171120/headshots/DSC_3942.jpg");
+			background-image: url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/DSC_3942.jpg");
 		}
 		&.infoBlock__execImage--VP_Ops{
-			background-image : url("../img/UTRA Exec Photoshoot 171120/headshots/DSC_3865.jpg");
+			background-image : url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/DSC_3865.jpg");
 		}
 		&.infoBlock__execImage--Director_website{
-			background-image : url("../img/UTRA Exec Photoshoot 171120/headshots/DSC_3875.jpg");
+			background-image : url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/DSC_3875.jpg");
 		}
 		&.infoBlock__execImage--Director_graphics1{
-			background-image : url("../img/UTRA Exec Photoshoot 171120/headshots/DSC_3889.jpg");
+			background-image : url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/DSC_3889.jpg");
 		}
-		
-
 
 		&.infoBlock__execImage--whodis1{
-			background-image : url("../img/UTRA Exec Photoshoot 171120/headshots/DSC_3807.jpg");
+			background-image : url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/DSC_3807.jpg");
 		}
 		&.infoBlock__execImage--whodis2{
-			background-image : url("../img/UTRA Exec Photoshoot 171120/headshots/DSC_3822.jpg");
+			background-image : url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/DSC_3822.jpg");
 		}
 		&.infoBlock__execImage--whodis3{
-			background-image : url("../img/UTRA Exec Photoshoot 171120/headshots/DSC_3834.jpg");
+			background-image : url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/DSC_3834.jpg");
 		}
 		&.infoBlock__execImage--whodis4{
-			background-image : url("../img/UTRA Exec Photoshoot 171120/headshots/DSC_3844.jpg");
+			background-image : url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/DSC_3844.jpg");
 		}
 		&.infoBlock__execImage--whodis5{
-			background-image : url("../img/UTRA Exec Photoshoot 171120/headshots/DSC_3850.jpg");
+			background-image : url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/DSC_3850.jpg");
 		}
 		&.infoBlock__execImage--whodis6{
-			background-image : url("../img/UTRA Exec Photoshoot 171120/headshots/DSC_3851.jpg");
+			background-image : url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/DSC_3851.jpg");
 		}	
 	}
 }

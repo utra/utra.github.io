@@ -71,6 +71,17 @@ $(document).ready(function(){
 		$(".sumoRobot__marker--chassis .sumoRobot__markerDescription").css("opacity", "0");
 	});
 
+	// Dual Motors
+	$(".sumoRobot__marker--motors .sumoRobot__markerCircle").on("mouseenter", function(){
+		$(".sumoRobot__marker--motors .sumoRobot__markerCircle").css("opacity", "1");
+		$(".sumoRobot__marker--motors .sumoRobot__markerLine").css("opacity", "1");
+		$(".sumoRobot__marker--motors .sumoRobot__markerDescription").css("opacity", "1");
+	});
 
+	$(".sumoRobot__marker--motors .sumoRobot__markerCircle").on("mouseleave", function(){
+		$(".sumoRobot__marker--motors .sumoRobot__markerCircle").css("opacity", "0.7");
+		$(".sumoRobot__marker--motors .sumoRobot__markerLine").css("opacity", "0");
+		$(".sumoRobot__marker--motors .sumoRobot__markerDescription").css("opacity", "0");
+	});
 
 });

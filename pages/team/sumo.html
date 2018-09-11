@@ -16,7 +16,14 @@ permalink: /teams/SUMO/index.html
 		<h1 class="shortBanner__titleText">SUMO</h1>
 		<div class="shortBanner__content">
 			<p>18:00 - 20:00 | Thursdays | MyHal Centre </p>
-
+			<div class="shortBanner__socialContainer">
+				<div class="socialIconCircle">
+					<a href="https://www.facebook.com/groups/170063056765640/" target="_blank"><i class="fa fa-facebook"></i></a>
+				</div>
+				<div class="socialIconCircle">
+					<a href="mailto:sumo@utra.ca"><i class="fa fa-envelope"></i></a>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -26,9 +33,55 @@ permalink: /teams/SUMO/index.html
 	</section>
 
 	<section class="section__teamBody section--backgroundAlternate">
-		<h1 class="section__Title section__Title--small">The SUMO Competition</h1>
+		<h1 class="section__Title section__Title--small">THE SUMO ROBOT</h1>
+		<!-- <p>Each SUMO robot is composed of the following parts:</p>
+		<ul class="section_unorderedList">
+			<li>Two DC motors</li>
+			<li>All the electrical parts for the circuit (micro-controller, H-bridge, resistors, capacitors, etc.)</li>
+			<li>One range sensor</li>
+			<li>One light sensor</li>
+		</ul> -->
+
+		<div class="section__sumoRobot">
+			<div class="sumoRobot">
+				<div class="sumoRobot__imageWrapper">
+					<div class="sumoRobot__imageFader"></div>
+					<img src="{{ site.baseurl }}/assets\img\SUMO\good.jpg">
+					<div class="sumoRobot__marker sumoRobot__marker--IRSensor">
+						<div class="sumoRobot__markerCircle"></div>
+						<svg class="sumoRobot__markerLine">
+						    <line x1="60.4%" y1="42.1%" x2="75%" y2="27%" />
+						</svg>
+						<div class="sumoRobot__markerDescription">
+							<p>Ultrasonic Range Sensor</p>
+						</div>
+					</div>
+					<div class="sumoRobot__marker sumoRobot__marker--chassis">
+						<div class="sumoRobot__markerCircle"></div>
+						<svg class="sumoRobot__markerLine">
+						    <line x1="52.1%" y1="64.8%" x2="59%" y2="80%" />
+						</svg>
+						<div class="sumoRobot__markerDescription">
+							<p>Aluminum Metal Chassis</p>
+						</div>
+					</div>
+					<div class="sumoRobot__marker sumoRobot__marker--motors">
+						<div class="sumoRobot__markerCircle"></div>
+						<svg class="sumoRobot__markerLine">
+						    <line x1="30.9%" y1="50.7%" x2="19%" y2="37%" />
+						</svg>
+						<div class="sumoRobot__markerDescription sumoRobot__markerDescription--alignRight">
+							<p>Dual DC Motors</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<h1 class="section__Title section__Title--small">The Competition</h1>
 		<p>The goal is to build an autonomous 10cm x 10cm robot with IR range finders to locate the opponent and light sensors to detect the edge of the ring. Two mini - sumo robots are placed in a black circular ring with a white border; the two robots try to push one another out of the ring, the last robot in the ring wins. Students use the circuit design to etch and solder their own circuit boards; they design the chassis in 3D CAD, then cut and bend the chassis from sheet metal; they write the software in C directly on the microcontroller.</p>
-		<p>UTRA hosts an autonomous mini-sumo competition at the end of the year, where the teams com pete for bragging rights amongst their peers. We organize tutorial sessions which cover most of the necessary know-how, practical and theoretical concepts required in the three areas involved:</p>
+		<p>UTRA hosts an autonomous mini-sumo competition at the end of the year, where the teams compete for bragging rights amongst their peers. We organize tutorial sessions which cover most of the necessary know-how, practical and theoretical concepts required in the three areas involved:</p>
 		<h2 class="section_subTitle">Electrical:</h2>
 		<ul class="section_unorderedList">
 			<li>Etching Printed Circuit Boards (PCBs)</li>
@@ -50,11 +103,76 @@ permalink: /teams/SUMO/index.html
 			<li>3D CAD modeling with Solidworks</li>
 			<li>Prototyping</li>
 		</ul>
+		<p>The competition will be open only to undergraduate students of University of Toronto. In addition, a student may not compete in this competition more than once. This is to encourage students to move on to UTRA’s bigger teams. We are letting you choose your own groups and highly recommend that you get into groups of three where each person is in charge of one aspect of the sumo-robot. We recommend teams of 3, but will allow teams of 1 to 5. If your team consists of 6 or more, you will be required to divide into 2 groups.</p>
+		<h2 class="section_subTitle">Area</h2>
+		<ul class="section_unorderedList">
+			<li>The playing field will consist of a 30-inch diameter circle, finished in a non-reflective black surface with a white painted boarder and elevated 1 inch above the floor.</li>
+			<li>When you’re ready to practice, we have an arena in EA-106 that you can try your robot on.</li>
+		</ul>
+		<h2 class="section_subTitle">Design Constraints</h2>
+		<ul class="section_unorderedList">
+			<li>At the start of each round, each competing machine must be able to fit into a box with internal dimensions with a width and length of 10 cm. There is no restriction on height.</li>
+			<li>The weight of the robot itself may not exceed 1 Kg.</li>
+			<li>No destructive weapons allowed.</li>
+			<li>The power supply and all control devices must be on-board.</li>
+		</ul>
+		<h2 class="section_subTitle">Match Rules</h2>
+		<ul class="section_unorderedList">
+			<li>At the start of each round, the robots will be placed on opposite sides of the platform facing in a clockwise direction (i.e., not at each other).</li>
+			<li>The intentional dropping of objects, whether tethered or not, is forbidden.</li>
+			<li>A robot loses by exiting the ring or being disabled</li>
+		</ul>
 
-
+		<h1 class="section__Title section__Title--small">Past Competitions</h1>
+		<div class="galleryGrid">
+			<div class="galleryGrid__arrow galleryGrid__arrow--deactivated">
+				<i id="galleryLeft" class="fa fa-angle-left"></i>
+			</div>
+			<div class="galleryGrid__photoWrapper">
+				<div id="gallery" class="galleryGrid__pages">
+					<div class="galleryGrid__page">
+						<div class="galleryGrid__pagePhotoFlexWrapper">
+							<div class="galleryGrid__photo"><img src="{{ site.baseurl }}/assets/img/UTRA Exec Photoshoot 171120/DSC_4016.jpg"></div>
+							<div class="galleryGrid__photo"><img src="{{ site.baseurl }}/assets/img/UTRA Exec Photoshoot 171120/DSC_4016.jpg"></div>
+							<div class="galleryGrid__photo"><img src="{{ site.baseurl }}/assets/img/UTRA Exec Photoshoot 171120/DSC_4016.jpg"></div>
+							<div class="galleryGrid__photo"><img src="{{ site.baseurl }}/assets/img/UTRA Exec Photoshoot 171120/DSC_4016.jpg"></div>
+							<div class="galleryGrid__photo"><img src="{{ site.baseurl }}/assets/img/UTRA Exec Photoshoot 171120/DSC_4016.jpg"></div>
+							<div class="galleryGrid__photo"><img src="{{ site.baseurl }}/assets/img/UTRA Exec Photoshoot 171120/DSC_4016.jpg"></div>
+						</div>
+					</div>
+					<div class="galleryGrid__page">
+						<div class="galleryGrid__pagePhotoFlexWrapper">
+							<div class="galleryGrid__photo"><img src="{{ site.baseurl }}/assets/img/UTRA Exec Photoshoot 171120/DSC_4016.jpg"></div>
+							<div class="galleryGrid__photo"><img src="{{ site.baseurl }}/assets/img/UTRA Exec Photoshoot 171120/DSC_4016.jpg"></div>
+							<div class="galleryGrid__photo"><img src="{{ site.baseurl }}/assets/img/UTRA Exec Photoshoot 171120/DSC_4016.jpg"></div>
+							<div class="galleryGrid__photo"><img src="{{ site.baseurl }}/assets/img/UTRA Exec Photoshoot 171120/DSC_4016.jpg"></div>
+							<div class="galleryGrid__photo"><img src="{{ site.baseurl }}/assets/img/UTRA Exec Photoshoot 171120/DSC_4016.jpg"></div>
+							<div class="galleryGrid__photo"><img src="{{ site.baseurl }}/assets/img/UTRA Exec Photoshoot 171120/DSC_4016.jpg"></div>
+						</div>
+					</div>
+					<div class="galleryGrid__page">
+						<div class="galleryGrid__pagePhotoFlexWrapper">
+							<div class="galleryGrid__photo"><img src="{{ site.baseurl }}/assets/img/UTRA Exec Photoshoot 171120/DSC_4016.jpg"></div>
+							<div class="galleryGrid__photo"><img src="{{ site.baseurl }}/assets/img/UTRA Exec Photoshoot 171120/DSC_4016.jpg"></div>
+							<div class="galleryGrid__photo"><img src="{{ site.baseurl }}/assets/img/UTRA Exec Photoshoot 171120/DSC_4016.jpg"></div>
+							<div class="galleryGrid__photo"><img src="{{ site.baseurl }}/assets/img/UTRA Exec Photoshoot 171120/DSC_4016.jpg"></div>
+							<div class="galleryGrid__photo"><img src="{{ site.baseurl }}/assets/img/UTRA Exec Photoshoot 171120/DSC_4016.jpg"></div>
+							<div class="galleryGrid__photo"><img src="{{ site.baseurl }}/assets/img/UTRA Exec Photoshoot 171120/DSC_4016.jpg"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="galleryGrid__arrow">
+				<i id="galleryRight" class="fa fa-angle-right"></i>
+			</div>
+		</div>
 	</section>
 
 	<footer id="mainFooter">{% include footer.html %}</footer>
 
+
+
+	<script type="text/javascript" src="{{ site.baseurl}}/assets/js/gallery.js"></script>
+	<script type="text/javascript" src="{{ site.baseurl}}/assets/js/sumoMarker.js"></script>
 </body>
 </html>

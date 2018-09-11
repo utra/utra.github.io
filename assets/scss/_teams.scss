@@ -137,3 +137,140 @@
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+// SUMO Team
+.section__sumoRobot{
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 15px;
+	padding-bottom: 30px;
+
+	width: calc(100% - 60px);
+
+	.sumoRobot{
+		position: relative;
+		width: 100%;
+
+		.sumoRobot__imageWrapper{
+			position: relative;
+			left: 50%;
+			transform: translate(-50%);
+			width: 65%;
+
+			.sumoRobot__marker{
+				pointer-events: none;
+				z-index: 5;
+				position: absolute;
+				top: 0;
+				left: 0;
+
+				width: 100%;
+				height: 100%;
+				.sumoRobot__markerCircle{
+					pointer-events: auto;
+					z-index: 5; //set this above the line
+					border-radius: 50%;
+				    width: 15px;
+				    height: 15px;
+				    background-color: #F5F9Fc;
+				    transform: translate(-50%,-50%);
+				    transition: opacity 0.2s linear;
+				    opacity: 0; //DEBUGGING PUT 1
+				    cursor: pointer;
+
+				    position: absolute;
+				}
+				.sumoRobot__markerLine{
+					width: 100%;
+					height: 100%;
+					opacity: 0; //DEBUGGING PUT 1
+					transition: opacity 0.2s linear;
+					line{
+						stroke: #F5F9Fc;
+						stroke-width: 2;
+					}
+				}
+				.sumoRobot__markerDescription{
+					position: absolute;
+					transform: translate(15px,-50%);
+					transition: opacity 0.2s linear;
+					opacity: 0; //DEBUGGING PUT 1
+
+					p{
+						padding: 0;
+						text-indent: 0;
+						color: #F5F9Fc;
+						white-space: nowrap;
+					}
+
+					&.sumoRobot__markerDescription--alignRight{
+						transform: translate(calc(-100% - 15px),-50%);
+						p{
+							align: right;
+						}		
+					}
+				}
+
+				&.sumoRobot__marker--IRSensor{
+					.sumoRobot__markerCircle{
+						top: 42.1%;
+    					left: 60.4%;
+					}
+
+					.sumoRobot__markerDescription{
+						top: 25%;
+						left: 75%;
+					}
+				}
+				&.sumoRobot__marker--chassis{
+					.sumoRobot__markerCircle{
+						top: 64.8%;
+    					left: 52.1%;
+					}
+
+					.sumoRobot__markerDescription{
+					    top: 82%;
+  						left: 59%;
+					}
+				}
+				&.sumoRobot__marker--motors{
+					.sumoRobot__markerCircle{
+						top: 50.7%;
+    					left: 30.9%;
+					}
+
+					.sumoRobot__markerDescription{
+					    top: 35%;
+  						left: 19%;
+					}
+				}
+			}
+			img{
+				position: relative;
+				display: block;
+				z-index: 1;
+				width: 100%;
+			}	
+			.sumoRobot__imageFader{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background-color: black;
+				z-index: 3;
+				opacity: 0;
+				transition: opacity 0.2s linear;
+			}
+		}
+		
+	}
+}

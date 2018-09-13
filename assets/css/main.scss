@@ -8,6 +8,7 @@ $baseurl: "{{ site.baseurl }}";
 
 @import 'bannerImage';
 @import 'accordion';
+@import 'marker';
 
 @import "landingPage";
 @import "about";

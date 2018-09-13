@@ -37,8 +37,8 @@ section{
 			padding-top: 20px;
 			text-indent: 30px;
 			color: #45526B;
-			padding-left: 30px;
-			padding-right: 30px;
+			padding-left: 50px;						//Page padding
+			padding-right: 50px;					//Page padding
 		}
 	}
 
@@ -78,16 +78,16 @@ section{
 		font-size: 1.2em;
 
 		padding-top: 15px;
-		padding-left: 30px;
-		padding-right: 30px;
+		padding-left: 50px;						//Page padding
+		padding-right: 50px;					//Page padding
 		color: #45526B;
 
 	}
 
 	.section_unorderedList{
 		padding-top: 5px;
-		padding-left: 75px;
-		padding-right: 30px;
+		padding-left: 95px;						//Page padding + indent
+		padding-right: 50px;					//Page padding
 
 		li{
 			color: #45526B;

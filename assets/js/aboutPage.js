@@ -1,34 +1,111 @@
 $(document).ready(function(){
-	var form = $(".form #gform");
-	$(".form #gform #emailTo").change(function(){
-		var sendToVal = $(".form #gform #emailTo").val();
-		console.log(sendToVal);
-		switch(sendToVal){
-			case "General Inquiries":
-				form.attr("data-email", "johnnyzou99@gmail.com");
-				break;
-			case "Autonomous Rover Team":
-				form.attr("data-email", "johnny.zou@mail.utoronto.ca");
-				break;
-			case "Combat":
-				form.attr("data-email", "johnnyzou99@yahoo.ca");				
-				break;
-			case "3D Printing":
-				form.attr("data-email", "johnnyzou99@gmail.com");
-				break;
-			case "SUMO":
-				form.attr("data-email", "johnnyzou99@gmail.com");
-				break;
-			case "RoboSoccer":
-				form.attr("data-email", "johnnyzou99@gmail.com");
-				break;
-			case "Top Secret":
-				form.attr("data-email", "johnnyzou99@gmail.com");
-				break;
-			default:
-				form.attr("data-email", "johnnyzou99@gmail.com");
-		}
-	});
+	// var form = $(".form #gform");
+	// $(".form #gform #emailTo").change(function(){
+	// 	var sendToVal = $(".form #gform #emailTo").val();
+	// 	console.log(sendToVal);
+	// 	switch(sendToVal){
+	// 		case "General Inquiries":
+	// 			form.attr("data-email", "johnnyzou99@gmail.com");
+	// 			break;
+	// 		case "Autonomous Rover Team":
+	// 			form.attr("data-email", "johnny.zou@mail.utoronto.ca");
+	// 			break;
+	// 		case "Combat":
+	// 			form.attr("data-email", "johnnyzou99@yahoo.ca");				
+	// 			break;
+	// 		case "3D Printing":
+	// 			form.attr("data-email", "johnnyzou99@gmail.com");
+	// 			break;
+	// 		case "SUMO":
+	// 			form.attr("data-email", "johnnyzou99@gmail.com");
+	// 			break;
+	// 		case "RoboSoccer":
+	// 			form.attr("data-email", "johnnyzou99@gmail.com");
+	// 			break;
+	// 		case "Top Secret":
+	// 			form.attr("data-email", "johnnyzou99@gmail.com");
+	// 			break;
+	// 		default:
+	// 			form.attr("data-email", "johnnyzou99@gmail.com");
+	// 	}
+	// });
+  var newPosition = $(document).scrollTop() - $(".infoBlock").offset().top + $(".header").outerHeight();
+  if(newPosition < 0){
+    newPosition = 0;
+  }
+  $(".sideMenu").css('top',newPosition + "px");
+
+  // about sidebar scrolling
+  $(window).on("scroll",function(){
+    var newPosition = $(document).scrollTop() - $(".infoBlock").offset().top + $(".header").outerHeight();
+    if(newPosition < 0){
+      newPosition = 0;
+    }
+    $(".sideMenu").css('top',newPosition + "px");
+
+    //Control styling
+    if(window.outerWidth >= 1050){
+      var scroll = $(window).scrollTop() + $(".header").outerHeight(); // how many pixels you've scrolled
+
+      var whoWeAre_positionMarker = $('#whoWeAre_positionMarker').offset().top - parseFloat($(".infoBlock").css("padding-top"));
+      var currentExecTeam_positionMarker = $('#currentExecTeam_positionMarker').offset().top - parseFloat($(".infoBlock").css("padding-top"));
+      var pastExec_positionMarker = $('#pastExec_positionMarker').offset().top - parseFloat($(".infoBlock").css("padding-top")); 
+      var contactUs_positionMarker = $('#contactUs_positionMarker').offset().top - parseFloat($(".infoBlock").css("padding-top"));
+      
+      if(scroll > whoWeAre_positionMarker && scroll <= currentExecTeam_positionMarker){
+        $('.sideMenu__menuItem').removeClass("sideMenu__menuItem--active");
+        $("#whoWeAre__sideMenuMarker").addClass("sideMenu__menuItem--active");
+      }
+      else if(scroll > currentExecTeam_positionMarker && scroll <= pastExec_positionMarker){
+        $('.sideMenu__menuItem').removeClass("sideMenu__menuItem--active");
+        $("#execTeam__sideMenuMarker").addClass("sideMenu__menuItem--active");
+      }
+      else if(scroll > pastExec_positionMarker && scroll <= contactUs_positionMarker){
+        $('.sideMenu__menuItem').removeClass("sideMenu__menuItem--active");
+        $("#pastExecs__sideMenuMarker").addClass("sideMenu__menuItem--active");
+      }
+      else if(scroll > contactUs_positionMarker){
+        $('.sideMenu__menuItem').removeClass("sideMenu__menuItem--active");
+        $("#contactUs__sideMenuMarker").addClass("sideMenu__menuItem--active");
+      }
+      else{
+        $('.sideMenu__menuItem').removeClass("sideMenu__menuItem--active");
+      }
+    }
+  });
+
+  //About page click events
+  $("#whoWeAre__sideMenuMarker").on("click",function(){
+    window.scroll({
+      top: $('#whoWeAre_positionMarker').offset().top - $(".header").outerHeight(), 
+      left: 0, 
+      behavior: 'smooth' 
+    });
+  });
+
+  $("#execTeam__sideMenuMarker").on("click",function(){
+    window.scroll({
+      top: $('#currentExecTeam_positionMarker').offset().top - $(".header").outerHeight(), 
+      left: 0, 
+      behavior: 'smooth' 
+    });
+  });
+
+  $("#pastExecs__sideMenuMarker").on("click",function(){
+    window.scroll({
+      top: $('#pastExec_positionMarker').offset().top - $(".header").outerHeight(), 
+      left: 0, 
+      behavior: 'smooth' 
+    });
+  });
+
+  $("#contactUs__sideMenuMarker").on("click",function(){
+    window.scroll({
+      top: $('#contactUs_positionMarker').offset().top - $(".header").outerHeight(), 
+      left: 0, 
+      behavior: 'smooth' 
+    });
+  });
 
 });
 
@@ -36,7 +113,7 @@ $(document).ready(function(){
 function initMap() {
     // Styles a map in night mode.
     var map = new google.maps.Map(document.getElementById('googleMaps'), {
-      center: {lat: 40.674, lng: -73.945},
+      center: {lat: 43.660772, lng: -79.396578},
       zoom: 12,
       styles: [
         {elementType: 'geometry', stylers: [{color: '#242f3e'}]},

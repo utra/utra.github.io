@@ -11,11 +11,19 @@
 
 //side menu
 .sideMenu{
+	position: relative;
+	top: 0;
 	height: 190px;
 	//margins
 	margin-top: calc(30px + 6%);
 	margin-right: 5vw;
 	margin-left: 5vw;
+
+	@media only screen and (max-width: 1049px) {
+		// mobile
+		display: none;
+
+	}
 	.sideMenu__titleText{
 		
 		//font stuff
@@ -48,6 +56,9 @@
 			&:hover{
 				color: $light-red;
 			}
+			&.sideMenu__menuItem--active{
+				color: $light-red;
+			}
 		}
 	}
 
@@ -64,12 +75,22 @@
 	padding-bottom: calc(30px + 6%);
 	padding-left: calc(20px + 7.5%);
 	padding-right: calc(20px + 7.5%);
+
+	@media only screen and (max-width: 1049px) {
+		// mobile
+		margin-left: 2.5vw;
+		margin-right: 2.5vw;
+		margin-top: 10px;
+
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
 	.infoBlock__title{
 		position: relative;
 
 
 		//font stuff
-		font-size: 2em;
 		font-weight: 700;
 		color: $heading-color;
 		
@@ -79,12 +100,21 @@
 		&:first-child{
 			margin-top: 0px;
 		}
-
-		&.infoBlock__title--caption{
-			font-size: 3em;
-			font-weight: 800;
+		@media only screen and (max-width: 1049px) {
+			font-size: 1.5em;
+			&.infoBlock__title--caption{
+				font-size: 2em;
+			}
 		}
-
+		@media only screen and (min-width: 1050px) {
+			// desktop
+			font-size: 2em;
+			&.infoBlock__title--caption{
+				font-size: 3em;
+				font-weight: 800;
+			}
+		}
+			
 	}
 	.infoBlock__paragraph{
 		line-height: 25px;
@@ -105,11 +135,19 @@
 .infoBlock__executiveWrapper{
 	position: relative;
 
+	.infoBlock__execSectionTitle{
+		font-size: 1.6em;
+    	text-align: center;
+	}
+
 	.infoBlock__execRow{
 		position: relative;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
+
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 	.infoBlock__execImageWrapper{
 		position: relative;
@@ -133,7 +171,6 @@
 			.infoBlock__execName{
 				opacity: 1;
 			}
-
 			.infoBlock__execPosition{
 				opacity: 1;
 			}

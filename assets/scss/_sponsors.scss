@@ -4,6 +4,7 @@
 
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 .sponsorList{
@@ -41,6 +42,51 @@
 		img{
 			height: 100%;
 			opacity: 1;
+		}
+	}
+	.sponsorList__tier1{
+		.sponsorList__tier1Item{
+			display: flex;
+			flex-direction: row;
+			height: 500px;
+			width: 100%;
+
+			.sponsorList__tier1IMG{
+				flex: 1;
+				// background-color: yellow;
+				img{
+					height: auto;
+					width: 100%;	
+				}
+			}
+			.sponsorList__tier1Description{
+				// background-color: red;
+				flex: 1;
+				p{
+					text-align: center;
+					position: relative;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+			}
+
+			&:nth-child(odd){
+				.sponsorList__tier1IMG{
+					order: 1;
+				}
+				.sponsorList__tier1Description{
+					order: 2;
+				}
+			}
+
+			&:nth-child(even){
+				.sponsorList__tier1IMG{
+					order: 2;
+				}
+				.sponsorList__tier1Description{
+					order: 1;
+				}
+			}
 		}
 	}
 }

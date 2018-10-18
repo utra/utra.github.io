@@ -497,7 +497,7 @@ h1, h2, h3, h4, h5, p {
 						@media only screen and (max-width: 520px) {
 							margin-left: 50px;
 						}
-					}
+					}					
 				}
 			}
 			@media only screen and (min-width: 1050px) {
@@ -507,9 +507,23 @@ h1, h2, h3, h4, h5, p {
 						white-space: nowrap;
 					}
 					&.timeTable__eventMarkerWrapper--position2{
-						margin-left: 300px;
+						margin-left: calc(50% - 120px);
+					}
+
+					// Position 3
+					&.timeTable__eventMarkerWrapper--position3{
+						margin-left: calc(100% - 220px);
+
+
+
+						.timeTable__eventTimeAndDetails{
+							p{
+								max-width: 200px;
+							}
+						}
 					}
 				}
+
 				
 			}
 
@@ -764,7 +778,7 @@ h1, h2, h3, h4, h5, p {
 
 		.sponsorList__img{
 			position: relative;
-			height: 100px;
+			height: 120px;
 			margin-top: 30px;
 			margin-bottom: 30px;
 			margin-left: 15px;
@@ -783,15 +797,31 @@ h1, h2, h3, h4, h5, p {
 			// 		opacity: 0.2;
 			// 	}
 			// }
-
-			@media only screen and (max-width: 620px) {
-				height: 75px;
+			@media only screen and (max-width: 1110px){
+				height: 100px;
 			}
-			@media only screen and (max-width: 500px) {
+			@media only screen and (max-width: 940px) {
+				height: 90px;
+			}
+			@media only screen and (max-width: 860px) {
+				height: 80px;
+			}
+			@media only screen and (max-width: 780px) {
+				height: 70px;
+			}
+			@media only screen and (max-width: 700px) {
+				height: 60px;
+			}
+			@media only screen and (max-width: 630px) {
 				height: 50px;
 			}
-			@media only screen and (max-width: 370px) {
+			@media only screen and (max-width: 550px) {
 				height: 40px;
+			}
+			@media only screen and (max-width: 470px) {
+				height: 35px;
+				margin-left: 7px;
+				margin-right: 7px;
 			}
 
 			img{
@@ -852,6 +882,15 @@ h1, h2, h3, h4, h5, p {
 				margin-left: 15px;
 				margin-right: 15px;
 
+				&.sponsorList__img--qualcomm{
+					height: 350px;
+					margin-top: 0px;
+					margin-bottom: 0px;
+				}
+				&.sponsorList__img--fdm{
+					margin-top: 10px;
+					margin-bottom: 10px;
+				}
 				@media only screen and (max-width: 1220px) {
 					height: 250px;
 				}	
@@ -886,6 +925,9 @@ h1, h2, h3, h4, h5, p {
 					&.sponsorList__img--particle{
 						height: 160px;
 					}
+					&.sponsorList__img--qualcomm{
+						height: 300px;
+					}
 				}
 				@media only screen and (max-width: 770px) {
 					height: 175px;
@@ -896,6 +938,9 @@ h1, h2, h3, h4, h5, p {
 				@media only screen and (max-width: 720px) {
 					&.sponsorList__img--particle{
 						height: 150px;
+					}
+					&.sponsorList__img--qualcomm{
+						height: 275px;
 					}
 				}
 				@media only screen and (max-width: 670px) {
@@ -908,6 +953,9 @@ h1, h2, h3, h4, h5, p {
 					&.sponsorList__img--particle{
 						height: 125px;
 					}
+					&.sponsorList__img--qualcomm{
+						height: 250px;
+					}
 				}
 				@media only screen and (max-width: 580px) {
 					height: 125px;
@@ -918,6 +966,9 @@ h1, h2, h3, h4, h5, p {
 					}
 					&.sponsorList__img--particle{
 						height: 110px;
+					}
+					&.sponsorList__img--qualcomm{
+						height: 225px;
 					}
 				}
 				@media only screen and (max-width: 510px) {
@@ -930,10 +981,16 @@ h1, h2, h3, h4, h5, p {
 					&.sponsorList__img--particle{
 						height: 90px;
 					}
+					&.sponsorList__img--qualcomm{
+						height: 175px;
+					}
 				}
 				@media only screen and (max-width: 460px) {
 					&.sponsorList__img--particle{
 						height: 80px;
+					}
+					&.sponsorList__img--qualcomm{
+						height: 130px;
 					}
 				}
 				@media only screen and (max-width: 400px) {
@@ -941,7 +998,7 @@ h1, h2, h3, h4, h5, p {
 					margin-bottom: 30px;
 
 					&.sponsorList__img--leap{
-						height: 110px;
+						height: 130px;
 					}
 					
 				}

@@ -47,6 +47,13 @@
 
 				color: #45526B;
 				font-size: 1em;
+
+				@media only screen and (max-width: 1049px) {
+					// mobile
+					margin-left: 0;
+					margin-right: 0;
+					font-size: 0.9em;
+				}
 				
 				&:last-child{
 					padding-bottom: 15px;

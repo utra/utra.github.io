@@ -279,6 +279,291 @@ h1, h2, h3, h4, h5, p {
 
 		}
 	}
+
+	.aboutFlexContainer__divider{
+		width: 85%;
+		background-color: #D2DCE5;
+		height: 1px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.aboutRow{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+
+
+		height: 300px;
+
+		.aboutRow__icon{
+			width: 300px;
+			position: relative;			
+		}
+		.aboutRow__description{
+			flex: 1;
+			height: 100%;
+
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			position: relative;
+
+			.aboutRow__title{
+				color: #45526B;
+				text-align: center;
+				font-size: 2.0em;
+				font-weight: 600;
+
+				&:after{
+					display: block;
+					content: '';
+					height: 3px;
+					width: 30px;
+					background-color: #CD959A;
+					margin-top: 5px;
+
+					position: relative;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+			.aboutRow__paragraph{
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				text-align: center;
+				color: #45526B;
+				.aboutRow__heading{
+					font-size: 3.4em;
+					white-space: nowrap;
+				}
+				.aboutRow__subheading{
+					font-size: 2.0em;
+				}
+			}
+
+		}
+
+		&.aboutRow--Prize{
+			.aboutRow__icon{
+				order: 1;
+				img{
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%,-50%);
+					height: 200px;
+					width: 200px;
+				}
+				
+			}
+			.aboutRow__paragraph{
+				order: 0;
+			}
+		}
+
+		&.aboutRow--Keynote{
+			.aboutRow__icon{
+				order: 0;
+				.aboutRow__iconWrapper{
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%,-50%);
+					height: 200px;
+					width: 200px;
+					clip-path: circle(50% at 50% 50%);
+					img{
+						position: relative;
+						height: 300px;
+	    				width: auto;
+						top: 50%;
+						left: 50%;
+						transform: translate(-41%, -34%);
+					}
+				}
+			}
+			.aboutRow__paragraph{
+				order: 1;	
+			}
+		}
+		@media only screen and (max-width: 1049px) {
+			//mobile
+			@media only screen and (max-width: 920px){
+				.aboutRow__description{
+					.aboutRow__paragraph{
+						.aboutRow__heading{
+							font-size: 3.0em;
+						}
+						.aboutRow__subheading{
+							font-size: 1.7em;
+						}
+					}
+				}
+			}
+			@media only screen and (max-width: 790px){
+				height: 250px;
+				.aboutRow__description{
+					.aboutRow__paragraph{
+						.aboutRow__heading{
+							font-size: 2.8em;
+						}
+						.aboutRow__subheading{
+							font-size: 1.5em;
+						}
+					}
+				}
+				.aboutRow__icon{
+					width: 250px;
+				}
+				&.aboutRow--Prize{
+					.aboutRow__icon{
+						img{
+							height: 175px;
+							width: 175px;
+						}
+						
+					}
+				}
+				&.aboutRow--Keynote{
+					.aboutRow__icon{
+						.aboutRow__iconWrapper{
+							height: 175px;
+							width: 175px;
+							img{
+								height: 250px;
+								transform: translate(-41%, -36%);
+							}
+						}
+					}
+				}
+			}
+			@media only screen and (max-width: 710px){
+				height: 225px;
+				.aboutRow__description{
+					.aboutRow__paragraph{
+						.aboutRow__heading{
+							font-size: 2.6em;
+						}
+						.aboutRow__subheading{
+							font-size: 1.3em;
+						}
+					}
+				}
+				.aboutRow__icon{
+					width: 200px;
+				}
+				&.aboutRow--Prize{
+					.aboutRow__icon{
+						img{
+							height: 150px;
+							width: 150px;
+						}
+						
+					}
+				}
+				&.aboutRow--Keynote{
+					.aboutRow__icon{
+						.aboutRow__iconWrapper{
+							height: 150px;
+							width: 150px;
+							img{
+								height: 200px;
+								transform: translate(-41%, -38%);
+							}
+						}
+					}
+				}
+			}
+			@media only screen and (max-width: 600px){
+				height: 200px;
+				.aboutRow__description{
+					.aboutRow__paragraph{
+						.aboutRow__heading{
+							font-size: 2.4em;
+						}
+						.aboutRow__subheading{
+							font-size: 1.1em;
+						}
+					}
+				}
+				.aboutRow__icon{
+					width: 150px;
+				}
+				&.aboutRow--Prize{
+					.aboutRow__icon{
+						img{
+							height: 125px;
+							width: 125px;
+						}
+						
+					}
+				}
+				&.aboutRow--Keynote{
+					.aboutRow__icon{
+						.aboutRow__iconWrapper{
+							height: 125px;
+							width: 125px;
+							img{
+								height: 150px;
+								transform: translate(-41%, -42%);
+							}
+						}
+					}
+				}
+			}
+			@media only screen and (max-width: 550px){
+				height: 330px;
+				flex-direction: column;
+				.aboutRow__description{
+					.aboutRow__paragraph{
+						padding-top: 55px;
+						.aboutRow__heading{
+							font-size: 2.4em;
+						}
+						.aboutRow__subheading{
+							font-size: 1.1em;
+						}
+					}
+				}
+				.aboutRow__icon{
+					width: 150px;
+					height: 150px;
+					position: relative;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+				&.aboutRow--Prize{
+					.aboutRow__icon{
+						img{
+							height: 125px;
+							width: 125px;
+						}
+						
+					}
+				}
+				&.aboutRow--Keynote{
+					.aboutRow__icon{
+						order: 2;
+						.aboutRow__iconWrapper{
+							height: 125px;
+							width: 125px;
+							img{
+								height: 150px;
+								transform: translate(-41%, -42%);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 //location section
@@ -519,12 +804,12 @@ h1, h2, h3, h4, h5, p {
 						white-space: nowrap;
 					}
 					&.timeTable__eventMarkerWrapper--position2{
-						margin-left: calc(50% - 120px);
+						margin-left: calc(50% - 150px);
 					}
 
 					// Position 3
 					&.timeTable__eventMarkerWrapper--position3{
-						margin-left: calc(100% - 220px);
+						margin-left: calc(100% - 360px);
 
 
 
@@ -568,6 +853,9 @@ h1, h2, h3, h4, h5, p {
 					}	
 					&.timeTable__eventDot--middleEndDown{
 						top: 0%;
+					}
+					&#dinnerDot{
+						z-index: 2;
 					}	
 				}
 
@@ -603,6 +891,7 @@ h1, h2, h3, h4, h5, p {
 				.timeTable__eventTimeAndDetails{
 					position: absolute;
 					transform: translateX(25px);
+					white-space: nowrap;
 
 					.timeTable__eventTimeAndDetails--food{
 						color: #F2C94C;

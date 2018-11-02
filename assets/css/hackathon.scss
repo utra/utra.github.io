@@ -381,11 +381,11 @@ h1, h2, h3, h4, h5, p {
 					clip-path: circle(50% at 50% 50%);
 					img{
 						position: relative;
-						height: 300px;
+						height: 220px;
 	    				width: auto;
 						top: 50%;
 						left: 50%;
-						transform: translate(-41%, -34%);
+						transform: translate(-48%, -50%);
 					}
 				}
 			}
@@ -437,8 +437,7 @@ h1, h2, h3, h4, h5, p {
 							height: 175px;
 							width: 175px;
 							img{
-								height: 250px;
-								transform: translate(-41%, -36%);
+								height: 190px;
 							}
 						}
 					}
@@ -474,8 +473,7 @@ h1, h2, h3, h4, h5, p {
 							height: 150px;
 							width: 150px;
 							img{
-								height: 200px;
-								transform: translate(-41%, -38%);
+								height: 165px;
 							}
 						}
 					}
@@ -511,8 +509,7 @@ h1, h2, h3, h4, h5, p {
 							height: 125px;
 							width: 125px;
 							img{
-								height: 150px;
-								transform: translate(-41%, -42%);
+								height: 135px;
 							}
 						}
 					}
@@ -555,8 +552,50 @@ h1, h2, h3, h4, h5, p {
 							height: 125px;
 							width: 125px;
 							img{
-								height: 150px;
-								transform: translate(-41%, -42%);
+								height: 135px;
+							}
+						}
+					}
+				}
+			}
+			@media only screen and (max-width: 360px){
+				height: 330px;
+				flex-direction: column;
+				.aboutRow__description{
+					.aboutRow__paragraph{
+						padding-top: 55px;
+						.aboutRow__heading{
+							font-size: 2.2em;
+						}
+						.aboutRow__subheading{
+							font-size: 1.1em;
+						}
+					}
+				}
+				.aboutRow__icon{
+					width: 150px;
+					height: 150px;
+					position: relative;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+				&.aboutRow--Prize{
+					.aboutRow__icon{
+						img{
+							height: 125px;
+							width: 125px;
+						}
+						
+					}
+				}
+				&.aboutRow--Keynote{
+					.aboutRow__icon{
+						order: 2;
+						.aboutRow__iconWrapper{
+							height: 125px;
+							width: 125px;
+							img{
+								height: 135px;
 							}
 						}
 					}
@@ -722,8 +761,15 @@ h1, h2, h3, h4, h5, p {
 			padding: 20px 30px 20px 30px;	
 			transition: background-color 0.1s linear;
 			width: 35.5px;
-			@media only screen and (max-width: 500px) {
-				padding: 30px 15px 30px 15px;	
+			@media only screen and (max-width: 670px) {
+				padding: 20px 20px 20px 20px;	
+			}
+			@media only screen and (max-width: 550px) {
+				padding: 30px 15px 30px 15px;
+				font-size: 0.95em;
+			}
+			@media only screen and (max-width: 420px) {
+				padding: 35px 10px 35px 10px;
 			}
 		}
 		.timeTable__event{
@@ -740,8 +786,27 @@ h1, h2, h3, h4, h5, p {
 					// All
 					.timeTable__eventTimeAndDetails{
 
-						@media only screen and (max-width: 500px) {
-							transform: translateX(20px);
+						@media only screen and (max-width: 890px){
+							p{
+								font-size: 0.95em;
+							}
+						}
+						@media only screen and (max-width: 785px) {
+							p{
+								font-size: 0.9em;
+							}
+						}
+						@media only screen and (max-width: 710px) {
+							p{
+								font-size: 0.85em;
+							}
+						}
+						@media only screen and (max-width: 550px) {
+							p{
+								font-size: 0.8em;
+							}
+						}
+						@media only screen and (max-width: 370px) {
 							p{
 								font-size: 0.8em;
 							}
@@ -751,12 +816,16 @@ h1, h2, h3, h4, h5, p {
 					&.timeTable__eventMarkerWrapper--position1{
 						.timeTable__eventTimeAndDetails{
 							p{
-								@media only screen and (max-width: 430px) {
-									max-width: 150px;
-								}	
-								@media only screen and (max-width: 350px) {
-									max-width: 100px;
-								}	
+								@media only screen and (max-width: 520px) {
+									font-size: 1em;
+									max-width: 180px;
+									white-space: normal;
+								}
+								@media only screen and (max-width: 370px) {
+									font-size: 0.9em;
+									max-width: 180px;
+									white-space: normal;
+								}
 							}
 						}
 					}
@@ -767,34 +836,53 @@ h1, h2, h3, h4, h5, p {
 
 						.timeTable__eventTimeAndDetails{
 							p{
-								max-width: 200px;
-								@media only screen and (max-width: 430px) {
+								@media only screen and (max-width: 520px) {
+									font-size: 1em;
 									max-width: 150px;
-								}	
-								@media only screen and (max-width: 350px) {
-									max-width: 100px;
-								}	
+									white-space: normal;
+								}
+								@media only screen and (max-width: 370px) {
+									font-size: 0.9em;
+									max-width: 130px;
+									white-space: normal;
+								}
 							}
 						}
-						@media only screen and (max-width: 750px) {
+						@media only screen and (max-width: 890px) {
 							margin-left: 200px;
 						}	
-						@media only screen and (max-width: 660px) {
+						@media only screen and (max-width: 810px) {
+							margin-left: 180px;
+						}	
+						@media only screen and (max-width: 785px) {
 							margin-left: 170px;
 						}	
-						@media only screen and (max-width: 630px) {
+						@media only screen and (max-width: 750px) {
 							margin-left: 140px;
 						}
-						@media only screen and (max-width: 590px) {
+						@media only screen and (max-width: 710px) {
 							margin-left: 120px;
 						}
-						@media only screen and (max-width: 560px) {
+						@media only screen and (max-width: 640px) {
 							margin-left: 80px;
 						}
-						@media only screen and (max-width: 520px) {
+						@media only screen and (max-width: 590px) {
 							margin-left: 50px;
 						}
-					}					
+						@media only screen and (max-width: 370px) {
+							margin-left: 40px;
+						}
+					}	
+
+					.timeTable__eventDot{
+						&#dinnerDot{
+							svg{
+								circle{
+									clip-path: url(#cut-off-top);
+								}
+							}
+						}
+					}				
 				}
 			}
 			@media only screen and (min-width: 1050px) {
@@ -811,8 +899,6 @@ h1, h2, h3, h4, h5, p {
 					&.timeTable__eventMarkerWrapper--position3{
 						margin-left: calc(100% - 360px);
 
-
-
 						.timeTable__eventTimeAndDetails{
 							p{
 								max-width: 200px;
@@ -820,6 +906,8 @@ h1, h2, h3, h4, h5, p {
 						}
 					}
 				}
+
+
 
 				
 			}
@@ -893,6 +981,16 @@ h1, h2, h3, h4, h5, p {
 					transform: translateX(25px);
 					white-space: nowrap;
 
+					@media only screen and (max-width: 890px){
+						transform: translateX(22px);
+					}
+					@media only screen and (max-width: 785px) {
+						transform: translateX(20px);
+					}
+					@media only screen and (max-width: 370px) {
+						transform: translateX(18px);
+					}
+
 					.timeTable__eventTimeAndDetails--food{
 						color: #F2C94C;
 					}
@@ -922,9 +1020,11 @@ h1, h2, h3, h4, h5, p {
 		}
 
 		&:first-child{
-			.timetimeTable__timeHeader{
+			.timeTable__timeHeader{
 				padding-top: 40px;
-
+				@media only screen and (max-width: 420px) {
+					padding-top: 45px;
+				}
 			}
 			.timeTable__event{
 				padding-top: 20px;
@@ -932,7 +1032,7 @@ h1, h2, h3, h4, h5, p {
 				.timeTable__eventMarkerWrapper{
 					height: calc(100% - 20px);
 				}
-				@media only screen and (max-width: 500px) {
+				@media only screen and (max-width: 550px) {
 					padding-top: 10px;
 					height: calc(100% - 10px);
 					.timeTable__eventMarkerWrapper{
@@ -943,8 +1043,11 @@ h1, h2, h3, h4, h5, p {
 		}
 
 		&:last-child{
-			.timetimeTable__timeHeader{
+			.timeTable__timeHeader{
 				padding-bottom: 40px;
+				@media only screen and (max-width: 420px) {
+					padding-top: 45px;
+				}
 			}
 			.timeTable__event{
 				padding-bottom: 20px;
@@ -952,7 +1055,7 @@ h1, h2, h3, h4, h5, p {
 				.timeTable__eventMarkerWrapper{
 					height: calc(100% - 20px);
 				}
-				@media only screen and (max-width: 500px) {
+				@media only screen and (max-width: 550px) {
 					padding-bottom: 10px;
 					height: calc(100% - 10px);
 					.timeTable__eventMarkerWrapper{

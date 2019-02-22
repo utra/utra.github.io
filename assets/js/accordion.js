@@ -1,6 +1,5 @@
 $(document).ready(function(){
 	$(".accordion__title").click(function(){
-		console.log("hi");
 
 		if($(this).siblings(".accordion__contentWrapper").css("max-height") != "0px"){
 			// Close

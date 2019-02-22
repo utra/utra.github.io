@@ -138,6 +138,7 @@
 	.infoBlock__execSectionTitle{
 		font-size: 1.6em;
     	text-align: center;
+    	padding-bottom: 10px;
 	}
 
 	.infoBlock__execRow{
@@ -146,13 +147,16 @@
 		flex-direction: row;
 		justify-content: center;
 
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 	.infoBlock__execImageWrapper{
 		position: relative;
 		width: 20%;
 		padding-bottom: 24.5%;
+		margin-left: 10px;
+		margin-right: 10px;
+
 	}
 	.infoBlock__execImage{
 		position: absolute;
@@ -163,6 +167,8 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+
+		border-radius: 5px;
 
 		&:hover{
 			.infoBlock__execFader{
@@ -230,37 +236,70 @@
 			}
 		}
 
-		&.infoBlock__execImage--President{
-			background-image: url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/DSC_3942.jpg");
+		&.infoBlock__execImage--Filler{
+			background-image: url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/Filler.jpg");
+			background-position: center;
+   			background-size: auto 100%;
 		}
-		&.infoBlock__execImage--VP_Ops{
-			background-image : url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/DSC_3865.jpg");
+		&.infoBlock__execImage--Khaled{
+			background-image: url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/Khaled.jpg");
 		}
-		&.infoBlock__execImage--Director_website{
-			background-image : url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/DSC_3875.jpg");
+		&.infoBlock__execImage--Larry{
+			background-image: url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/Larry.jpg");
 		}
-		&.infoBlock__execImage--Director_graphics1{
-			background-image : url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/DSC_3889.jpg");
+		&.infoBlock__execImage--Kamran{
+			background-image: url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/Kamran.jpg");
 		}
-
-		&.infoBlock__execImage--whodis1{
-			background-image : url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/DSC_3807.jpg");
+		&.infoBlock__execImage--Johnny{
+			background-image: url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/Johnny.jpg");
 		}
-		&.infoBlock__execImage--whodis2{
-			background-image : url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/DSC_3822.jpg");
+		&.infoBlock__execImage--Zoe{
+			background-image: url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/Zoe.jpg");
 		}
-		&.infoBlock__execImage--whodis3{
-			background-image : url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/DSC_3834.jpg");
+		&.infoBlock__execImage--Paul{
+			background-image: url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/Paul.jpg");
 		}
-		&.infoBlock__execImage--whodis4{
-			background-image : url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/DSC_3844.jpg");
+		&.infoBlock__execImage--Jason{
+			background-image: url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/Jason.jpg");
 		}
-		&.infoBlock__execImage--whodis5{
-			background-image : url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/DSC_3850.jpg");
+		&.infoBlock__execImage--Helen{
+			background-image: url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/Helen.jpg");
+			background-position: center;
+   			background-size: auto 100%;
 		}
-		&.infoBlock__execImage--whodis6{
-			background-image : url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/DSC_3851.jpg");
-		}	
+		&.infoBlock__execImage--Raman{
+			background-image: url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/Raman.jpg");
+			background-position: center;
+   			background-size: auto 125%;
+		}
+		&.infoBlock__execImage--Katie{
+			background-image: url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/Katie.jpg");
+			background-position: 50% 85%;
+   			background-size: auto 125%;
+		}
+		&.infoBlock__execImage--MichaelR{
+			background-image: url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/MichaelR.png");
+		}
+		&.infoBlock__execImage--Chloe{
+			background-image: url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/Chloe.jpg");
+		    background-position: 40% 70%;
+   			background-size: auto 150%;
+		}
+		&.infoBlock__execImage--Jennifer{
+			background-image: url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/Jennifer.jpg");
+		    background-position: 40% 50%;
+   			background-size: auto 125%;
+		}
+		&.infoBlock__execImage--Edward{
+			background-image: url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/Edward.jpg");
+		    background-position: 70% 50%;
+    		background-size: auto 150%;
+		}
+		&.infoBlock__execImage--Kailin{
+			background-image: url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/Kailin.jpg");
+		    background-position: 60% 50%;
+    		background-size: auto 150%;
+		}
 	}
 }
 

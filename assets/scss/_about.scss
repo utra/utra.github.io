@@ -280,6 +280,11 @@
 			background-position: 70% 0%;
     		background-size: auto 215%;
 		}
+		&.infoBlock__execImage--Yuxuan{
+			background-image: url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/Yuxuan.jpg");
+			background-position: 50% 50%;
+    		background-size: auto 135%;
+		}
 	}
 
 	.infoBlock__execFader{
@@ -398,7 +403,7 @@
 
 .map{
 	width: 100%;
-	height: 40vw;
+	height: 70vh;
 }
 
 #googleMaps{

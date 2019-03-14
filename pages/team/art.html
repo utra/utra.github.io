@@ -15,7 +15,7 @@ permalink: /teams/ART/index.html
 	<div class="shortBanner shortBanner--noPhoto">
 		<h1 class="shortBanner__titleText">Autonomous Rover Team</h1>
 		<div class="shortBanner__content">
-			<p>15:00 - 16:00 | Saturday | MyHal Centre </p>
+			<p>13:00 - 15:00 | Saturday | MyHal Centre </p>
 			<div class="shortBanner__socialContainer">
 				<div class="socialIconCircle">
 					<a href="https://www.facebook.com/groups/170063056765640/" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -28,7 +28,7 @@ permalink: /teams/ART/index.html
 	</div>
 
 	<section class="section__pageDescription section--backgroundAlternate">
-		<p>The Autonomous Rover Team (ART) designs and builds the components for several robots. Components are designed to be modular and chassis-independent. Therefore we will build a chassis specific to a competition, install or pre-built components to make it autonomous, then tweak the code to competition-specific details. Sounds simple, right? Now we just need you to make those ‘pre-built’ components!</p>
+		<p>The Autonomous Rover Team (ART) designs and builds the components for several robots. Components are designed to be modular and chassis-independent. Therefore we will build a chassis specific to a competition, install or pre-built components to make it autonomous, then tweak the code to competition-specific details. Our rover is capable of autonomously navigating around an obstacle course using LIDAR and a stereo camera as inputs. Sounds simple, right? Now we just need you to make those ‘pre-built’ components!</p>
 		
 	</section>
 
@@ -51,7 +51,7 @@ permalink: /teams/ART/index.html
 					<div class="robotMarker__marker robotMarker__marker--hydraulicShocks">
 						<div class="robotMarker__markerCircle"></div>
 						<svg class="robotMarker__markerLine">
-						    <line x1="65.4%" y1="62.1%" x2="76%" y2="75%" />
+						    <line x1="65.4%" y1="62.1%" x2="72%" y2="75%" />
 						</svg>
 						<div class="robotMarker__markerDescription">
 							<p>8-Spring Hydraulic Shocks</p>
@@ -60,7 +60,7 @@ permalink: /teams/ART/index.html
 					<div class="robotMarker__marker robotMarker__marker--gps">
 						<div class="robotMarker__markerCircle"></div>
 						<svg class="robotMarker__markerLine">
-						    <line x1="57.4%" y1="51.1%" x2="72%" y2="39%" />
+						    <line x1="57.4%" y1="51.1%" x2="65%" y2="39%" />
 						</svg>
 						<div class="robotMarker__markerDescription">
 							<p>Global Positioning System (GPS)</p>
@@ -78,10 +78,10 @@ permalink: /teams/ART/index.html
 					<div class="robotMarker__marker robotMarker__marker--emergencyStops">
 						<div class="robotMarker__markerCircle"></div>
 						<svg class="robotMarker__markerLine">
-						    <line x1="37.4%" y1="75.1%" x2="30%" y2="85%" />
+						    <line x1="37.4%" y1="75.1%" x2="35%" y2="85%" />
 						</svg>
 						<div class="robotMarker__markerDescription robotMarker__markerDescription--alignRight">
-							<p>Manual and Wireless Emergency stops</p>
+							<p>Manual & Wireless Emergency stops</p>
 						</div>
 					</div>
 				</div>
@@ -89,15 +89,27 @@ permalink: /teams/ART/index.html
 		</div>
 
 		<h1 class="section__Title section__Title--small">The ART team</h1>
-		<h2 class="section_subTitle">Mechanical</h2>
-		<p>To date, UTRA has been modifying off-the-shelf vehicles like electric wheelchairs and RC trucks. We need mechanical students with intermediate knowledge to help us make the required modifications (like computer mounts, sensor mounts, etc.) We would love to build a chassis from scratch, but we’re waiting some highly motivated mechanical students to take the lead!</p>
-		<h2 class="section_subTitle">Electrical</h2>
+		<h2 class="section_subTitle">Mechanical Sub-team</h2>
+		<p>Every rover needs a base. The mechanical sub-team strives to provide the strong foundation for everything else. From 3D-modeling and designing to hands on metal working and frame building, we do everything! If you are a robot enthusiast and you would like to help out, then this team is where you want to be.</p>
+		<h2 class="section_subTitle">Electrical Sub-team</h2>
 		<p>ART is a great place to learn how to build some simple circuits and gain some hands-on experience in wiring, soldering, etc. We need circuits that range from PCBs for our microelectronics, to high voltage (48V-DC), high current (100A) circuits. Learn and build protection circuitry, motor controllers, filters, and much more!</p>
-		<h2 class="section_subTitle">Software</h2>
-		<p>For high-level artificial intelligence (AI), ART uses off-the-shelf software packages to keep code modular and integration easy. We program in C++ and C#, but are not opposed to Java and Python. Learn how to use and make sense of sensor data to accomplish a task. Test your algorithms in simulation, before putting them on the real robot. We do our low-level (motor control, analog sensor interface) control on Atmel AVR microcontrollers. We program exclusively in C – we are opposed to assembly. Learn the basics of how to move a motor, read a sensor, communicate with a computer, and much more!</p>
-		<h2 class="section_subTitle">Sensors</h2>
-		<p>A robot is only as good as its sensors. ART buys a few high-end sensors and shares them across robot platforms. A large portion of our budget goes to these sensors, so we need people that know them inside and out. What they’re capable of, how to communicate with them, how to protect them, and which new sensors are required!</p>
+		<h2 class="section_subTitle">Embedded Sub-team</h2>
+		<p>We're the middleware between the software and the actual robot. We write the code that operates the
+		motor and microcontrollers. We use the ROS platform to communicate between these systems, and work mostly with C/C++. Learn the fundamentals of control theory, PID controllers, and dynamical systems!
+		</p>
+		<h2 class="section_subTitle">CV and SLAM Sub-team</h2>
+		<p>This sub-team forms the eyes of the rover. We use OpenCV techniques and Machine Learning for lane detection and identifying obstacles. Simultaneous Localization and Mapping (SLAM) works on creating a map of the world around the rover using the LIDAR mounted on it. This map combined with the information obtained from CV is used to plan a path for the rover.</p>
+		<!-- <h2 class="section_subTitle">Sensors</h2> -->
+		<!-- <p>A robot is only as good as its sensors. ART buys a few high-end sensors and shares them across robot platforms. A large portion of our budget goes to these sensors, so we need people that know them inside and out. What they’re capable of, how to communicate with them, how to protect them, and which new sensors are required!</p> -->
 		<br>
+
+		<h1 class="section__Title section__Title--small">Competitions List</h1>
+		<ul class="section_unorderedList">
+			<li>IGVC – Intelligent Ground Vehicle Competition | UPCOMING</li>
+			<li>RoboGames – Robomagellan</li>
+			<li>Unmanned Ground Vehicle Competition</li>
+			<li>Robot Racing</li>
+		</ul>
 	</section>
 
 	<footer id="mainFooter">{% include footer.html %}</footer>

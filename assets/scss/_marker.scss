@@ -6,6 +6,12 @@
 
 	width: calc(100% - 60px);
 
+	@media only screen and (max-width: 1049px) {
+		padding-left: 20px;
+		padding-right: 20px;
+		width: calc(100% - 40px);
+	}
+
 	.robotMarker{
 		position: relative;
 		width: 100%;
@@ -16,6 +22,36 @@
 			transform: translate(-50%);
 			width: 65%;
 
+			@media only screen and (max-width: 1450px) {
+				width: 70%;
+			}
+			@media only screen and (max-width: 1300px) {
+				width: 75%;
+			}
+			@media only screen and (max-width: 1200px) {
+				width: 80%;
+			}
+			@media only screen and (max-width: 1100px) {
+				width: 85%;
+			}
+			@media only screen and (max-width: 1049px) {
+				width: 90%;
+				.robotMarker__marker{
+					display: none;
+				}
+				.robotMarker__imageFader{
+					display: none;
+				}
+			}
+			@media only screen and (max-width: 450px) {
+				width: 95%;
+				.robotMarker__marker{
+					display: none;
+				}
+				.robotMarker__imageFader{
+					display: none;
+				}
+			}
 			.robotMarker__marker{
 				pointer-events: none;
 				z-index: 5;
@@ -150,7 +186,7 @@
 
 						.robotMarker__markerDescription{
 							top: 77%;
-							left: 76%;
+							left: 72%;
 						}
 					}
 					&.robotMarker__marker--gps{
@@ -161,7 +197,7 @@
 
 						.robotMarker__markerDescription{
 							top: 37%;
-							left: 72%;
+							left: 65%;
 						}
 					}
 					&.robotMarker__marker--lrf{
@@ -183,7 +219,7 @@
 
 						.robotMarker__markerDescription{
 							top: 87%;
-							left: 30%;
+							left: 37%;
 						}
 					}
 				}

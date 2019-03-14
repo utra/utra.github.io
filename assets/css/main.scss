@@ -16,6 +16,7 @@ $baseurl: "{{ site.baseurl }}";
 @import "events";
 @import "sponsors";
 @import "codeOfConduct";
+@import "gallery";
 
 html, body{
 	margin: 0;

@@ -175,6 +175,7 @@
 	justify-content: center;
 	flex-direction: column;
 	.shortBanner__titleText{
+		text-align: center;
 		color: #45526B;
 		font-size: 3em;
 	}	
@@ -221,6 +222,9 @@
 					}
 
 					&.fa-envelope{
+						transform: translate(calc(-50% + 1px),calc(-50% - 0px)); //1 pixel looks more centered
+					}
+					&.fa-heart{
 						transform: translate(calc(-50% + 1px),calc(-50% - 0px)); //1 pixel looks more centered
 					}
 				}

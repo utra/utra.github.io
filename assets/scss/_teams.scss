@@ -31,67 +31,48 @@
 		transition: background-size 0.2s linear;
 		background-position: 50% 50%;
 		background-repeat: no-repeat;
+		background-size: auto 100%;
 
 		a{
 			text-decoration: none;
 		}
 
-		&:hover{
-			.teamContainer__details{
-				opacity: 1;
-			}
-			.teamContainer__fader{
-				opacity: 0.4;
+		@media only screen and (min-width: 1050px) {
+			&:hover{
+				background-size: auto 110%;
+				.teamContainer__details{
+					opacity: 1;
+				}
+				.teamContainer__fader{
+					opacity: 0.4;
+				}
 			}
 		}
 
 		&.teamContainer--SUMO{
 			background-image: url($baseurl + '/assets/img/Team Photos/sumo/IMG_6938.jpg');
-			background-size: 100% 100%;
-
-			&:hover{
-				background-size: 110% 110%;
-			}
 		}
 		&.teamContainer--ART{
 			background-image: url($baseurl + '/assets/img/Team Photos/ART/Art robot.jpg');
-			background-size: 100% 100%;
-			
-			&:hover{
-				background-size: 110% 110%;
+			@media only screen and (min-width: 1050px) {
+			   	background-size: auto 110%;
+				
+				&:hover{
+					background-size: auto 120%;
+				}
 			}
 		}
 		&.teamContainer--3DP{
 			background-image: url($baseurl + '/assets/img/Team Photos/3dp/IMG_1012.JPG');
-			background-size: 100% 100%;
-			
-			&:hover{
-				background-size: 110% 110%;
-			}
 		}
 		&.teamContainer--roboSoccer{
 			background-image: url($baseurl + '/assets/img/Team Photos/robosoccer/DSC01784.jpg');
-			background-size: 100% 100%;
-			
-			&:hover{
-				background-size: 110% 110%;
-			}
 		}
 		&.teamContainer--heavyCombat{
 			background-image: url($baseurl + '/assets/img/Team Photos/heavy combat/combat.jpg');
-			background-size: 100% 100%;
-			
-			&:hover{
-				background-size: 110% 110%;
-			}
 		}
 		&.teamContainer--lightCombat{
 			background-image: url($baseurl + '/assets/img/Team Photos/sumo/IMG_6938.jpg');
-			background-size: 100% 100%;
-			
-			&:hover{
-				background-size: 110% 110%;
-			}
 		}
 
 		.teamContainer__fader{
@@ -130,12 +111,107 @@
 					cursor: pointer;
 
 					&:hover{
-						color: gray;
+						color: lightgray;
 					}
 				}
+			}
+		}
+
+		@media only screen and (max-width: 1049px) {
+			transition: none;
+			background-size: auto 100%;
+
+			.teamContainer__details{
+				opacity: 1;
+			}
+			.teamContainer__fader{
+				opacity: 0.4;
+			}
+			.teamContainer__details .teamContainer__socialIconsContainer{
+				display: none;
 			}
 		}
 	}
 }
 
 
+// Combat Page + 3dp
+.PhotoSpec__Robot{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+
+	.PhotoSpec__photo{
+		width: 40%;
+		height: 400px;
+		margin-left: 5%;
+		margin-right: 5%;
+		position: relative;
+		margin-top: auto;
+		margin-bottom: auto;
+
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+
+		&.PhotoSpec__photo--YellowMouse{
+			background-image: url($baseurl + "/assets/img/Combat/yellowmouse.jpg");
+			background-position: 50% 50%;
+		}
+		&.PhotoSpec__photo--TSAInspected{
+			background-image: url($baseurl + "/assets/img/Combat/TSA_Inspected.jpg");
+			background-position: 50% 50%;
+		}
+		&.PhotoSpec__photo--Kludge{
+			background-image: url($baseurl + "/assets/img/Combat/Kludge.jpg");
+			background-position: 50% 50%;
+		}
+		&.PhotoSpec__photo--FlashForgeCreatorPro{
+			background-image: url($baseurl + "/assets/img/3DP/Undated FolgerTech FT-5 Printer Build/IMG_1012.JPG");
+			background-position: 50% 50%;
+		}
+		&.PhotoSpec__photo--FolgerTech{
+			background-image: url($baseurl + "/assets/img/3DP/Undated FolgerTech FT-5 Printer Build/IMG_1051.JPG");
+			background-position: 50% 50%;
+		}
+	}
+	.PhotoSpec__specs{
+		width: 50%;
+		.PhotoSpec__name{
+			font-size: 1.4em;
+			font-weight: 600;
+			text-align: center;
+			color: #45526B;
+		}
+		.PhotoSpec__heading{
+			font-weight: 600;
+			color: #45526B;
+		}
+		.PhotoSpec__item{
+			color: #45526B;
+		}
+	}
+
+	&:nth-child(odd){
+		.PhotoSpec__photo{
+			order: 0;
+			margin-right: calc( 5% + 20px)
+		}
+		.PhotoSpec__specs{
+			order: 1;
+			margin-left: 20px;
+		}
+	}
+	&:nth-child(even){
+		.PhotoSpec__photo{
+			order: 1;
+			margin-left: calc( 5% + 20px)
+		}
+		.PhotoSpec__specs{
+			order: 0;
+			margin-right: 20px;
+		}
+	}
+}

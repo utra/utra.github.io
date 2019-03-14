@@ -33,15 +33,77 @@ permalink: /teams/3dp/index.html
 
 	<section class="section__teamBody section--backgroundAlternate">
 		<h1 class="section__Title section__Title--small">Our Printers</h1>
-		<p>In the past year, 3DP has built two printers to add to their manufacturing arsenal and provided support in designing quadcopters for their members. Currently, our team has two FolgerTech Ft-5s and a FlashForge Creator Pro. The Specs are outlined below:</p>
-		
 
-		TO DO:
-		add specs
-		add photos
+		<div class="section__PhotoSpec">
+			<div class="PhotoSpec__Robot">
+				<div class="PhotoSpec__photo PhotoSpec__photo--FlashForgeCreatorPro"></div>
+				<div class="PhotoSpec__specs">
+					<div class="PhotoSpec__name">FlashForge Creator Pro</div>
+
+					<div class="PhotoSpec__heading">Print Volume</div>
+					<div class="PhotoSpec__item">227mm x 148mm x 150mm</div>
+
+					<div class="PhotoSpec__heading">Layer Resolution</div>
+					<div class="PhotoSpec__item">100-500 microns</div>
+
+					<div class="PhotoSpec__heading">Dual Extruder</div>
+					<div class="PhotoSpec__item">Yes</div>
+
+					<div class="PhotoSpec__heading">Materials</div>
+					<div class="PhotoSpec__item">PLA, ABS, TPU</div>
+				</div>
+			</div>
+			<div class="PhotoSpec__Robot">
+				<div class="PhotoSpec__photo PhotoSpec__photo--FolgerTech"></div>
+				<div class="PhotoSpec__specs">
+					<div class="PhotoSpec__name">FolgerTech Ft-5</div>
+
+					<div class="PhotoSpec__heading">Print Volume</div>
+					<div class="PhotoSpec__item">300mm x 300mm x 400mm</div>
+
+					<div class="PhotoSpec__heading">Layer Resolution</div>
+					<div class="PhotoSpec__item">50 microns</div>
+
+					<div class="PhotoSpec__heading">Dual Extruder</div>
+					<div class="PhotoSpec__item">Available as a modification</div>
+
+					<div class="PhotoSpec__heading">Materials</div>
+					<div class="PhotoSpec__item">PLA</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<p>In the past year, 3DP has built two printers to add to their manufacturing arsenal and provided support in designing quadcopters for their members. Currently, our team has two FolgerTech Ft-5s and a FlashForge Creator Pro.</p>
+
+		<br>
+		<h1 class="section__Title section__Title--small">Our Prints!</h1>
+		<div class="galleryGrid">
+			<div class="galleryGrid__arrow galleryGrid__arrow--deactivated">
+				<i id="galleryLeft" class="fa fa-angle-left"></i>
+			</div>
+			<div class="galleryGrid__photoWrapper">
+				<div id="gallery" class="galleryGrid__pages">
+					<div class="galleryGrid__page">
+						<div class="galleryGrid__pagePhotoFlexWrapper">
+							<div class="galleryGrid__photo"><img src="{{ site.baseurl }}/assets/img/3DP/Undated 3D Prints/IMG_1014.JPG"></div>
+							<div class="galleryGrid__photo"><img src="{{ site.baseurl }}/assets/img/3DP/Undated 3D Prints/IMG_1034.JPG"></div>
+							<div class="galleryGrid__photo"><img src="{{ site.baseurl }}/assets/img/3DP/Undated 3D Prints/IMG_1057.JPG"></div>
+							<div class="galleryGrid__photo"><img src="{{ site.baseurl }}/assets/img/3DP/Undated 3D Prints/IMG_1055.JPG"></div>
+							<div class="galleryGrid__photo"><img src="{{ site.baseurl }}/assets/img/3DP/Undated 3D Prints/IMG_1065.JPG"></div>
+							<div class="galleryGrid__photo"><img src="{{ site.baseurl }}/assets/img/3DP/Undated 3D Prints/IMG_1062.JPG"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="galleryGrid__arrow galleryGrid__arrow--deactivated">
+				<i id="galleryRight" class="fa fa-angle-right"></i>
+			</div>
+		</div>
 	</section>
 
 	<footer id="mainFooter">{% include footer.html %}</footer>
 
+	<script type="text/javascript" src="{{ site.baseurl}}/assets/js/gallery.js"></script>
 </body>
 </html>

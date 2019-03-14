@@ -1,10 +1,30 @@
 $(document).ready(function(){
-	var increment = 930;
-
-	var maxLeft = (( parseInt($("#gallery").children().length) - 1) * 930) * -1;
-
 
 	function moveLeft(){
+		var increment;
+		var sizeOfOnePic;
+		if(window.innerWidth < 450){
+			sizeOfOnePic = 245;
+			increment = 245; //1 photo per page
+		}
+		else if(window.innerWidth < 825){
+			sizeOfOnePic = 310;
+			increment = 310; //1 photo per page
+		}
+		else if(window.innerWidth < 1350){
+			sizeOfOnePic = 310;
+			increment = 620; //2 photo per page
+		}
+		else{
+			sizeOfOnePic = 310;
+			increment = 930; //3 photo per page
+		}
+		var totalPics = $("#gallery").children().children().children().length
+		var picsPerPage = increment/sizeOfOnePic
+		var maxPages = Math.floor((totalPics/2) / picsPerPage)
+		var maxLeft = (maxPages-1) * increment * -1
+		// var maxLeft = (( parseInt($("#gallery").children().length) * 3-(increment/sizeOfOnePic)) * sizeOfOnePic) * -1;
+
 		$("#galleryLeft").off("click");
 		var left = parseFloat($("#gallery").css("left"));
 		if(left < 0){
@@ -32,6 +52,30 @@ $(document).ready(function(){
 	}
 
 	function moveRight(){
+		var increment;
+		var sizeOfOnePic;
+		if(window.innerWidth < 450){
+			sizeOfOnePic = 245;
+			increment = 245;
+		}
+		else if(window.innerWidth < 825){
+			sizeOfOnePic = 310;
+			increment = 310;
+		}
+		else if(window.innerWidth < 1350){
+			sizeOfOnePic = 310;
+			increment = 620;
+		}
+		else{
+			sizeOfOnePic = 310;
+			increment = 930;
+		}
+		var totalPics = $("#gallery").children().children().children().length
+		var picsPerPage = increment/sizeOfOnePic
+		var maxPages = Math.floor((totalPics/2) / picsPerPage)
+		var maxLeft = (maxPages-1) * increment * -1
+		// var maxLeft = (( parseInt($("#gallery").children().length) * 3-(increment/sizeOfOnePic)) * sizeOfOnePic) * -1;
+
 		$("#galleryRight").off("click");
 		var left = parseFloat($("#gallery").css("left"));
 		if(left > maxLeft){
@@ -59,7 +103,57 @@ $(document).ready(function(){
 		}
 	}
 
+	function setup(){
+		// initialize the clicker opacity
+		var sizeOfOnePic;
+		var increment;
+		if(window.innerWidth < 450){
+			sizeOfOnePic = 245;
+			increment = 245;
+		}
+		else if(window.innerWidth < 825){
+			sizeOfOnePic = 310;
+			increment = 310;
+		}
+		else if(window.innerWidth < 1350){
+			sizeOfOnePic = 310;
+			increment = 620;
+		}
+		else{
+			sizeOfOnePic = 310;
+			increment = 930;
+		}
+		var totalPics = $("#gallery").children().children().children().length
+		var picsPerPage = increment/sizeOfOnePic
+		var maxPages = Math.floor((totalPics/2) / picsPerPage)
+		var maxLeft = (maxPages-1) * increment *-1
+		// var maxLeft = (( parseInt($("#gallery").children().length) * 3-(increment/sizeOfOnePic)) * sizeOfOnePic) * -1;
+		var left = parseFloat($("#gallery").css("left"));
+		
+		if(left >= 0){
+			$("#galleryLeft").parent().addClass("galleryGrid__arrow--deactivated");
+		}
+		else{
+			$("#galleryLeft").parent().removeClass("galleryGrid__arrow--deactivated");
+		}
+
+		if(left <= maxLeft){
+			$("#galleryRight").parent().addClass("galleryGrid__arrow--deactivated");
+		}
+		else{
+			$("#galleryRight").parent().removeClass("galleryGrid__arrow--deactivated");
+		}
+	}
+
 	$("#galleryLeft").on("click",moveLeft);
 	$("#galleryRight").on("click",moveRight);
+
+	$(window).on("resize", function(){
+		$("#gallery").css("left","0px");
+		setup();
+	})
+
+	setup();
+	
 
 });

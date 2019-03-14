@@ -33,6 +33,10 @@ section{
 		display: flex;
 		flex-direction: column;
 
+		@media only screen and (max-width: 1049px) {
+			width: 95%;
+		}
+
 		p{
 			padding-top: 20px;
 			text-indent: 30px;
@@ -86,108 +90,21 @@ section{
 
 	.section_unorderedList{
 		padding-top: 5px;
-		padding-left: 95px;						//Page padding + indent
+		padding-left: 65px;						//Page padding
 		padding-right: 50px;					//Page padding
 
 		li{
 			color: #45526B;
 		}
+		
+		&.section_unorderedList--indent{
+			padding-left: 95px;						//Page padding + indent
+		}
 	}
 
-
-
-	.galleryGrid{
-	
+	.section__PhotoSpec{
 		position: relative;
-		left: 50%;
-		transform: translateX(-50%);
-
 		width: 100%;
-		height: fit-content;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-
-		.galleryGrid__photoWrapper{
-
-
-			position: relative;
-			overflow: hidden;
-			width: 930px;
-
-			
-
-			.galleryGrid__pages{
-				position: relative;
-				left: 0;
-				display: flex;
-				transition: left 0.5s ease-in-out;
-
-				.galleryGrid__page{
-					display: inline-block;
-					width: 930px;
-					position: relative;
-
-					.galleryGrid__pagePhotoFlexWrapper{
-						display: flex;
-						flex-direction: row;
-						flex-wrap: wrap;
-						justify-content: center;
-						width: 930px;
-						// flex: 0 0 0;
-						
-						.galleryGrid__photo{
-							height: 200px;
-							width: 300px;
-							margin-left: 5px;
-							margin-right: 5px;
-							margin-top: 10px;
-							margin-bottom: 10px;
-							overflow: hidden;
-							position: relative;
-							img{
-								position: absolute;
-								top: 50%;
-								left: 50%;
-								transform: translate(-50%,-50%);
-								width: 100%;
-								height: auto;
-							}
-						}
-					}
-				}
-			}
-		}
-
-		.galleryGrid__arrow{
-			position: relative;
-			width: 30px;
-
-			margin-left: 10px;
-			margin-right: 10px;
-
-			&.galleryGrid__arrow--deactivated{
-				i{
-					opacity: 0.5;
-				}
-			}
-			
-			i{
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%,-50%);
-				color: #45526B;
-				font-size: 4em;
-				opacity: 1;
-				transition: opacity 0.2s linear;
-				cursor: pointer;
-
-				&:hover{
-					opacity: 0.5;
-				}
-			}
-		}
-
+		padding-top: 10px;
 	}
 }

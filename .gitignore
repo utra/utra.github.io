@@ -47,8 +47,19 @@ assets/img/Utra Exec Photoshoot 171120/*
 # team images
 !assets/img/Team Photos/
 !assets/img/Team Photos/**
-!/assets/img/Team Photos/robosoccer/DSC01784.jpg
 
 # Sponsors
 !assets/img/Sponsors/
 !assets/img/Sponsors/**
+
+# 3dp photos
+!assets/img/3DP/
+!assets/img/3DP/**
+
+# robosoccer photos
+!assets/img/RoboSoccer/
+!assets/img/RoboSoccer/**
+
+# pacbot photos
+!assets/img/Pacbot/
+!assets/img/Pacbot/**

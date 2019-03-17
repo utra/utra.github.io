@@ -17,6 +17,66 @@
 	.header .logo .logo__desktop{
 		display: none;
 	}
+
+	.header{
+		// Hover Modifiers
+		&.header--aboutActive{
+			.mainMenu{
+				.mainMenu__menuItem{
+					&.mainMenu__menuItem--about{
+						a{
+							color: white;
+							transition: none;
+						}
+					}
+					
+				}
+			}
+		}
+
+		&.header--teamsActive{
+			.mainMenu{
+				.mainMenu__menuItem{
+					&.mainMenu__menuItem--teams{
+						a{
+							color: white;
+							transition: none;
+						}
+					}
+					
+				}
+			}
+		}
+
+		&.header--eventsActive{
+			.mainMenu{
+				.mainMenu__menuItem{
+					&.mainMenu__menuItem--events{
+						a{
+							color: white;
+							transition: none;
+						}
+					}
+					
+				}
+			}
+		}
+
+		&.header--sponsorsActive{
+			.mainMenu{
+				.mainMenu__menuItem{
+					&.mainMenu__menuItem--sponsors{
+						a{
+							color: white;
+							transition: none;
+						}
+					}
+					
+				}
+			}
+		}
+	}
+
 	.mainMenu{
 		//Elements
 		.mainMenu__mobileNav{
@@ -74,7 +134,7 @@
 				display: block;
 				height: 2px;
 
-				transition: opacity 0.2s, top 0.2s;
+				// transition: opacity 0.2s, top 0.2s;
 			}
 
 			a{
@@ -95,18 +155,18 @@
 			}
 
 			&:hover{
-				&:after{
-					content: '';
-					position: relative;
-					left: 50%;
-					top: 0px;
-					transform:translateX(-50%);
-					width: 70%;
-					background-color: white;
-					opacity: 1;
-					display: block;
-					height: 2px;
-				}
+				// &:after{
+				// 	content: '';
+				// 	position: relative;
+				// 	left: 50%;
+				// 	top: 0px;
+				// 	transform:translateX(-50%);
+				// 	width: 70%;
+				// 	background-color: white;
+				// 	opacity: 1;
+				// 	display: block;
+				// 	height: 2px;
+				// }
 			}
 		}
 		&.mainMenu--backgroundVisible{

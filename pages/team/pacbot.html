@@ -13,7 +13,7 @@ permalink: /teams/pacbot/index.html
 	<header class="header header--noScroll">{% include header.html %}</header>
 
 	<div class="shortBanner shortBanner--noPhoto">
-		<h1 class="shortBanner__titleText">Pacbot</h1>
+		<h1 class="shortBanner__titleText">PacBot</h1>
 		<div class="shortBanner__content">
 			<p>18:00 - 20:00 | Tuesdays | MyHal Centre </p>
 
@@ -21,42 +21,101 @@ permalink: /teams/pacbot/index.html
 	</div>
 
 	<section class="section__pageDescription section--backgroundAlternate">
-		<p>Interested in the robotics? Not sure where to start off? Well, the Sumo team might just be the team for you!! Working on Sumo bots allowed our members to gain hands-on experience and exposed them to the electrical, mechanical and software aspects of engineering design. Students make their own teams of 3 and are provided with a circuit design, sensors, electrical components and example code.</p>
+		<p>Pacbot is a competition designed and hosted by the Harvard Undergraduate Robotics Club. The competition mimics the popular arcade game of "Pac-man". Participating team’s robot, which is called the PacBot, will assume the role of Pac-man, navigate itself through the arena, eat dots, and avoid or attack ghosts to collect points.</p>
 		
 	</section>
 
 	<section class="section__teamBody section--backgroundAlternate">
-		<h1 class="section__Title section__Title--small">Introduction</h1>
-		<p>Pacbot is a competition designed and hosted by the Harvard Undergraduate Robotics Club. The competition mimics the popular arcade game of "Pac-man". Participating team’s robot, which is called the PacBot, will assume the role of Pac-man, navigate itself through the arena, eat dots, and avoid or attack ghosts to collect points</p>
+		<h1 class="section__Title section__Title--small">THE 1T9 PACBOT</h1>
+		<div class="section__robotMarker">
+			<div class="robotMarker robotMarker--Pacbot">
+				<div class="robotMarker__imageWrapper">
+					<div class="robotMarker__imageFader"></div>
+					<img src="{{ site.baseurl }}/assets\img\Pacbot\pacbot-side.jpg">
+					<div class="robotMarker__marker robotMarker__marker--ultrasonic">
+						<div class="robotMarker__markerCircle"></div>
+						<svg class="robotMarker__markerLine">
+						    <line x1="72.4%" y1="71.1%" x2="79%" y2="91%" />
+						</svg>
+						<div class="robotMarker__markerDescription">
+							<p>4 Ultrasonic sensors</p>
+						</div>
+					</div>
+					<div class="robotMarker__marker robotMarker__marker--omniWheels">
+						<div class="robotMarker__markerCircle"></div>
+						<svg class="robotMarker__markerLine">
+						    <line x1="43.4%" y1="85.1%" x2="16%" y2="77%" />
+						</svg>
+						<div class="robotMarker__markerDescription robotMarker__markerDescription--alignRight">
+							<p>Omni Wheels</p>
+						</div>
+					</div>
+					<!-- <div class="robotMarker__marker robotMarker__marker--raspberrypi">
+						<div class="robotMarker__markerCircle"></div>
+						<svg class="robotMarker__markerLine">
+						    <line x1="30.9%" y1="50.7%" x2="19%" y2="37%" />
+						</svg>
+						<div class="robotMarker__markerDescription robotMarker__markerDescription--alignRight">
+							<p>Raspberry Pi for path finding</p>
+						</div>
+					</div> -->
+					<div class="robotMarker__marker robotMarker__marker--ardunio">
+						<div class="robotMarker__markerCircle"></div>
+						<svg class="robotMarker__markerLine">
+						    <line x1="60.4%" y1="35.1%" x2="88%" y2="15%" />
+						</svg>
+						<div class="robotMarker__markerDescription">
+							<p>Ardunio</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-		
-		
-<!-- 		<h2 class="section_subTitle">Electrical:</h2>
-		<ul class="section_unorderedList">
-			<li>Etching Printed Circuit Boards (PCBs)</li>
-			<li>Circuit theory, electrical components</li>
-			<li>Soldering, wire organization</li>
-			<li>Debugging</li>
+		<h1 class="section__Title section__Title--small">The Pacbot Competition</h1>
+		<p>This competition will mimic the popular game of Pac-Man. It will consist of four “ghosts,” which will be projected onto the arena, and one PacBot, which is the robot each participating team will enter in the competition. Each team’s PacBot must adhere to the specifications outlined below, and the ghosts will follow the specifications provided below. They will navigate in the arena specified below. The objective, much like in the arcade game, is to collect as many “dots” as possible. These are outlined in more detail in the “Arena” section of this document. There will be 4 “special dots” that, upon collection by your PacBot, will enable the PacBot to “eat” the ghosts for extra points. These are outlined in more detail in the “Arena” section of this document. Your PacBot will be given three lives to collect as many of the dots as possible. Scoring is outlined in more detail in the “Gameplay” section of this document. The PacBot with the highest score wins the competition.</p>
+
+		<h2 class="section_subTitle">Arena</h2>
+		<ul class="section_unorderedList section_unorderedList--indent">
+			<li>Arena Mimics original arena in the Pacman game with boundaries 4” tall.</li>
+			<li>Unlike hte original game, PacBots won't be able be exit the arena on the right side and re-enter on the left side of the arena.</li>
+			<li>Each grid unit will be assumed to have one implicity "dot" that will be automatically collected when the PacBot enters that unit.</li>
+			<li>There will be four "special dots" in the arena, their functionality is described in the gameplay section</li>
+			<li>The dots on the map do not respawn at any time</li>
 		</ul>
-		<h2 class="section_subTitle">Embedded:</h2>
-		<ul class="section_unorderedList">
-			<li>Programming microcontrollers</li>
-			<li>Process data from sensors</li>
-			<li>Hardware - software communication (using C)</li>
+		<h2 class="section_subTitle">Gameplay</h2>
+		<ul class="section_unorderedList section_unorderedList--indent">
+			<li>The goal of your PacBot is to collect as many dots as possible; this means the goal is to traverse as much of the grid as possible.</li>
+			<li>Each Pacbot will have three lives</li>
+			<li>Each gird unit that the PacBot enters will grant 10 points. Each of the "special dots" ("Power Pellets") will grant 50 points.</li>
+			<li>Entering a grid unit that has already been visited will not grant any points</li>
+			<li>When a "special dot" is taken, a signal will be sent to the ghosts to avoid the Pacbot for 20 seconds. The ghosts will resume chasing the Pacbot after this time.</li>
+			<li>In the event that your Pacbot reaches another special dot within the previous 20 second time period, the scared time for the ghosts is reset to 20 seconds</li>
+			<li>During this 20 second period, your Pacbot can chase the ghosts. If your PacBot catches a ghost, your team will be awarded 200 points for the first ghost, 400 for the second ghost, 800 for the third, and 1600 for the fourth.</li>
+			<li>To catch a ghost, your Pacbot must occupy the same grid space as the ghost</li>
+			<li>Once a ghost has been eaten, it will respawn in the ghost house, stay there for a short period of time and will no longer be frightened.</li>
+			<li>If a ghost that is not frightened catches your Pacbot, you team will lose one life.</li>
+			<li>Upon losing a life, a "pause" signal will be sent out to your PacBot and it must stop all autonomous movement. The ghosts will also entere standby mode and return to their home position</li>
+			<li>The dots do not reappear when your PacBot loses a life.</li>
+			<li>The game ends when a team has lost all of their three lives.</li>
+			<li>The winner will first be decided by the number of points, then the number of lives left, then by the time taken to do so.</li>
 		</ul>
-		<h2 class="section_subTitle">Mechanical:</h2>
-		<ul class="section_unorderedList">
-			<li>Working with tools and machining sheet metal</li>
-			<li>Drilling</li>
-			<li>Cutting</li>
-			<li>3D CAD modeling with Solidworks</li>
-			<li>Prototyping</li>
-		</ul> -->
-
-
+		<h2 class="section_subTitle">Ghosts</h2>
+		<ul class="section_unorderedList section_unorderedList--indent">
+			<li>Ghosts do not take physical form, but will instead of projected onto the arena.</li>
+			<li>Ghosts will be traveling at 7” per second, or 2 grid units per second (Although they may speed up depending on the performance of the participating Pacbots).</li>
+			<li>The ghosts will act independently of each other and will not assist each other in locating and chasing your PacBot.</li>
+			<li>They will have slight differences in their code to prevent ghosts from following the same path. These differences will mimic the differences of the code in the actual game of Pacman. (Found <a class="linkToSite" href="http://gameinternals.com/post/2072558330/understanding-pac-man-ghost-behavior">here</a>)</li>
+			<li>WHen a ghosts catches your Pacbot, it must enter standby mode and stop all movement. The PacBot and ghosts will be placed at their home positions and then the game will be resumed.</li>
+			<li>At the beginning of the game, Blinky will start just outside it's home position, and approximately every 5 seconds, another ghost will exit the ghost enclosure.</li>
+			<li>Ghosts are temporarily eliminated when they are caught, and will respawn at their home position. Gameplay will continue uninterrupted when a Pacbot catches a ghost.</li>
+		</ul>
+		<h1 class="section_subTitle">More information about the competition as well as detailed Pacbot design specifications can be found <a class="linkToSite" href="https://harvardrobotics.com/pacbots">here</a></h1>
 	</section>
 
 	<footer id="mainFooter">{% include footer.html %}</footer>
 
+	<!-- scripts -->
+	<script type="text/javascript" src="{{ site.baseurl}}/assets/js/robotMarker.js"></script>
 </body>
 </html>

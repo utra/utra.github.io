@@ -70,7 +70,7 @@
 				    background-color: #F5F9Fc;
 				    transform: translate(-50%,-50%);
 				    transition: opacity 0.2s linear;
-				    opacity: 0; //DEBUGGING PUT 1
+				    opacity: 0; //DEBUGGING PUT 1 else 0
 				    cursor: pointer;
 
 				    position: absolute;
@@ -78,7 +78,7 @@
 				.robotMarker__markerLine{
 					width: 100%;
 					height: 100%;
-					opacity: 0; //DEBUGGING PUT 1
+					opacity: 0; //DEBUGGING PUT 1 else 0
 					transition: opacity 0.2s linear;
 					line{
 						stroke: #F5F9Fc;
@@ -89,7 +89,7 @@
 					position: absolute;
 					transform: translate(15px,-50%);
 					transition: opacity 0.2s linear;
-					opacity: 0; //DEBUGGING PUT 1
+					opacity: 0; //DEBUGGING PUT 1 else 0
 
 					p{
 						padding: 0;
@@ -223,9 +223,212 @@
 						}
 					}
 				}
+			}	
+		}
+
+		&.robotMarker--Pacbot{
+			.robotMarker__imageWrapper{
+				.robotMarker__marker{
+					&.robotMarker__marker--ultrasonic{
+						.robotMarker__markerCircle{
+    						top: 71.1%;
+    						left: 72.4%;
+
+						}
+
+						.robotMarker__markerDescription{
+						    top: 93%;
+    						left: 77%;
+						}
+					}
+					&.robotMarker__marker--omniWheels{
+						.robotMarker__markerCircle{
+							top: 85.1%;
+    						left: 43.4%;
+						}
+
+						.robotMarker__markerDescription{
+  						    top: 76%;
+    						left: 17%;
+						}
+					}
+					/*&.robotMarker__marker--raspberrypi{
+						.robotMarker__markerCircle{
+							top: 50.7%;
+	    					left: 30.9%;
+						}
+
+						.robotMarker__markerDescription{
+						    top: 35%;
+	  						left: 19%;
+						}
+					}*/
+					&.robotMarker__marker--ardunio{
+						.robotMarker__markerCircle{
+							top: 35.1%;
+    						left: 60.4%;
+						}
+
+						.robotMarker__markerDescription{
+	  						top: 13%;
+    						left: 87%;
+						}
+					}
+				}
 			}
-			
+		}
+
+		&.robotMarker--RobosoccerBot{
+			.robotMarker__imageWrapper{
+				.robotMarker__marker{
+					&.robotMarker__marker--webcam{
+						.robotMarker__markerCircle{
+    					    top: 8.5%;
+    						left: 54.5%;
+						}
+
+						.robotMarker__markerDescription{
+							top: 20%;
+							left: 75%;
+						}
+					}
+					&.robotMarker__marker--jetson{
+						.robotMarker__markerCircle{
+    					    top: 43.8%;
+   							left: 57.1%;
+
+						}
+
+						.robotMarker__markerDescription{
+						    top: 33%;
+	  						left: 78%;
+						}
+					}
+					&.robotMarker__marker--3dprinted{
+						.robotMarker__markerCircle{
+    					    top: 36.7%;
+   							left: 46.9%;
+						}
+
+						.robotMarker__markerDescription{
+						    top: 16%;
+    						left: 28%;
+						}
+					}
+					&.robotMarker__marker--degreeFreedom{
+						.robotMarker__markerCircle{
+    					    top: 54.7%;
+    						left: 68.9%;
+						}
+
+						.robotMarker__markerDescription{
+						    top: 85%;
+						    left: 74%;
+						}
+					}
+					&.robotMarker__marker--servo{
+						.robotMarker__markerCircle{
+	    					top: 69.7%;
+    						left: 47.9%;
+						}
+
+						.robotMarker__markerDescription{
+						    top: 91%;
+						    left: 41%;
+						}
+					}
+				}
+			}
 		}
 		
+		&.robotMarker--fabricationFlashforgeCreator{
+
+		}
+
+		&.robotMarker--fabricationFlashforgeFinder{
+
+		}
+	}
+}
+
+
+
+
+.markerScroll{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+
+	width: 100%;
+	.markerScoll__arrow{
+		position: absolute;
+		z-index: 100;
+	    height: 100%;
+	    background-color: #F5F9Fc;
+	    
+		i{
+			font-size: 4em;
+			color: #45526B;
+			cursor: pointer;
+			top: 50%;
+			position: relative;
+			transform: translateY(-50%);
+
+			opacity: 1;
+	    	transition: opacity 0.2s linear;
+
+	    	&:hover{
+	    		opacity: 0.5;
+	    	}
+		}
+
+		&.markerScroll__arrow--deactivated{
+			i{
+				opacity: 0.5;
+			}
+		}	
+
+	}
+	.markerScroll__leftScroll{
+		left: 0;
+		padding-left: 40px;
+		padding-right: 100px;
+	}
+	.markerScroll__wrapper{
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+		.markerScroll__allMarkers{
+		    position: relative;
+		    left: 0;
+		    display: flex;
+		    transition: left 0.5s ease-in-out;
+			.markerScroll__markerWrapper{
+			    display: inline-block;
+    			position: relative;
+    			.markerScroll__markerTitle{
+    				padding-top: 10px;
+    				text-align: center;
+    				font-size: 1.5em;
+    				font-weight: 500;
+    			}
+    			.section__robotMarker{
+    				width: calc(80vw - 60px); // override width
+
+    				@media only screen and (max-width: 1049px) {
+    					width: calc(95vw - 40px);
+    				}
+    			}
+			}
+		}
+		.markerScroll__innerWrapper{
+			display: inline-block;
+			position: relative;
+		}
+	}
+	.markerScroll__rightScroll{
+		right: 0;
+	    padding-left: 100px;
+		padding-right: 40px;
 	}
 }

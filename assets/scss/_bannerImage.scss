@@ -150,6 +150,7 @@
 		height: 100%;
 		background-repeat: no-repeat;
 		background-size: cover;
+		background-attachment: fixed;
 
 		&.bannerImage__image--about{
 			background-image: url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/DSC_4016.jpg");

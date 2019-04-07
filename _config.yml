@@ -1,6 +1,6 @@
 name: UTRA
-baseurl: /utra
-url: https://johnny-zou.github.io/
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://utra.ca" # the base hostname & protocol for your site
 
 # Adds other folders besides _includes, _layouts, _posts
 includes:

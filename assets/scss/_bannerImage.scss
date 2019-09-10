@@ -182,6 +182,7 @@
 	}	
 	.shortBanner__content{
 		p{
+			text-align: center;
 			color: #45526B;
 		}
 		.shortBanner__socialContainer{
@@ -227,6 +228,10 @@
 					}
 					&.fa-heart{
 						transform: translate(calc(-50% + 1px),calc(-50% - 0px)); //1 pixel looks more centered
+					}
+					&.fa-frown-o{
+						transform: translate(calc(-50% + 1px),calc(-50% - 0px)); //1 pixel looks more centered
+						font-size: 1.5em;
 					}
 				}
 			}

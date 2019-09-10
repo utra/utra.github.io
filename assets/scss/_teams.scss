@@ -68,11 +68,8 @@
 		&.teamContainer--roboSoccer{
 			background-image: url($baseurl + '/assets/img/Team Photos/robosoccer/robosoccerRobot.jpg');
 		}
-		&.teamContainer--heavyCombat{
+		&.teamContainer--combat{
 			background-image: url($baseurl + '/assets/img/Team Photos/heavy combat/combat.jpg');
-		}
-		&.teamContainer--lightCombat{
-			background-image: url($baseurl + '/assets/img/Team Photos/sumo/IMG_6938.jpg');
 		}
 		&.teamContainer--pacbot{
 			background-image: url($baseurl + '/assets/img/Pacbot/pacbot.jpg');

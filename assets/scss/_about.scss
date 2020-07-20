@@ -212,6 +212,11 @@
     		background-repeat: no-repeat;
 
 		}
+		&.infoBlock__execImage--Sarah{
+			background-image: url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/Sarah.jpeg");
+			background-position: 50% 50%;
+			background-size: auto 200%;
+		}
 		&.infoBlock__execImage--Johnny{
 			background-image: url($baseurl + "/assets/img/UTRA Exec Photoshoot 171120/headshots/Johnny.jpg");
 		}

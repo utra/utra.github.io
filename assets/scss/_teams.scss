@@ -74,6 +74,9 @@
 		&.teamContainer--pacbot{
 			background-image: url($baseurl + '/assets/img/Pacbot/pacbot.jpg');
 		}
+		&.teamContainer--robonars{
+			background-image: url($baseurl + '/assets/img/Robonars/Robonars Class.jpg');
+		}
 
 		.teamContainer__fader{
 			z-index: 1;

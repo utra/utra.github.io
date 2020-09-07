@@ -1,0 +1,80 @@
+---
+permalink: /teams/pacbot/index.html
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UTRA | Robonars</title>
+
+	{% include resources.html %}
+	
+</head>
+<body>
+	<header class="header header--noScroll">{% include header.html %}</header>
+
+	<div class="shortBanner shortBanner--noPhoto">
+		<h1 class="shortBanner__titleText">Robonars</h1>
+	</div>
+
+	<section class="section__pageDescription section--backgroundAlternate">
+		<p>The Robonar subteam serves to provide robotics related lecture series and workshops throughout the academic year. The content covered includes mechanical, hardware, and software aspects. All workshops are drop-in based.</p>
+	</section>
+
+	<section class="section__teamBody section--backgroundAlternate">
+		<h1 class="section__Title section__Title--small">THE 1T9 PACBOT</h1>
+		<div class="section__robotMarker">
+			<div class="robotMarker robotMarker--Pacbot">
+				<div class="robotMarker__imageWrapper">
+					<div class="robotMarker__imageFader"></div>
+					<img src="{{ site.baseurl }}/assets\img\Pacbot\pacbot-side.jpg">
+					<div class="robotMarker__marker robotMarker__marker--ultrasonic">
+						<div class="robotMarker__markerCircle"></div>
+						<svg class="robotMarker__markerLine">
+						    <line x1="72.4%" y1="71.1%" x2="79%" y2="91%" />
+						</svg>
+						<div class="robotMarker__markerDescription">
+							<p>4 Ultrasonic sensors</p>
+						</div>
+					</div>
+					<div class="robotMarker__marker robotMarker__marker--omniWheels">
+						<div class="robotMarker__markerCircle"></div>
+						<svg class="robotMarker__markerLine">
+						    <line x1="43.4%" y1="85.1%" x2="16%" y2="77%" />
+						</svg>
+						<div class="robotMarker__markerDescription robotMarker__markerDescription--alignRight">
+							<p>Omni Wheels</p>
+						</div>
+					</div>
+					<!-- <div class="robotMarker__marker robotMarker__marker--raspberrypi">
+						<div class="robotMarker__markerCircle"></div>
+						<svg class="robotMarker__markerLine">
+						    <line x1="30.9%" y1="50.7%" x2="19%" y2="37%" />
+						</svg>
+						<div class="robotMarker__markerDescription robotMarker__markerDescription--alignRight">
+							<p>Raspberry Pi for path finding</p>
+						</div>
+					</div> -->
+					<div class="robotMarker__marker robotMarker__marker--ardunio">
+						<div class="robotMarker__markerCircle"></div>
+						<svg class="robotMarker__markerLine">
+						    <line x1="60.4%" y1="35.1%" x2="88%" y2="15%" />
+						</svg>
+						<div class="robotMarker__markerDescription">
+							<p>Ardunio</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h1 class="section__Title section__Title--small">Description</h1>
+		<p>Robonar is a subteam of UTRA re-established in 2019. The goal of the team is to provide the fundamental and essential technical knowledge required for one to turn ideas into reality. The lecture series range from introductory topics like introduction to Python programming language to more advanced topics such as ROS in software, Solidworks in CAD, etc. Students also can attend arduino-based workshops with the option in purchasing the hardware.</p>
+    <br>
+    <p>Speakers range from leads of other subteams in UTRA, including current upper year students and alumni. Other career related workshops, including industry mixes, are also offered throughout the year. All lectures are open to all students at the University of Toronto.</p>
+
+	<footer id="mainFooter">{% include footer.html %}</footer>
+
+	<!-- scripts -->
+	<script type="text/javascript" src="{{ site.baseurl}}/assets/js/robotMarker.js"></script>
+</body>
+</html>

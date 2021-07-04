@@ -1,21 +1,21 @@
-id,timestamp,name,pic,team,role,year,dis,email,phone,timezone,linkedin,studentid,github,other
-1,6/5/2021 16:40:14,Helen Wang,https://drive.google.com/open?id=1YxMi9GHvMmiXG0SSOG2f9ZYy_mqVOB0y,Admin,President,2T1,EngSci,yiruhelen.wang@mail.utoronto.ca,2898927516,EST,https://www.linkedin.com/in/yi-ru-helen-wang/,1004030185,,
-2,5/18/2021 6:06:30,Chirag Saxena,https://drive.google.com/open?id=1Ji-aQHmaQARzgo9Lxki8FoVCCN283muM,Directors,Sponsorships,2T3,Mech,chirag.saxena@mail.utoronto.ca,4165780762,IST,https://www.linkedin.com/in/Chirag-Saxena07112000,1005933019,,
-3,5/18/2021 6:11:39,Haocheng(Leo) Li,https://drive.google.com/open?id=1YxrwdPIOgW6C0edaQ11O5drKw39CqKya,Directors,Webmaster,2T4,ECE,leeoo.li@mail.utoronto.ca,+86 17665094321,China GMT+8,https://www.linkedin.com/in/haocheng-leo/,1007255453,https://github.com/Leo6Leo,https://www.instagram.com/leo.6.leo/
-4,5/18/2021 10:56:01,Zeynep Tibik,https://drive.google.com/open?id=1zEV6WyJX_OChFWy0IuQmcAbFQc84QU9O,Robonars,"Treasurer, Robonars",2T3,Mech,zeynep.tibik@mail.utoronto.ca,4379984920,EST,https://www.linkedin.com/in/zeynep-tibik-a1b986126/,1006228413,https://github.com/zeyneptbk,https://www.instagram.com/zeynep_tbk/
-5,5/18/2021 13:37:57,Emily Jiao,https://drive.google.com/open?id=1QPR_5Ho5LZEo3PpaQ47jw2BcxStVVN2r,Directors,Marketing/Graphics,2T3,Indy,emily.jiao@mail.utoronto.ca,6475728638,EST,https://www.linkedin.com/in/emilyjiao,1005949440,https://github.com/emilyjiao,https://www.facebook.com/profile.php?id=100006399316451
-6,5/18/2021 19:10:39,Matthew Lourenco,https://drive.google.com/open?id=1DO_T1KAv3TEFX3q9wtXH8siyFVjHaO6D,Admin,"VP Internal,Advisor",2T2,ECE,matt.lourenco@mail.utoronto.ca,6133020111,EST,https://www.linkedin.com/in/matthew-lourenco27/,1004927458,https://github.com/mattlourenco27,
-7,5/19/2021 7:45:28,Hao You,https://drive.google.com/open?id=1c0VnEXd6MsplCWmSUCZwWzBAGMpZFN4f,Directors,Marketing/Graphics,2T4,ECE,hao.you@mail.utoronto.ca,+86 13605312561,UTC+8,,1006835766,,
-8,5/19/2021 17:47:31,Chahit Uppal,https://drive.google.com/open?id=1amL57yEgbUAF37uLd8hgkZAlmi_BZj0Q,Combat,Combat,2T4,ECE,chahit.uppal@mail.utoronto.ca,9.72E+11,GMT+4,https://www.linkedin.com/in/chahit-uppal-9026891b1/,1006917400,https://github.com/ChahitUppal,
-9,5/20/2021 5:32:25,Sarah Khan,https://drive.google.com/open?id=1eiXul9Y9SQOzWbaj4qIrPiz69MTbMskr,Admin,VP Communications,2T3,Mech,sarahkkhan.khan@mail.utoronto.ca,+971 50 132 7110,GST,https://www.linkedin.com/in/sarah-khan2211/,1005886365,,
-10,5/21/2021 20:56:18,Spencer Teetaert,https://drive.google.com/open?id=1ShY2mRGLadEOy4VtjoOlLHXNm94GI_gw,ART,ART,2T2,EngSci,spencer.teetaert@mail.utoronto.ca,2043817738,EST,https://www.linkedin.com/in/spencerteetaert/,1004777501,https://github.com/spencerteetaert,
-11,5/31/2021 1:36:06,Eric Wang,https://drive.google.com/open?id=1Uuhp6CKjukoe693FVSyDhB7w8PDyWsIs,RoboSoccer,RoboSoccer,2T1,EngSci,ericdy.wang@mail.utoronto.ca,6479822398,EST,https://www.linkedin.com/in/duanyang-wang-87b798163/,1004038267,,https://www.facebook.com/eric.wang.98096721/
-12,5/31/2021 1:40:38,Jonathan Spraggett,https://drive.google.com/open?id=1BUFAI7Vk7U44USoW5PPvrwu4oER6hT52,RoboSoccer,"Advisor, RoboSoccer",2T1,EngSci,jonathan.spraggett@mail.utoronto.ca,6476289681,EST,https://www.linkedin.com/in/jonathan-spraggett-722697a4/,1003958737,https://github.com/manx52,
-13,6/4/2021 21:29:18,Michael Ruan,https://drive.google.com/open?id=1598Gcr9D8_6uT1-yQoToNEJghXm7uHwS,ART,ART,2T1,EngSci,michael.ruan@mail.utoronto.ca,647-869-3536,EST,https://www.linkedin.com/in/m-ruan/,1004041547,https://github.com/1999michael,I'm not social
-14,6/7/2021 11:14:22,Zhitian Guan,https://drive.google.com/open?id=1nXI7x9Rpik_zAM-jdNFisWVcjgLyAYCX,Directors,Marketing/Graphics,2T3,ECE,z.guan@mail.utoronto.ca,6478194985,EST,https://www.linkedin.com/in/zhitian-guan/,1006391664,https://github.com/zhitianguan,
-15,6/15/2021 17:57:36,Rosie Wang ,https://drive.google.com/open?id=1BBwNGT1Gvx48F8sCYyDrJUQHLy7p_GMv,Admin,VP Partnership,2T2,EngSci,rushi.wang@mail.utoronto.ca,2898303400,EST,https://www.linkedin.com/in/rosie-rushi-wang/,1004927564,https://github.com/Rosie-Wang,Instagram: rosie0725
-16,6/15/2021 18:09:52,Benny Li,https://drive.google.com/open?id=15xi67fXwP8BGOsf1hbKS1Pg0jlF8_BoE,Robonars,Robonars,2T1,ECE,zebin.li@mail.utoronto.ca,7789295452,PST,https://www.linkedin.com/in/benny-li-003612110,1002332497,,
-17,6/16/2021 14:47:51,Ben Natra,https://drive.google.com/open?id=1ZO72nnTwrnqI5ZCZYByJMOKzYteE1Xki,Combat,Combat,2T2,EngSci,Ben.natraihilov@mail.utoronto.ca,6472913340,Est,https://www.linkedin.com/in/ben-natra-1a329717a,1005117366,,
-18,6/17/2021 1:22:58,Bobby Graydon,https://drive.google.com/open?id=1Vow9cpOs0Mjkn343FpE7L5rrTxc_NAKQ,Combat,Combat,2T1,Mech,r.graydon@mail.utoronto.ca,6479715764,EST,https://www.linkedin.com/in/robert-graydon-1b0345204/,1004440054,,
-19,6/20/2021 16:22:21,Arash Ahmadian,https://drive.google.com/open?id=1STy-visnEnMfGyF6SLzkVkDvZLrC6wDt,PacBot,PacBot,2T3,ECE,arash.ahmadian@mail.utoronto.ca ,6476081239,EST,https://www.linkedin.com/in/arash-ahmadian-8051651a0/,1005511117,https://github.com/ArashAhmadian,https://www.facebook.com/profile.php?id=100006037515219
-20,6/20/2021 22:52:55,Eric Ji,https://drive.google.com/open?id=1-wY3X0MWLwhGb_QFG-Rl66I48dw6lWm3,PacBot,PacBot,2T2,Mech,erichanxiang.ji@mail.utoronto.ca,6476091298,EST,https://www.linkedin.com/in/eric-h-ji/,1005108358,https://github.com/ericji1326,
+id,name,team,role,year,dis,linkedin,github
+1,Helen Wang,Admin,President,2T1,EngSci,https://www.linkedin.com/in/yi-ru-helen-wang/,
+2,Chirag Saxena,Directors,Sponsorships,2T3,Mech,https://www.linkedin.com/in/Chirag-Saxena07112000,
+3,Haocheng(Leo) Li,Directors,Webmaster,2T4,ECE,https://www.linkedin.com/in/haocheng-leo/,https://github.com/Leo6Leo
+4,Zeynep Tibik,Robonars,"Treasurer, Robonars",2T3,Mech,https://www.linkedin.com/in/zeynep-tibik-a1b986126/,https://github.com/zeyneptbk
+5,Emily Jiao,Directors,Marketing/Graphics,2T3,Indy,https://www.linkedin.com/in/emilyjiao,https://github.com/emilyjiao
+6,Matthew Lourenco,Admin,"VP Internal,Advisor",2T2,ECE,https://www.linkedin.com/in/matthew-lourenco27/,https://github.com/mattlourenco27
+7,Hao You,Directors,Marketing/Graphics,2T4,ECE,,
+8,Chahit Uppal,Combat,Combat,2T4,ECE,https://www.linkedin.com/in/chahit-uppal-9026891b1/,https://github.com/ChahitUppal
+9,Sarah Khan,Admin,VP Communications,2T3,Mech,https://www.linkedin.com/in/sarah-khan2211/,
+10,Spencer Teetaert,ART,ART,2T2,EngSci,https://www.linkedin.com/in/spencerteetaert/,https://github.com/spencerteetaert
+11,Eric Wang,RoboSoccer,RoboSoccer,2T1,EngSci,https://www.linkedin.com/in/duanyang-wang-87b798163/,
+12,Jonathan Spraggett,RoboSoccer,"Advisor, RoboSoccer",2T1,EngSci,https://www.linkedin.com/in/jonathan-spraggett-722697a4/,https://github.com/manx52
+13,Michael Ruan,ART,ART,2T1,EngSci,https://www.linkedin.com/in/m-ruan/,https://github.com/1999michael
+14,Zhitian Guan,Directors,Marketing/Graphics,2T3,ECE,https://www.linkedin.com/in/zhitian-guan/,https://github.com/zhitianguan
+15,Rosie Wang ,Admin,VP Partnership,2T2,EngSci,https://www.linkedin.com/in/rosie-rushi-wang/,https://github.com/Rosie-Wang
+16,Benny Li,Robonars,Robonars,2T1,ECE,https://www.linkedin.com/in/benny-li-003612110,
+17,Ben Natra,Combat,Combat,2T2,EngSci,https://www.linkedin.com/in/ben-natra-1a329717a,
+18,Bobby Graydon,Combat,Combat,2T1,Mech,https://www.linkedin.com/in/robert-graydon-1b0345204/,
+19,Arash Ahmadian,PacBot,PacBot,2T3,ECE,https://www.linkedin.com/in/arash-ahmadian-8051651a0/,https://github.com/ArashAhmadian
+20,Eric Ji,PacBot,PacBot,2T2,Mech,https://www.linkedin.com/in/eric-h-ji/,https://github.com/ericji1326

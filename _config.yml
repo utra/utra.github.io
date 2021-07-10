@@ -8,3 +8,5 @@ includes:
 
 sass:
     sass_dir: assets/scss
+
+theme: jekyll-theme-cayman

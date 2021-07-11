@@ -1,6 +1,8 @@
 #ignore these
 .sass-cache/
 _site/
+.jekyll-cache/
+_data/
 
 #ignore all images
 assets/img/*

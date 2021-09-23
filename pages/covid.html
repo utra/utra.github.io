@@ -1,0 +1,73 @@
+---
+permalink: /covid.html
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UTRA | Announcement</title>
+
+	{% include resources.html %}
+
+	<!-- load images -->
+	<link rel="preload" href="{{ site.baseurl }}/assets/img/UTRA Exec Photoshoot 171120/DSC_4016.jpg" as="image">
+	
+</head>
+<body>
+	<header class="header header--aboutActive">{% include header.html %}</header>
+
+	<div class="bannerImage">
+		<div class="bannerImage__textBlock">
+			<h1 class="textBlock__titleText">Announcement</h1>
+		</div>
+		<div class="bannerImage__overley"></div>
+		<div class="bannerImage__image bannerImage__image--about"></div>
+	</div>
+
+
+	<div class="aboutPageWrapper">
+		<nav class="sideMenu">
+			<h3 class="sideMenu__titleText">Announcement</h3>
+			<ul class="sideMenu__list">
+				<li id="whoWeAre__sideMenuMarker" class="sideMenu__menuItem">Pacbot</li>
+			    <li id="pacbot__sideMenuMarker" class="sideMenu__menuItem">Robonars</li>
+				<!-- <li id="pastExecs__sideMenuMarker" class="sideMenu__menuItem">Past Execs</li>
+				<li id="contactUs__sideMenuMarker" class="sideMenu__menuItem">Contact Us</li>  -->
+			</ul>
+		</nav>
+		
+		<div class="infoBlock">
+			<div id="whoWeAre_positionMarker"class="infoBlock__title infoBlock__title--caption">❗ COVID-update</div>
+			<p class="infoBlock__paragraph">UTRA is trying best to provide a safe environment for all.....</p>
+			<div id="pacbot_positionMarker" class="infoBlock__title">Pacbot</div>
+			<p class="infoBlock__paragraph">We're doing our best to have everything be done virtually so students can attend meetings and make meaning full contributions to the club incase we are still under lockdown or if they cannot physically come to campus.</p>
+				
+			<div class="infoBlock__title">Robonars</div>
+			<p class="infoBlock__paragraph">To keep everyone safe, Robonars will be hosting the Fall semester seminars and lectures online as well as uploading the recordings onto YouTube for those that are unable to attend due to different time zones.</p>
+			
+		</div>
+				
+
+				
+	</div>
+
+	
+	
+			</div>
+
+			
+			
+			
+
+	<footer>
+		{% include footer.html %}
+	</footer>
+
+	<!-- scripts -->
+	<!-- <script data-cfasync="false" type="text/javascript" src=".{{ site.baseurl }}/assets/js/formSubmission.js"></script> -->
+	<script type="text/javascript" src='{{ site.baseurl }}/assets/js/aboutPage.js'></script>
+	<script type="text/javascript" src='{{ site.baseurl }}/assets/js/accordion.js'></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQQ04VdU2UMEk81eM3kryWP4JrC65Lz5g&libraries=places&callback=initMap"
+    async defer></script>
+
+</body>
+</html>

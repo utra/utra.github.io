@@ -67,12 +67,12 @@ permalink: /about.html
 
 					{% assign i = i|plus:1 %}
 					<div class="infoBlock__execImageWrapper">
-						<img class="infoBlock__execImage" width="100%" src="../assets/img/exec_photo_2021/{{member.id}}.jpg"></img>
+						<img class="infoBlock__execImage" width="100%" src="../assets/img/exec_photo_2022/{{member.id}}.jpg"></img>
 				
 						<div class="infoBlock__execFader">
 							<div class="infoBlock__execName">{{ member.name }}</div>
-							<div class="infoBlock__execYear">{{ member.dis }} {{ member.year }} + PEY</div>
-							<div class="infoBlock__execPosition">{{ member.role }}</div>
+							<div class="infoBlock__execYear">{{ member.dis }} {{ member.year }}{{member.pey}}</div>
+							<div class="infoBlock__execPosition"><center>{{ member.role }}</center></div>
 							<div class="infoBlock__execSocial">
 								{% if member.linkedin != null and member.linkedin != "" %}
 								<br>
@@ -97,6 +97,7 @@ permalink: /about.html
 				{% endif %}
 			
 				{% endfor %}
+				</div>
 				
 				<div class='infoBlock__execSectionTitle'>Directors</div>
 				{% assign i = 0 %}
@@ -109,12 +110,12 @@ permalink: /about.html
 
 					{% assign i = i|plus:1 %}
 					<div class="infoBlock__execImageWrapper">
-						<img class="infoBlock__execImage" width="100%" src="../assets/img/exec_photo_2021/{{member.id}}.jpg"></img>
+						<img class="infoBlock__execImage" width="100%" src="../assets/img/exec_photo_2022/{{member.id}}.jpg"></img>
 				
 						<div class="infoBlock__execFader">
 							<div class="infoBlock__execName">{{ member.name }}</div>
-							<div class="infoBlock__execYear">{{ member.dis }} {{ member.year }} + PEY</div>
-							<div class="infoBlock__execPosition">{{ member.role }}</div>
+							<div class="infoBlock__execYear">{{ member.dis }} {{ member.year }}{{member.pey}}</div>
+							<div class="infoBlock__execPosition"><center>{{ member.role }}</center></div>
 							<div class="infoBlock__execSocial">
 								{% if member.linkedin != null and member.linkedin != "" %}
 								<br>
@@ -140,6 +141,7 @@ permalink: /about.html
 			
 				{% endfor %}
 				</div>
+
 				<div class='infoBlock__execSectionTitle'>Team Project Managers</div>
 				{% assign i = 0 %}
 				{% for member in site.data.members %}
@@ -152,12 +154,12 @@ permalink: /about.html
 
 					{% assign i = i|plus:1 %}
 					<div class="infoBlock__execImageWrapper">
-					<img class="infoBlock__execImage" width="100%" src="../assets/img/exec_photo_2021/{{member.id}}.jpg"></img>
+						<img class="infoBlock__execImage" width="100%" src="../assets/img/exec_photo_2022/{{member.id}}.jpg"></img>
 				
 						<div class="infoBlock__execFader">
 							<div class="infoBlock__execName">{{ member.name }}</div>
-							<div class="infoBlock__execYear">{{ member.dis }} {{ member.year }} + PEY</div>
-							<div class="infoBlock__execPosition">{{ member.role }}</div>
+							<div class="infoBlock__execYear">{{ member.dis }} {{ member.year }}{{member.pey}}</div>
+							<div class="infoBlock__execPosition"><center>{{ member.role }}</center></div>
 							<div class="infoBlock__execSocial">
 								{% if member.linkedin != null and member.linkedin != "" %}
 								<br>
@@ -183,14 +185,91 @@ permalink: /about.html
 				{% endif %}
 				{% endfor %}
 				</div>
-				
-				
-
 				</div>
 
 			<div id="pastExec_positionMarker" class="infoBlock__title">Past Executive Teams</div>
 			<div class="infoBlock__pastExectiveWrapper">
 				<div class="accordionWrapper">
+					<div class="accordionElement">
+						<h1 class="accordion__title">2021 - 2022</h1>
+						<div class="accordion__contentWrapper">
+							<p class="accordion__contentTitle">Admin</p>
+								<div class="accordion__execMember">
+									<div class="execMember__name">Helen Wang</div>
+									<div class="execMember__role">VP Internal, Advisor</div>
+								</div>
+								<div class="accordion__execMember">
+									<div class="execMember__name">Matthew Lourenco</div>
+									<div class="execMember__role">President</div>
+								</div>
+								<div class="accordion__execMember">
+									<div class="execMember__name">Sarah Khan</div>
+									<div class="execMember__role">VP Communications</div>
+								</div>
+								<div class="accordion__execMember">
+									<div class="execMember__name">Rosie Wang</div>
+									<div class="execMember__role">VP Partnership</div>
+								</div>
+							<p class="accordion__contentTitle">Directors</p>
+								<div class="accordion__execMember">
+									<div class="execMember__name">Chirag Saxena</div>
+									<div class="execMember__role">Sponsorships</div>
+								</div>
+								<div class="accordion__execMember">
+									<div class="execMember__name">Haocheng(Leo) Li</div>
+									<div class="execMember__role">Webmaster</div>
+								</div>
+								<div class="accordion__execMember">
+									<div class="execMember__name">Mena Hassan</div>
+									<div class="execMember__role">Marketing/Graphics</div>
+								</div>
+							<p class="accordion__contentTitle">Team Project Managers</p>
+								<div class="accordion__execMember">
+									<div class="execMember__name">Zeynep Tibik</div>
+									<div class="execMember__role">Treasurer, Robonars</div>
+								</div>
+								<div class="accordion__execMember">
+									<div class="execMember__name">Chahit Uppal</div>
+									<div class="execMember__role">Combat</div>
+								</div>
+								<div class="accordion__execMember">
+									<div class="execMember__name">Spencer Teetaert</div>
+									<div class="execMember__role">ART</div>
+								</div>
+								<div class="accordion__execMember">
+									<div class="execMember__name">Eric Wang</div>
+									<div class="execMember__role">RoboSoccer</div>
+								</div>
+								<div class="accordion__execMember">
+									<div class="execMember__name">Jonathan Spraggett</div>
+									<div class="execMember__role">Advisor, RoboSoccer</div>
+								</div>
+								<div class="accordion__execMember">
+									<div class="execMember__name">Michael Ruan</div>
+									<div class="execMember__role">ART</div>
+								</div>
+								<div class="accordion__execMember">
+									<div class="execMember__name">Benny Li</div>
+									<div class="execMember__role">Robonars</div>
+								</div>
+								<div class="accordion__execMember">
+									<div class="execMember__name">Ben Natra</div>
+									<div class="execMember__role">Combat</div>
+								</div>
+								<div class="accordion__execMember">
+									<div class="execMember__name">Bobby Graydon</div>
+									<div class="execMember__role">Combat</div>
+								</div>
+								<div class="accordion__execMember">
+									<div class="execMember__name">Arash Ahmadian</div>
+									<div class="execMember__role">PacBot</div>
+								</div>
+								<div class="accordion__execMember">
+									<div class="execMember__name">Eric Ji</div>
+									<div class="execMember__role">PacBot</div>
+								</div>
+						</div>
+					</div>
 					<div class="accordionElement">
 						<h1 class="accordion__title">2020 - 2021</h1>
 						<div class="accordion__contentWrapper">

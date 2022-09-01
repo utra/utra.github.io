@@ -67,3 +67,6 @@ assets/img/Utra Exec Photoshoot 171120/*
 # pacbot photos
 !assets/img/Pacbot/
 !assets/img/Pacbot/**
+
+# Exec photos
+!assets/img/exec_photo_2022

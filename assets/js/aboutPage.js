@@ -61,14 +61,14 @@ $(document).ready(function(){
         $('.sideMenu__menuItem').removeClass("sideMenu__menuItem--active");
         $("#execTeam__sideMenuMarker").addClass("sideMenu__menuItem--active");
       }
-      else if(scroll > pastExec_positionMarker && scroll <= faq_positionMarker){
+      else if(scroll > pastExec_positionMarker && scroll <= contactUs_positionMarker){
         $('.sideMenu__menuItem').removeClass("sideMenu__menuItem--active");
         $("#pastExecs__sideMenuMarker").addClass("sideMenu__menuItem--active");
       }
-      else if(scroll > faq_positionMarker && scroll <= contactUs_positionMarker){
-        $('.sideMenu__menuItem').removeClass("sideMenu__menuItem--active");
-        $("#faq__sideMenuMarker").addClass("sideMenu__menuItem--active");
-      }
+      // else if(scroll > faq_positionMarker && scroll <= contactUs_positionMarker){
+      //   $('.sideMenu__menuItem').removeClass("sideMenu__menuItem--active");
+      //   $("#faq__sideMenuMarker").addClass("sideMenu__menuItem--active");
+      // }
       else if(scroll > contactUs_positionMarker){
         $('.sideMenu__menuItem').removeClass("sideMenu__menuItem--active");
         $("#contactUs__sideMenuMarker").addClass("sideMenu__menuItem--active");

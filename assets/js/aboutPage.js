@@ -50,7 +50,6 @@ $(document).ready(function(){
       var whoWeAre_positionMarker = $('#whoWeAre_positionMarker').offset().top - parseFloat($(".infoBlock").css("padding-top"));
       var currentExecTeam_positionMarker = $('#currentExecTeam_positionMarker').offset().top - parseFloat($(".infoBlock").css("padding-top"));
       var pastExec_positionMarker = $('#pastExec_positionMarker').offset().top - parseFloat($(".infoBlock").css("padding-top"));
-      var faq_positionMarker = $('#faq_positionMarker').offset().top - parseFloat($(".infoBlock").css("padding-top"));  
       var contactUs_positionMarker = $('#contactUs_positionMarker').offset().top - parseFloat($(".infoBlock").css("padding-top"));
       
       if(scroll > whoWeAre_positionMarker && scroll <= currentExecTeam_positionMarker){
@@ -65,10 +64,6 @@ $(document).ready(function(){
         $('.sideMenu__menuItem').removeClass("sideMenu__menuItem--active");
         $("#pastExecs__sideMenuMarker").addClass("sideMenu__menuItem--active");
       }
-      // else if(scroll > faq_positionMarker && scroll <= contactUs_positionMarker){
-      //   $('.sideMenu__menuItem').removeClass("sideMenu__menuItem--active");
-      //   $("#faq__sideMenuMarker").addClass("sideMenu__menuItem--active");
-      // }
       else if(scroll > contactUs_positionMarker){
         $('.sideMenu__menuItem').removeClass("sideMenu__menuItem--active");
         $("#contactUs__sideMenuMarker").addClass("sideMenu__menuItem--active");
@@ -99,14 +94,6 @@ $(document).ready(function(){
   $("#pastExecs__sideMenuMarker").on("click",function(){
     window.scroll({
       top: $('#pastExec_positionMarker').offset().top - $(".header").outerHeight(), 
-      left: 0, 
-      behavior: 'smooth' 
-    });
-  });
-
-  $("#faq__sideMenuMarker").on("click",function(){
-    window.scroll({
-      top: $('#faq_positionMarker').offset().top - $(".header").outerHeight(), 
       left: 0, 
       behavior: 'smooth' 
     });

@@ -4,6 +4,8 @@ footer{
     position: relative;
     width: 100%;
     height: 150px;
+
+
   .footer-content{
     position: absolute;
     width: 100%;
@@ -46,8 +48,11 @@ footer{
     // }
   }
   .social-icons{
-    width: 2%;
-    align-self: center;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Horizontally center the icons */
+    align-items: center; /* Vertically center the icons */
   }
 
   /* Style all font awesome icons */

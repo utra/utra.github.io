@@ -48,7 +48,7 @@ footer{
     // }
   }
   .social-icons{
-    width: 100%;
+    width: 100%; /* Make sure this is 100% to be centered*/
     text-align: center;
     display: flex;
     justify-content: center; /* Horizontally center the icons */

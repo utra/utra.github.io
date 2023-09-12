@@ -1,14 +1,12 @@
-
 id,name,linkedin,github,instagram,team,role,year,pey,dis
-1,Ammar Vora,https://www.linkedin.com/in/ammar-vora,https://www.github.com/Ammar-V,@ammar_v0ra,Admin,President,2T5,PEY,ECE	
-2,Alicia Jin,https://www.linkedin.com/in/thisisaliciajin/,https://github.com/programmingduh,@alicia._.jin,RoboSoccer,Project Manager,2T5,PEY,Mech
+1,Ammar Vora,https://www.linkedin.com/in/ammar-vora,https://www.github.com/Ammar-V,Admin,President,2T5,PEY,ECE	
+2,Alicia Jin,https://www.linkedin.com/in/thisisaliciajin/,https://github.com/programmingduh,RoboSoccer,Project Manager,2T5,PEY,Mech
 3,Leon Lee,https://www.linkedin.com/in/leonlee021/,https://github.com/leonlee021,ART,ART Project Manager,2T5,PEY,ECE
-4,Leon Lee,https://www.linkedin.com/in/leonlee021/,https://github.com/leonlee021,ART,ART Project Manager,2T5,PEY,ECE
-5,Raiyann Jacob,https://www.linkedin.com/in/raiyannjacob/,,Directors,Sponsorships Director,2T6,PEY,EngSci
-6,Brendan Lee,https://www.linkedin.com/in/brendanjunilee/,,juniblee,SUMO,SUMO Project Manager,2T6,No PEY,Mech
-7,Chahit Uppal,https://www.linkedin.com/in/chahituppal/,https://github.com/ChahitUppal,PacBot,PacBot Project Manager,2T4,PEY,ECE
-8,Charlotte Vedrines,www.linkedin.com/in/charlotte-vedrines-01227a219,https://github.com/charlottevedrines?tab=repositories,Robonars,Robonars Project Manager,2T5,PEY,Indy
-9,Anne Chow,https://www.linkedin.com/in/chowanne/,,Directors,Marketing/Graphics Director,2T4,PEY,ECE
-10,Leo Ping,https://www.linkedin.com/in/leo-ping-188105220,,Combat,Combat Project Manager,Rotman Commerce Y3,No PEY,Rotman
-11,Vraj Prajapati,https://linkedin.com/in/vraj8725,https://github.com/vproHacks,@vpro8725,Admin,Embedded Advisor,2T6,No PEY,EngSci
-12,Micol Altomare,https://www.linkedin.com/in/micol-altomare/,https://github.com/micol-altomare,Directors,Hacks Co-Director,2T5,PEY,EngSci
+4,Raiyann Jacob,https://www.linkedin.com/in/raiyannjacob/,,Directors,Sponsorships Director,2T6,PEY,EngSci
+5,Brendan Lee,https://www.linkedin.com/in/brendanjunilee/,,juniblee,SUMO,SUMO Project Manager,2T6,No PEY,Mech
+6,Chahit Uppal,https://www.linkedin.com/in/chahituppal/,https://github.com/ChahitUppal,PacBot,PacBot Project Manager,2T4,PEY,ECE
+7,Charlotte Vedrines,www.linkedin.com/in/charlotte-vedrines-01227a219,https://github.com/charlottevedrines?tab=repositories,Robonars,Robonars Project Manager,2T5,PEY,Indy
+8,Anne Chow,https://www.linkedin.com/in/chowanne/,,Directors,Marketing/Graphics Director,2T4,PEY,ECE
+9,Leo Ping,https://www.linkedin.com/in/leo-ping-188105220,,Combat,Combat Project Manager,Rotman Commerce Y3,No PEY,Rotman
+10,Vraj Prajapati,https://linkedin.com/in/vraj8725,https://github.com/vproHacks,Admin,Embedded Advisor,2T6,No PEY,EngSci
+11,Micol Altomare,https://www.linkedin.com/in/micol-altomare/,https://github.com/micol-altomare,Directors,Hacks Co-Director,2T5,PEY,EngSci

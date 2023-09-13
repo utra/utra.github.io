@@ -52,7 +52,7 @@ permalink: /about.html
 			<div class="infoBlock__executiveWrapper">
 				<div class='infoBlock__execSectionTitle'>Admin</div>
 				{% assign i = 0 %}
-				{% for member in site.data.members %}
+				{% for member in site.data.members2023 %}
 				{% if member.team == "Admin" %}
 				{% assign remainder = i | modulo: 4 %}
 				{% if remainder == 0 or i == 0 %}
@@ -95,7 +95,7 @@ permalink: /about.html
 				
 				<div class='infoBlock__execSectionTitle'>Directors</div>
 				{% assign i = 0 %}
-				{% for member in site.data.members %}
+				{% for member in site.data.members2023 %}
 				{% if member.team == "Directors" %}
 				{% assign remainder = i | modulo: 4 %}
 				{% if remainder == 0 or i == 0 %}
@@ -138,7 +138,7 @@ permalink: /about.html
 
 				<div class='infoBlock__execSectionTitle'>Team Project Managers</div>
 				{% assign i = 0 %}
-				{% for member in site.data.members %}
+				{% for member in site.data.members2023 %}
 				{% if member.team != "Directors" %}
 				{% if member.team != "Admin" %}
 				{% assign remainder = i | modulo: 4 %}

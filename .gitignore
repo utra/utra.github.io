@@ -3,7 +3,7 @@
 _site/
 
 #ignore all images
-assets/img/*
+#assets/img/*
 !assets/img/Logo/
 !assets/img/Logo/*
 

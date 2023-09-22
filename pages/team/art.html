@@ -201,7 +201,7 @@ permalink: /teams/ART/index.html
 			<div id="currentExecTeam_positionMarker" class="infoBlock__title">Current Executive Team</div>
 			<div class="infoBlock__executiveWrapper">
 				{% assign i = 0 %}
-				{% for member in site.data.ARTExecs %}
+				{% for member in site.data.ARTExecs2024 %}
 				{% if member.team == "Admin" %}
 				{% assign remainder = i | modulo: 4 %}
 				{% if remainder == 0 or i == 0 %}
@@ -210,7 +210,7 @@ permalink: /teams/ART/index.html
 
 					{% assign i = i|plus:1 %}
 					<div class="infoBlock__execImageWrapper">
-						<img class="infoBlock__execImage" width="100%" src="{{ site.baseurl }}/assets/img/Team Photos/ART/exec_photos2023/{{member.Photo}}.jpg"></img>
+						<img class="infoBlock__execImage" width="100%" src="{{ site.baseurl }}/assets/img/Team Photos/ART/exec_photos2024/{{member.PhotoID}}.jpg"></img>
 				
 						<div class="infoBlock__execFader">
 							<div class="infoBlock__execName">{{ member.Name }}</div>

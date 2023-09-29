@@ -130,11 +130,10 @@ permalink: /about.html
 					</div>
 			
 			
-				{% if remainder == 3 %}
+				<!-- {% if remainder == 3 %}
 				</div>
+				{% endif %} -->
 				{% endif %}
-				{% endif %}
-			
 				{% endfor %}
 				</div>
 
@@ -182,7 +181,7 @@ permalink: /about.html
 				<div class='infoBlock__execSectionTitle'>Team Project Managers</div>
 				{% assign i = 0 %}
 				{% for member in site.data.members2023 %}
-				{% if member.team == "Directors" %}
+				{% if member.team == "Manager" %}
 				{% assign remainder = i | modulo: 4 %}
 				{% if remainder == 0 or i == 0 %}
 				<div class="infoBlock__execRow">
@@ -219,6 +218,9 @@ permalink: /about.html
 				{% endif %}
 				{% endfor %}
 				</div>
+
+				
+
 
 			</div>
 			<div id="pastExec_positionMarker" class="infoBlock__title">Past Executive Teams</div>
@@ -309,9 +311,10 @@ permalink: /about.html
 								</div>
 						</div>
 					</div>
+				<div class="accordionElement">
 					<h1 class="accordion__title">2021 - 2022</h1>
 					<div class="accordion__contentWrapper">
-							<p class="accordion__contentTitle">Admin</p>
+						<p class="accordion__contentTitle">Admin</p>
 								<div class="accordion__execMember">
 									<div class="execMember__name">Helen Wang</div>
 									<div class="execMember__role">President</div>

@@ -182,12 +182,12 @@ permalink: /about.html
 				{% assign i = 0 %}
 				{% for member in site.data.members2023 %}
 				{% if member.team == "Manager" %}
-				{% assign remainder = i | modulo: 3 %}
+				{% assign remainder = i | modulo: 5 %}
 				{% if remainder == 0 or i == 0 %}
 				<div class="infoBlock__execRow">
 					{% endif %}
 
-					{% assign i = i|plus:1 %}
+					{% assign i = i|plus: 1 %}
 					<div class="infoBlock__execImageWrapper">
 						<img class="infoBlock__execImage" width="100%" src="../assets/img/exec_photo_2023/{{member.id}}.jpg"></img>
 				
@@ -212,7 +212,7 @@ permalink: /about.html
 						</div>
 					</div>
 			
-				{% if remainder == 2 %}
+				{% if remainder == 4 %}
 				</div>
 				{% endif %}
 				{% endif %}

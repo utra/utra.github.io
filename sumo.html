@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #000000; /* Black background for better visibility */
+            border-radius: 50%;        /* Circular background */
+            padding: 50px;             /* Space around the icon */
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>University of Toronto Robotics Association</title>
+    <link href="static/css/css2.css" rel="stylesheet">
+    <!-- fontawesome css link -->
+    <link rel="stylesheet" href="static/css/fontawesome-all.min.css">
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <!-- favicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- swipper css link -->
+    <link rel="stylesheet" href="static/css/swiper.min.css">
+    <!-- lightcase css links -->
+    <link rel="stylesheet" href="static/css/lightcase.css">
+     <!-- AOS css link -->
+     <link rel="stylesheet" href="static/css/aos.css">
+    <!-- odometer css link -->
+    <link rel="stylesheet" href="static/css/odometer.css">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="static/css/animate.css">
+    <!-- line-awesome-icon css -->
+    <link rel="stylesheet" href="static/css/line-awesome.min.css">
+    <!-- nice-select -->
+    <link rel="stylesheet" href="static/css/nice-select.css">
+    <!-- main style css link -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Start Preloader
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div class="preloader">
+    <div id="loader">
+        <div class="clockFace"></div>
+        <div class="hourHand"></div>
+        <div class="minuteHand"></div>
+      </div>
+</div>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    End Preloader
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Start Scroll-To-Top
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="#" class="scrollToTop">
+    <i class="las la-angle-up"></i>
+    <small>top</small>
+</a>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    End Scroll-To-Top
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Start Body Overlay
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div id="body-overlay" class="body-overlay"></div>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    End Body Overlay
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Start Header
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<header class="header-section">
+    <div class="header">
+        <div class="header-bottom-area">
+            <div class="container custom-container">
+                <div class="header-menu-content">
+                    <nav class="navbar navbar-expand-lg p-0">
+                        <a class="site-logo site-title" href="index.html"><img src="./static/images/logo/utraLogoWhite.png" alt="site-logo"></a>
+                        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="fas fa-bars"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav main-menu ms-auto">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="join.html">Join Us</a></li>
+                                <li><a href="sponsors.html">Sponsors</a></li>
+                                <li><a href="https://hackathon.utra.ca/">UTRAHacks</a></li>
+                            </ul>
+                            <div class="header-action">
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    End Header
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<section class="watch-details ptb-80">
+    <div class="container">
+        <div class="watch-details-area">
+            <div class="row">
+                <div class="col-lg-6 pb-30">
+                    <div class="watch-item">
+                        <div class="image">
+                            <img src="static/images/subteams/sumo/good.jpg" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="product-details">
+                        <h3 class="title">SUMO</h3>
+                        <p>Interested in robotics? Not sure where to start off? Join SUMO.</p>
+                        <p>SUMO is an introductory robotics division designed for students eager to explore robotics systems. Members gain practical experience in essential skills such as circuit design and soldering, CAD software for 3D modeling and printing, sheet metal fabrication, and programming with embedded C++.</p>
+                        <p>In teams of three, students apply these skills to build an autonomous robot for our annual SUMO competition, where the goal is to push the opponent out of the ring. The SUMO competition has been held over 10 times and continues to grow in popularity among both incoming and current University of Toronto students.</p>
+                            <div class="product-reting d-flex align-content-center">
+                        </div>
+                
+                        <div class="buy-btn pt-4">
+                            <a href="mailto:sumo@utra.ca" class="btn--base buy-it-now"> Join SUMO </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="customer-review pt-20">
+                <h2 class="title">The Competition</h2>
+                <div class="customer-comment pt-3">
+                    <div class="customer-say ps-4">
+                        <!-- <div class="get-star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div> -->
+                        <p>The goal is to create a simulated version of an autonomous robot with IR range sensors to locate the opponent and light sensors to detect the edge of the ring. Two “sumo” robots are spawned in a black circular ring with a white border; the two simulated robots try to push one another out of the ring, the last robot in the ring wins. Students get to design the chassis in 3D CAD, and write the software for the robot using ROS.</p>
+
+                        <p>UTRA hosts an online simulated autonomous mini-sumo competition at the end of the year, where the teams compete for bragging rights amongst their peers. We organize tutorial sessions which cover most of the necessary know-how, practical, and theoretical concepts required in the two areas involved.</p>
+                    </div>
+                </div>
+                <div class="customer-comment pt-3">
+                    <div class="customer d-flex">
+                        <h4 class="title"> 1. </h4>
+                        <h4 class="title ps-2">Mechanical:</h4>
+                    </div>
+                    <div class="customer-say ps-4">
+                        <ul>
+                            <li>3D CAD modelling</li>
+                            <li>Prototyping</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="customer-comment pt-3">
+                    <div class="customer d-flex">
+                        <h4 class="title"> 2. </h4>
+                        <h4 class="title ps-2">Software:</h4>
+                    </div>
+                    <div class="customer-say ps-4">
+                        <ul>
+                            <li>Using ROS framework to simulate robot</li>
+                            <li>Programming sensors</li>
+                            <li>Process data from sensors</li>
+                            <li>Create your own algorithm</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="customer-comment pt-3">
+                    <div class="customer-say ps-4">
+                        <p>The competition will be open only to undergraduate students of University of Toronto. In addition, a student may not compete in the competition more than once. This is to encourage students to move on to UTRA’s bigger teams.</p>
+
+                        <p>We are letting you choose your own groups and highly recommend that you get into groups of three. We recommend teams of 3, but will allow teams of 1 to 5. If your team consists of 6 or more, you will be required to divide into 2 groups.</p>
+                    </div>
+                </div>
+                <div class="customer-comment pt-3">
+                    <div class="customer-say ps-4">
+                        <!-- Add text content here -->
+                        <h2 class="title">Past Competitions</h2>               
+                        <!-- Carousel for pictures -->
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col"><img src="./static/images/subteams/sumo/teamPage Photos/1.jpg" class="d-block w-100" alt="..."></div>
+                                        <div class="col"><img src="./static/images/subteams/sumo/teamPage Photos/2.jpg" class="d-block w-100" alt="..."></div>
+                                        <div class="col"><img src="./static/images/subteams/sumo/teamPage Photos/3.jpg" class="d-block w-100" alt="..."></div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col"><img src="./static/images/subteams/sumo/teamPage Photos/4.jpg" class="d-block w-100" alt="..."></div>
+                                        <div class="col"><img src="./static/images/subteams/sumo/teamPage Photos/good2.jpg" class="d-block w-100" alt="..."></div>
+                                        <div class="col"><img src="./static/images/subteams/sumo/teamPage Photos/good3.jpg" class="d-block w-100" alt="..."></div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col"><img src="./static/images/subteams/sumo/teamPage Photos/IMG_6845.jpg" class="d-block w-100" alt="..."></div>
+                                        <div class="col"><img src="./static/images/subteams/sumo/teamPage Photos/IMG_6838.jpg" class="d-block w-100" alt="..."></div>
+                                        <div class="col"><img src="./static/images/subteams/sumo/teamPage Photos/IMG_6843.jpg" class="d-block w-100" alt="..."></div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col"><img src="./static/images/subteams/sumo/teamPage Photos/IMG_6860.jpg" class="d-block w-100" alt="..."></div>
+                                        <div class="col"><img src="./static/images/subteams/sumo/teamPage Photos/IMG_6862.jpg" class="d-block w-100" alt="..."></div>
+                                        <div class="col"><img src="./static/images/subteams/sumo/teamPage Photos/IMG_6865.jpg" class="d-block w-100" alt="..."></div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col"><img src="./static/images/subteams/sumo/teamPage Photos/IMG_6869.jpg" class="d-block w-100" alt="..."></div>
+                                        <div class="col"><img src="./static/images/subteams/sumo/teamPage Photos/IMG_6874.jpg" class="d-block w-100" alt="..."></div>
+                                        <div class="col"><img src="./static/images/subteams/sumo/teamPage Photos/IMG_6878.jpg" class="d-block w-100" alt="..."></div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col"><img src="./static/images/subteams/sumo/teamPage Photos/IMG_6880.jpg" class="d-block w-100" alt="..."></div>
+                                        <div class="col"><img src="./static/images/subteams/sumo/teamPage Photos/IMG_6882.jpg" class="d-block w-100" alt="..."></div>
+                                        <div class="col"><img src="./static/images/subteams/sumo/teamPage Photos/IMG_6888.jpg" class="d-block w-100" alt="..."></div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col"><img src="./static/images/subteams/sumo/teamPage Photos/robot.jpg" class="d-block w-100" alt="..."></div>
+                                        <div class="col"><img src="./static/images/subteams/sumo/teamPage Photos/team.jpg" class="d-block w-100" alt="..."></div>
+                                        <div class="col"><img src="./static/images/subteams/sumo/teamPage Photos/you1.jpg" class="d-block w-100" alt="..."></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="next-page">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item">
+                            <!-- <a class="page-link" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                            </a> -->
+                          <!-- </li> -->
+                          <!-- <li class="page-item"><a class="page-link" href="#">1</a></li> -->
+                          <!-- <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li> -->
+                          <!-- <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span> -->
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Start Footer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<footer class="footer-section">
+    <div class="footer-bottom-area">
+        <div class="container">
+            <div class="row mb-30-none">
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a class="site-logo" href=""><img src="./static/images/logo/utraLogoWhite.png" alt="logo"></a>
+                        </div>
+                        <p>Design. Build. Inspire.</p>
+                        <a href="https://www.instagram.com/utra_uoft/"><i class="fab fa-instagram"></i></a>  
+                        <a href="https://www.linkedin.com/company/university-of-toronto-robotics-association/"><i class="fab fa-linkedin"></i></a>
+                        <span>utra.ca</span>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <h3 class="widget-title">Webpages</h3>
+                        <ul class="footer-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="join.html">Join Us</a></li>
+                            <li><a href="sponsors.html">Sponsors</a></li>
+                            <li><a href="https://hackathon.utra.ca/">UTRAHacks</a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <h3 class="widget-title">Teams</h3>
+                        <ul class="footer-list">
+                            <li><a href="sumo.html">SUMO</a></li>
+                            <li><a href="combat.html">Combat</a></li>
+                            <li><a href="art.html">ART</a></li>
+                            <li><a href="robosoccer.html">RoboSoccer</a></li>
+                            <li><a href="6ix-pac.html">6ix-Pac</a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="copyright-area">
+                    <p>© 2025 University of Toronto Robotics Association</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    End Footer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+
+
+
+
+    <!-- jquery -->
+<script src="static/js/jquery-3.6.0.min.js"></script>
+<!-- bootstrap js -->
+<script src="static/js/bootstrap.bundle.min.js"></script>
+<!-- swipper js -->
+<script src="static/js/swiper.min.js"></script>
+<!-- lightcase js-->
+<script src="static/js/lightcase.js"></script>
+<!-- odometer js -->
+<script src="static/js/odometer.min.js"></script>
+<!-- viewport js -->
+<script src="static/js/viewport.jquery.js"></script>
+<!-- smooth scroll js -->
+<script src="static/js/smoothscroll.min.js"></script>
+<!-- nice select js -->
+<script src="static/js/jquery.nice-select.js"></script>
+<!-- ui js -->
+<script src="#"></script>
+<!-- main -->
+<script src="static/js/main.js"></script>
+
+
+</body>
+</html>

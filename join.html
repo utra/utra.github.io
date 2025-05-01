@@ -28,8 +28,6 @@
     <link rel="stylesheet" href="static/css/nice-select.css">
     <!-- main style css link -->
     <link rel="stylesheet" href="static/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 <body>
 
@@ -79,18 +77,20 @@
             <div class="container custom-container">
                 <div class="header-menu-content">
                     <nav class="navbar navbar-expand-lg p-0">
-                        <a class="site-logo site-title" href=""><img src="static/images/logo/utraLogoWhite.png" alt="site-logo"></a>
+                        <a class="site-logo site-title" href="index.html"><img src="./static/images/logo/utraLogoWhite.png" alt="site-logo"></a>
                         <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="fas fa-bars"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav main-menu ms-auto">
-                                <li><a href="index.html" class="active">Home</a></li>
+                                <li><a href="index.html" >Home</a></li>
                                 <li><a href="about.html">About Us</a></li>
-                                <li><a href="join.html">Join Us</a></li>
+                                <li><a href="join.html" class="active">Join Us</a></li>
                                 <li><a href="sponsors.html">Sponsors</a></li>
                                 <li><a href="https://hackathon.utra.ca/">UTRAHacks</a></li>
                             </ul>
+                            <div class="header-action">
+                            </div>
                         </div>
                     </nav>
                 </div>
@@ -99,57 +99,66 @@
     </div>
 </header>
 
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     End Header
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Start Banner
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<section class="banner-section bg-overlay-base bg_img" data-background="./static/images/graphics/homepage_background.webp">
+<section class="features-section ptb-60">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-7 col-md-12">
-               <div class="text-bubble">
-                   <div class="banner-content">
-                      <h1 class="title"> UTRA: <span>Innovating the Future of Robotics</span></h1>
-                      <p>Established in 2004, the University of Toronto Robotics Association (UTRA) is the premier robotics student group at the University of Toronto.</p> 
-                    </div>
-                   <div class="banner-btn ptb-20">
-                        <a href="about.html" class="btn--base">Learn More <i class="las la-arrow-right"></i></a>
-                        <!-- <a href="join.html" class="btn--base ms-3">Join Us</a> -->
-                   </div>
-               </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title text-center">
+                    <h2 class="title">Getting Involved with UTRA</h2>
+                    <p>There are various ways to get involved with UTRA.</p>
+                </div>
             </div>
+        </div>
+        <div class="features-area pt-40">
+           <div class="row">
+               <div class="col-lg-4 pb-20">
+                  <div class="features-item">
+                     <h3 class="title">Attend our events</h3>
+                     <p>UTRA hosts regular events where all students are welcome. This includes Robonars: robotics seminars and workshops, and our annual UTRAHacks.</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 pb-20">
+                <div class="features-item">
+                   <h3 class="title">Join a subteam</h3>
+                   <p>UTRA comprises five robotics subteams. Join a subteam to build the robot and head to competition!</p>
+                </div>
+             </div>
+             <div class="col-lg-4 pb-20">
+                <div class="features-item">
+                    <h3 class="title">Join the executives</h3>
+                    <p>Love using robots but not building them? That's alright! Join UTRA as an executive in the Marketing, Outreach, Web, or UTRAHack teams.</p>
+                </div>
+             </div>
+           </div>
         </div>
     </div>
 </section>
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    End Banner
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- about section -->
 <section class="about section ptb-80">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-6 col-md-6 mb-30">
+            <div class="col-lg-5 col-md-6 mb-30">
                 <div class="about-img">
-                    <img src="static/images/photoshoot/exec_photoshoot.jpg" alt="img">
+                    <img src="static/images/graphics/instagram_qr_code.png" alt="img">
                 </div>
             </div>
             <div class="col-lg-6 col-md-6">
                 <div class="about-title">
-                    <h2 class="title">Celebrating 20 years of innovation</h2>
-                    <p>For two decades, UTRA has been at the forefront of robotics innovation at the University of Toronto. What started as a small group of passionate students has grown into a vibrant community of engineers, programmers, and thinkers, pushing the boundaries of technology and robotics.</p>
-                    <p>Join us as we celebrate our achievements, honor our alumni, and look ahead to the future of robotics excellence.</p>
+                    <h2 class="title">Follow UTRA on Instagram</h2>
+                    <p>Stay updated with our latest robots, achievements, competition highlights, and recruitment opportunities by following us on Instagram.</p>
+                    <p>Have questions? Feel free to send us a DM—we’d love to hear from you!</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- watch section -->
+
 <section class="watch-item ptb-80">
     <div class="container">
         <div class="section-title pb-40">
@@ -252,73 +261,25 @@
     </div>
 </section>
 
-<!-- FEATURES -->
-<section class="features-section ptb-60">
+<section class="about section ptb-80">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="section-title text-center">
-                    <h2 class="title">Our Achievements</h2>
-                    <p>UTRA actively participates in competitions worldwide, achieving excellence on the global stage.</p>
+        <div class="row align-items-center">
+            
+            <div class="col-lg-6 col-md-6">
+                <div class="about-title">
+                    <h2 class="title">Reach out to us!</h2>
+                    <p>We typically recruit new members at the start of the fall and winter terms, with announcements posted on our Instagram. Check there for updates on how to join!</p>
+                    <p>If you miss the recruitment window, no worries—just send us a DM or email. We’re always happy to welcome new members to the team!</p>
                 </div>
             </div>
-        </div>
-        <div class="features-area pt-40">
-           <div class="row">
-               <div class="col-lg-4 pb-20">
-                  <div class="features-item">
-                     <h3 class="title">Top 5 Finish</h3>
-                     <p>UIUC iRobotics Pacbot Compeititon 2024, Illinois, United States</p>
-                  </div>
-               </div>
-               <div class="col-lg-4 pb-20">
-                <div class="features-item">
-                   <h3 class="title">5th Place in Design</h3>
-                   <p>Intelligent Ground Vehicle Competition (IGVC) 2024, Michigan, United States</p>
-                </div>
-             </div>
-             <div class="col-lg-4 pb-20">
-                <div class="features-item">
-                    <h3 class="title">4th Place</h3>
-                    <p>University of Bordeaux RoboCup 2023, Bordeaux, France</p>
-                </div>
-             </div>
-           </div>
-        </div>
-    </div>
-</section>
-
-
-
-<!-- app section -->
-<section class="app-section pt-80 pb-120">
-    <div class="container">
-        <div class="app-wrapper">
-            <div class="row justify-content-center align-items-center mb-30-none">
-                <div class="col-xl-6 col-lg-6 mb-30">
-                    <div class="app-thumb text-center">
-                        <img src="static/images/graphics/cartoon_robot_1.jpg" alt="element">
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 mb-30">
-                    <div class="app-content">
-                        <span class="sub-title">Want to get involved?</span>
-                        <h2 class="title">UTRA needs you!</h2>
-                        <p>UTRA is the perfect place to dive into robotics, learn new skills, and work on cool projects with a team. Whether you’re into coding, building, or just curious about robotics, you’ll get hands-on experience and a chance to compete in exciting competitions. No experience? No problem—just bring your enthusiasm, and we’ll help you get started!</p>
-                        <div class="about-btn pt-30">
-                            <a href="join.html" class="btn--base">Join Us <i class="las la-arrow-right"></i></a>
-                        </div>
-                        <!-- <p>UTRA’s mission is to foster creativity and innovation while cultivating technology leaders of the future by providing students with opportunities to design and build advanced robotic technologies. These opportunities have led students across a variety of science and engineering disciplines to work in highly dynamic inter-disciplinary teams to develop critical leadership, teamwork and problem-solving skills!</p>
-                        -->
-                        <div class="app-btn-wrapper">
-                        </div>
-                    </div>
+            <div class="col-lg-6 col-md-6 mb-30">
+                <div class="about-img">
+                    <img src="static/images/photoshoot/aboutImage.jpg" alt="img">
                 </div>
             </div>
         </div>
     </div>
 </section>
-
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Start Footer
@@ -336,8 +297,6 @@
                         <a href="https://www.instagram.com/utra_uoft/"><i class="fab fa-instagram"></i></a>  
                         <a href="https://www.linkedin.com/company/university-of-toronto-robotics-association/"><i class="fab fa-linkedin"></i></a>
                         <span>utra.ca</span>
-                        <p></p>
-                        <p>Myhal Centre 015D, 55 St George St, Toronto ON M5S 1A4</p>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
@@ -403,21 +362,6 @@
 <!-- main -->
 <script src="static/js/main.js"></script>
 
-<script>
-    var swiper = new Swiper('.blog-slider', {
-      spaceBetween: 30,
-      effect: 'fade',
-      loop: true,
-      mousewheel: {
-        invert: false,
-      },
-      // autoHeight: true,
-      pagination: {
-        el: '.blog-slider__pagination',
-        clickable: true,
-      }
-    });
-</script>
 
 </body>
 </html>

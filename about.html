@@ -28,8 +28,6 @@
     <link rel="stylesheet" href="static/css/nice-select.css">
     <!-- main style css link -->
     <link rel="stylesheet" href="static/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 <body>
 
@@ -79,18 +77,20 @@
             <div class="container custom-container">
                 <div class="header-menu-content">
                     <nav class="navbar navbar-expand-lg p-0">
-                        <a class="site-logo site-title" href=""><img src="static/images/logo/utraLogoWhite.png" alt="site-logo"></a>
+                        <a class="site-logo site-title" href="index.html"><img src="./static/images/logo/utraLogoWhite.png" alt="site-logo"></a>
                         <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="fas fa-bars"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav main-menu ms-auto">
-                                <li><a href="index.html" class="active">Home</a></li>
-                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="index.html" >Home</a></li>
+                                <li><a href="about.html" class="active">About Us</a></li>
                                 <li><a href="join.html">Join Us</a></li>
                                 <li><a href="sponsors.html">Sponsors</a></li>
                                 <li><a href="https://hackathon.utra.ca/">UTRAHacks</a></li>
                             </ul>
+                            <div class="header-action">
+                            </div>
                         </div>
                     </nav>
                 </div>
@@ -103,218 +103,228 @@
     End Header
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Start Banner
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<section class="banner-section bg-overlay-base bg_img" data-background="./static/images/graphics/homepage_background.webp">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-7 col-md-12">
-               <div class="text-bubble">
-                   <div class="banner-content">
-                      <h1 class="title"> UTRA: <span>Innovating the Future of Robotics</span></h1>
-                      <p>Established in 2004, the University of Toronto Robotics Association (UTRA) is the premier robotics student group at the University of Toronto.</p> 
-                    </div>
-                   <div class="banner-btn ptb-20">
-                        <a href="about.html" class="btn--base">Learn More <i class="las la-arrow-right"></i></a>
-                        <!-- <a href="join.html" class="btn--base ms-3">Join Us</a> -->
-                   </div>
-               </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    End Banner
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- about section -->
 <section class="about section ptb-80">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-6 mb-30">
                 <div class="about-img">
-                    <img src="static/images/photoshoot/exec_photoshoot.jpg" alt="img">
+                    <img src="static/images/photoshoot/DSC_4016.jpg" alt="img">
                 </div>
             </div>
             <div class="col-lg-6 col-md-6">
                 <div class="about-title">
-                    <h2 class="title">Celebrating 20 years of innovation</h2>
-                    <p>For two decades, UTRA has been at the forefront of robotics innovation at the University of Toronto. What started as a small group of passionate students has grown into a vibrant community of engineers, programmers, and thinkers, pushing the boundaries of technology and robotics.</p>
-                    <p>Join us as we celebrate our achievements, honor our alumni, and look ahead to the future of robotics excellence.</p>
+                    <h2 class="title">Our Mission</h2>
+                    <p>UTRA’s mission is to foster creativity and innovation while cultivating technology leaders of the future by providing students with opportunities to design and build advanced robotic technologies.</p>
+                    </div>
+                <div class="about-btn pt-30">
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- watch section -->
+
+<!-- Admin -->
 <section class="watch-item ptb-80">
     <div class="container">
-        <div class="section-title pb-40">
-            <h2 class="title">Teams</h2>
+        <div class="section-title pb-40" id="admin">
+            <h2 class="title">Our Leadership</h2>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12">
+            <!-- President Card -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="watch-card">
                     <div class="watch-thumb">
-                       <img src="static/images/subteams/sumo/IMG_6938.jpg" alt="img">
+                        <img src="static/images/logo/logoSquare.png" alt="img">
                     </div>
                     <div class="thumb-footer text-center">
-                        <div class="watch-brand pb-10">
-                            <p class="title">Beginner-friendly SUMO-wrestling Bot</p>
+                        <div class="Title">
+                            <h3 class="title one-line">President</h3>
                         </div>
-                        <div class="buy-btn">
-                            <a href="./sumo.html" class="btn--base w-100">SUMO</a>
+                        <div class="name">
+                            <p class="title one-line">Shreyaansh Dadoo</p>
+                        </div>
+                        <div class="year">
+                            <p class="title one-line">ECE 2T4 + PEY</p>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-5">
+                                <a href="utra.ca" class="btn--base icon-btn">
+                                    <i class="fab fa-linkedin"></i> <!-- LinkedIn Icon -->
+                                </a>
+                            </div>
+                            <div class="col-5">
+                                <a href="mailto:president@utra.ca" class="btn--base icon-btn">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
+
+            <!-- VP Communication Card -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="watch-card">
                     <div class="watch-thumb">
-                       <img src="static/images/subteams/combat/combat.jpg" alt="img">
+                        <img src="static/images/logo/logoSquare.png" alt="img">
                     </div>
                     <div class="thumb-footer text-center">
-                        <div class="watch-brand pb-10">
-                            <p class="title">Get ready for battle!</p>
+                        <div class="Title">
+                            <h3 class="title one-line">VP Communications</h3>
                         </div>
-                        <div class="price">
-                            <!-- <h3 class="title">$140</h3> -->
+                        <div class="name">
+                            <p class="title one-line">Carl Ma</p>
                         </div>
-                        <div class="buy-btn">
-                            <a href="./combat.html" class="btn--base w-100">COMBAT</a>
+                        <div class="year">
+                            <p class="title one-line">ECE 2T5 + PEY</p>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-5">
+                                <a href="https://www.linkedin.com/in/carlkma/" class="btn--base icon-btn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                            <div class="col-5">
+                                <a href="mailto:vpcommunications@utra.ca" class="btn--base icon-btn">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
+
+            <!-- VP Internal Card -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="watch-card">
                     <div class="watch-thumb">
-                       <img src="static/images/subteams/art/IMG_4167.JPG" alt="img">
+                        <img src="static/images/logo/logoSquare.png" alt="img">
                     </div>
                     <div class="thumb-footer text-center">
-                        <div class="watch-brand pb-10">
-                            <p class="title">ART: Autonomous Rover Team</p>
+                        <div class="Title">
+                            <h3 class="title one-line">VP Internal</h3>
                         </div>
-                        <div class="price">
-                            <!-- <h3 class="title">$140</h3> -->
+                        <div class="name">
+                            <p class="title one-line">Brendan Lee</p>
                         </div>
-                        <div class="buy-btn">
-                            <a href="./art.html" class="btn--base w-100">ART</a>
+                        <div class="year">
+                            <p class="title one-line">Mech 2T6</p>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-5">
+                                <a href="utra.ca" class="btn--base icon-btn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                            <div class="col-5">
+                                <a href="mailto:vpinternal@utra.ca" class="btn--base icon-btn">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
+
+            <!-- VP Partnerships Card -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="watch-card">
                     <div class="watch-thumb">
-                       <img src="static/images/subteams/robosoccer/robosoccerRobot.jpg" alt="img">
+                        <img src="static/images/logo/logoSquare.png" alt="img">
                     </div>
                     <div class="thumb-footer text-center">
-                        <div class="watch-brand pb-10">
-                            <p class="title">Humanoid Robot for Soccer</p>
+                        <div class="Title">
+                            <h3 class="title one-line">VP Partnerships</h3>
                         </div>
-                        <div class="price">
-                            <!-- <h3 class="title">$140</h3> -->
+                        <div class="name">
+                            <p class="title one-line">Raiyann Jacob</p>
                         </div>
-                        <div class="buy-btn">
-                            <a href="./robosoccer.html" class="btn--base w-100">ROBOSOCCER</a>
+                        <div class="year">
+                            <p class="title one-line">EngSci 2T6 + PEY</p>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-5">
+                                <a href="https://www.linkedin.com/in/raiyannjacob/" class="btn--base icon-btn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                            <div class="col-5">
+                                <a href="mailto:vppartnership@utra.ca" class="btn--base icon-btn">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-           
-            <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="watch-card">
                     <div class="watch-thumb">
-                       <img src="static/images/subteams/6ix-pac/pacbot.jpg" alt="img">
+                        <img src="static/images/logo/logoSquare.png" alt="img">
                     </div>
                     <div class="thumb-footer text-center">
-                        <div class="watch-brand pb-10">
-                            <p class="title">PAC-man? PAC-bot!</p>
+                        <div class="Title">
+                            <h3 class="title one-line">VP Finance</h3>
                         </div>
-                        <div class="price">
-                            <!-- <h3 class="title">$140</h3> -->
+                        <div class="name">
+                            <p class="title one-line">Charlotte Fritz</p>
                         </div>
-                        <div class="buy-btn">
-                            <a href="./6ix-pac.html" class="btn--base w-100">6IX-PAC</a>
+                        <div class="year">
+                            <p class="title one-line">ECE 2T5</p>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-5">
+                                <a href="utra.ca" class="btn--base icon-btn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                            <div class="col-5">
+                                <a href="mailto:admin@utra.ca" class="btn--base icon-btn">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="shopping-btn text-center ptb-40">
-            <!-- <a href="#0" class="btn--base">  <i class="las la-arrow-right"></i></a> -->
         </div>
     </div>
 </section>
+
+<div class="buy-btn row justify-content-center">
+    <a href="./alumni.html" class="btn--base w-75">UTRA Alumni</a>
+</div>
 
 <!-- FEATURES -->
 <section class="features-section ptb-60">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="section-title text-center">
-                    <h2 class="title">Our Achievements</h2>
-                    <p>UTRA actively participates in competitions worldwide, achieving excellence on the global stage.</p>
-                </div>
-            </div>
-        </div>
         <div class="features-area pt-40">
+            <h2 class="title">Our History</h3>  
            <div class="row">
-               <div class="col-lg-4 pb-20">
+               <div class="col-lg-12 pb-20">
                   <div class="features-item">
-                     <h3 class="title">Top 5 Finish</h3>
-                     <p>UIUC iRobotics Pacbot Compeititon 2024, Illinois, United States</p>
-                  </div>
+                    <p>The University of Toronto Robotics Association (UTRA) was founded in 2004 by four engineering students inspired by the thrill of BattleBots. Starting with Combat Robotics, UTRA quickly made a name for itself by competing in international competitions like RoboGames, where the team earned several gold and bronze medals. These early successes laid the foundation for a club driven by innovation and teamwork.</p>
+                </div>
                </div>
-               <div class="col-lg-4 pb-20">
+               <div class="col-lg-12 pb-20">
                 <div class="features-item">
-                   <h3 class="title">5th Place in Design</h3>
-                   <p>Intelligent Ground Vehicle Competition (IGVC) 2024, Michigan, United States</p>
+                    <p>Over the years, UTRA expanded beyond Combat Robotics to tackle diverse challenges in robotics. The club launched projects like RoboSoccer and the Autonomous Rover Team (ART), which built fully functional autonomous rovers and competed internationally. UTRA also embraced cutting-edge technologies, founding the Fabrication (now Infrastructure) team in 2010 to explore 3D printing and manufacturing innovations.</p>
                 </div>
              </div>
-             <div class="col-lg-4 pb-20">
+             <div class="col-lg-12 pb-20">
                 <div class="features-item">
-                    <h3 class="title">4th Place</h3>
-                    <p>University of Bordeaux RoboCup 2023, Bordeaux, France</p>
+                    <p>UTRA continues to grow and evolve, adding new teams and initiatives. In 2016, we launched Robonars (short for Robotics Seminars), offering hands-on robotics workshops to UofT students. That same spirit of innovation led to the creation of UTRAHacks, now recognized by university students across Canada as a premier hardware hackathon. Our RoboSoccer team gained acclaim as the only Canadian team to qualify for the prestigious RoboCup competition in both 2018 and 2019, while the 6ix-Pac team, founded in 2018, brought robotics to life by recreating the classic arcade game Pac-Man.</p>
                 </div>
              </div>
+             <div class="col-lg-12 pb-20">
+                <div class="features-item">
+                    <p>Today, UTRA comprises five robotics subteams, each driving innovation through cutting-edge projects, international competitions, and active community engagement. Alongside these teams, we host UTRAHacks annually, and run regular Robonars workshops to share robotics knowledge and skills. Backed by dedicated student leadership, strong faculty support, and valuable industry partnerships, UTRA continues to lead the charge in robotics innovation at U of T and beyond.</p>
+                </div>
+             </div>
+            
+             
            </div>
-        </div>
-    </div>
-</section>
-
-
-
-<!-- app section -->
-<section class="app-section pt-80 pb-120">
-    <div class="container">
-        <div class="app-wrapper">
-            <div class="row justify-content-center align-items-center mb-30-none">
-                <div class="col-xl-6 col-lg-6 mb-30">
-                    <div class="app-thumb text-center">
-                        <img src="static/images/graphics/cartoon_robot_1.jpg" alt="element">
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 mb-30">
-                    <div class="app-content">
-                        <span class="sub-title">Want to get involved?</span>
-                        <h2 class="title">UTRA needs you!</h2>
-                        <p>UTRA is the perfect place to dive into robotics, learn new skills, and work on cool projects with a team. Whether you’re into coding, building, or just curious about robotics, you’ll get hands-on experience and a chance to compete in exciting competitions. No experience? No problem—just bring your enthusiasm, and we’ll help you get started!</p>
-                        <div class="about-btn pt-30">
-                            <a href="join.html" class="btn--base">Join Us <i class="las la-arrow-right"></i></a>
-                        </div>
-                        <!-- <p>UTRA’s mission is to foster creativity and innovation while cultivating technology leaders of the future by providing students with opportunities to design and build advanced robotic technologies. These opportunities have led students across a variety of science and engineering disciplines to work in highly dynamic inter-disciplinary teams to develop critical leadership, teamwork and problem-solving skills!</p>
-                        -->
-                        <div class="app-btn-wrapper">
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
@@ -336,8 +346,6 @@
                         <a href="https://www.instagram.com/utra_uoft/"><i class="fab fa-instagram"></i></a>  
                         <a href="https://www.linkedin.com/company/university-of-toronto-robotics-association/"><i class="fab fa-linkedin"></i></a>
                         <span>utra.ca</span>
-                        <p></p>
-                        <p>Myhal Centre 015D, 55 St George St, Toronto ON M5S 1A4</p>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 mb-30">

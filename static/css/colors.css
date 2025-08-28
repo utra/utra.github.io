@@ -2,13 +2,13 @@
 # Color Variables
 --------------------------------------------------------------*/
 :root {
-  /* Primary Brand Colors */
-  --primary-color: #c5a75a; /* UTRA Gold - Main brand color */
-  --primary-light: rgba(197, 167, 90, 0.2);
-  --primary-dark: #998145;
-  --primary-transparent: rgba(197, 167, 90, 0.9);
-  --primary-border: rgba(197, 167, 90, 0.5176470588);
-  --primary-shadow: rgba(197, 167, 90, 0.807);
+  /* Updated Primary Brand Colors */
+  --primary-color: #a57ad5; /* New primary color - Purple */
+  --primary-light: rgba(165, 122, 213, 0.2);
+  --primary-dark: #7c5ca1;
+  --primary-transparent: rgba(165, 122, 213, 0.9);
+  --primary-border: rgba(165, 122, 213, 0.5176470588);
+  --primary-shadow: rgba(165, 122, 213, 0.807);
 
   /* Background Colors */
   --bg-primary: #0a0a0a; /* Main dark background */

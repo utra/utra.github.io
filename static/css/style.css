@@ -2262,10 +2262,9 @@ input:focus {
 
 .bg-overlay-purple {
   position: relative;
-  z-index: 2;
 }
 
-.bg-overlay-purple:after {
+.bg-overlay-purple:before {
   content: "";
   position: absolute;
   background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
@@ -2276,8 +2275,14 @@ input:focus {
   right: 0;
   top: 0;
   bottom: 0;
-  z-index: -1;
+  z-index: 0;
   mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.bg-overlay-purple > * {
+  position: relative;
+  z-index: 1;
 }
 
 @-webkit-keyframes scroll-down {

@@ -1,0 +1,126 @@
+/*--------------------------------------------------------------
+# Color Variables
+--------------------------------------------------------------*/
+:root {
+  /* Updated Primary Brand Colors */
+  --primary-color: #a57ad5; /* New primary color - Purple */
+  --primary-light: rgba(165, 122, 213, 0.2);
+  --primary-dark: #7c5ca1;
+  --primary-transparent: rgba(165, 122, 213, 0.9);
+  --primary-border: rgba(165, 122, 213, 0.5176470588);
+  --primary-shadow: rgba(165, 122, 213, 0.807);
+
+  /* Background Colors */
+  --bg-primary: #0a0a0a; /* Main dark background */
+  --bg-secondary: #19181d; /* Secondary dark background */
+  --bg-tertiary: #10163a; /* Tertiary dark background */
+  --bg-light: #ffffff; /* Light background */
+  --bg-gray: rgba(80, 80, 80, 0.8); /* Semi-transparent grey */
+  --bg-overlay: rgba(255, 255, 255, 0.05); /* Light overlay */
+
+  /* Text Colors */
+  --text-primary: #ffffff; /* Primary text color */
+  --text-secondary: rgb(191, 191, 191); /* Secondary text color */
+  --text-muted: rgba(191, 191, 191, 0.4); /* Muted text color */
+  --text-light: #ebebeb; /* Light text color */
+  --text-dark: #000000; /* Dark text color */
+
+  /* Status Colors */
+  --success-color: #28c76f; /* Success green */
+  --danger-color: #d63384; /* Danger red */
+  --warning-color: #ff9f43; /* Warning orange */
+  --info-color: #1e9ff2; /* Info blue */
+  --error-color: #ea5455; /* Error red */
+
+  /* Additional Theme Colors */
+  --accent-purple: #7367f0; /* Purple accent */
+  --accent-yellow: #ffce52; /* Yellow accent */
+  --accent-blue: #107be9; /* Blue accent */
+  --accent-teal: #0dc270; /* Teal accent */
+  --accent-lime: yellowgreen; /* Lime accent */
+
+  /* Additional UI Colors */
+  --secondary-gray: #868e96; /* Secondary gray */
+  --modal-dark: #1c3259; /* Modal dark background */
+  --border-gray: #60648d; /* Border gray */
+  --light-blue: #627afe; /* Light blue */
+  --darker-blue: #4e62d6; /* Darker blue */
+  --light-teal: #44cdd2; /* Light teal */
+  --darker-teal: #3ab1b6; /* Darker teal */
+  --light-red: #ff5e5e; /* Light red */
+  --darker-red: #d84545; /* Darker red */
+  --cyan: #71cdcf; /* Cyan */
+  --light-cyan: #fbffff; /* Light cyan */
+
+  /* File Upload & Drag Drop Colors */
+  --upload-border: #5a5278; /* Upload border color */
+  --upload-border-light: #8a8dab; /* Light upload border */
+  --upload-text: #c4c5cf; /* Upload text color */
+  --text-light-gray: #f0eded; /* Light gray text */
+
+  /* Social Media & Brand Colors */
+  --facebook: #3a5795; /* Facebook blue */
+  --google: #4285f4; /* Google blue */
+  --text-muted-dark: #ababb1; /* Muted dark text */
+  --text-gray-medium: #908f97; /* Medium gray text */
+  --warning-alt: #febe28; /* Alternative warning color */
+  --warning-alt-dark: #feb240; /* Alternative warning dark */
+  --brand-green: #29e1b7; /* Brand green */
+
+  /* Specific Section Colors */
+  --section-dark: #151418; /* Dark section background */
+  --section-alt: #25283d; /* Alternative section background */
+  --section-blue: #131c50; /* Blue section background */
+  --section-darker: #090139; /* Darker section background */
+  --section-navy: #0e1f2f; /* Navy section background */
+  --accent-gray: #959595; /* Accent gray */
+  --bg-medium-gray: #505050; /* Medium gray background */
+
+  /* Border Colors */
+  --border-primary: var(--primary-color);
+  --border-secondary: var(--primary-border);
+  --border-light: #e5e5e5;
+  --border-muted: rgba(42, 69, 116, 0.583);
+
+  /* Shadow Colors */
+  --shadow-default: rgba(0, 0, 0, 0.08);
+  --shadow-dark: rgba(0, 0, 0, 0.3);
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --shadow-primary: var(--primary-shadow);
+
+  /* Gradient Colors */
+  --gradient-primary: linear-gradient(147deg, #998145 0%, #c5a75a 74%);
+  --gradient-blue: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    #1370d9 0%,
+    #255e9f 81.3%
+  );
+
+  /* Scrollbar Colors */
+  --scrollbar-track: #f1f1f1;
+  --scrollbar-thumb: #999;
+
+  /* Form Colors */
+  --form-bg: var(--bg-overlay);
+  --form-border: var(--primary-border);
+  --form-focus: var(--primary-color);
+  --form-text: var(--text-secondary);
+  --form-placeholder: var(--text-muted);
+
+  /* Button Colors */
+  --btn-primary-bg: var(--primary-color);
+  --btn-primary-text: var(--text-primary);
+  --btn-secondary-bg: var(--bg-secondary);
+  --btn-secondary-text: var(--text-primary);
+
+  /* Navigation Colors */
+  --nav-bg: var(--bg-secondary);
+  --nav-text: var(--text-secondary);
+  --nav-hover: var(--primary-color);
+  --nav-border: var(--border-muted);
+
+  /* Modal Colors */
+  --modal-bg: var(--bg-secondary);
+  --modal-text: var(--text-primary);
+  --modal-border: var(--border-secondary);
+}
